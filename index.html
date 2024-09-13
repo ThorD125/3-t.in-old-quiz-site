@@ -1,38 +1,46 @@
-<style>
-  body {
-    background-color: #121212; /* Dark background */
-    color: #ffffff;           /* Light text for contrast */
-    font-family: Arial, sans-serif; /* Optional font setting */
-    margin: 0;
-    padding: 0;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  a {
-    color: #1e90ff; /* Bright color for links */
-    text-decoration: none;
-  }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-  a:hover {
-    color: #ff8c00; /* Hover effect for links */
-  }
+<body>
+  <div class="container">
+    <h1>Quiz</h1>
+    <div>
+      <label for="exam-selection">Choose an exam:</label>
+      <select id="exam-selection">
+        <option value="" disabled selected>Select an exam</option>
+        <!-- These values correspond to the JSON files in the "exam" folder -->
+        <option value="example1.json">Example 1</option>
+        <option value="example2.json">Example 2</option>
+        <option value="example3.json">Example 3</option>
+      </select>
+      <button id="start-btn">Start Exam</button>
+    </div>
 
-  header, footer {
-    background-color: #1c1c1c;
-    padding: 20px;
-    text-align: center;
-  }
+    <div id="quiz-container" style="display:none;">
+      <p id="question-text"></p>
+      <div id="answer-buttons" class="btn-container">
+        <button class="btn" data-option="A"></button>
+        <button class="btn" data-option="B"></button>
+        <button class="btn" data-option="C"></button>
+        <button class="btn" data-option="D"></button>
+      </div>
+      <p id="feedback"></p>
+      <p id="question-counter"></p>
+      <button id="next-btn" class="next-btn">Next Question</button>
+    </div>
 
-  button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+    <div id="good-job-animation" class="hidden">
+      <h2>Good Job! 🎉</h2>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
 
-  button:hover {
-    background-color: #555;
-  }
-</style>
-
-super<div style="display: none">daddy</div>
+</html>

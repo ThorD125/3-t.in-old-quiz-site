@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the primary purpose of Azure Resource Manager (ARM)?",
+        "options": {
+            "A": "To manage access to Azure resources using role-based access control (RBAC)",
+            "B": "To deploy and manage applications and services in Azure",
+            "C": "To organize Azure resources into resource groups",
+            "D": "To automate the scaling of Azure resources"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a benefit of using cloud computing?",
+        "options": {
+            "A": "Fixed costs and dedicated servers",
+            "B": "Manual updates and maintenance",
+            "C": "Pay-as-you-go pricing model",
+            "D": "No need for data backups"
+        },
+        "answer": "C"
+    },
+    {
+        "question": "What type of cloud service model allows you to manage applications without worrying about the underlying infrastructure?",
+        "options": {
+            "A": "Infrastructure as a Service (IaaS)",
+            "B": "Platform as a Service (PaaS)",
+            "C": "Software as a Service (SaaS)",
+            "D": "Disaster Recovery as a Service (DRaaS)"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which Azure service allows you to run virtualized environments and operating systems in the cloud?",
+        "options": {
+            "A": "Azure Virtual Machines",
+            "B": "Azure SQL Database",
+            "C": "Azure App Service",
+            "D": "Azure Kubernetes Service"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is the main purpose of an Azure region?",
+        "options": {
+            "A": "To provide localized pricing for Azure services",
+            "B": "To offer services to customers located in a specific geographical area",
+            "C": "To manage the physical security of Azure datacenters",
+            "D": "To store Azure customer data securely"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of a private cloud?",
+        "options": {
+            "A": "Shared hardware infrastructure with other tenants",
+            "B": "Dedicated resources for a single organization",
+            "C": "Publicly accessible over the internet",
+            "D": "Pay-as-you-go model"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the function of Azure Load Balancer?",
+        "options": {
+            "A": "It distributes traffic across multiple virtual machines or services",
+            "B": "It provides network security by filtering incoming traffic",
+            "C": "It manages the scaling of Azure resources automatically",
+            "D": "It stores unstructured data in the cloud"
+        },
+        "answer": "A"
+    },
+    {
+        "question": "What is a benefit of Azure's consumption-based pricing model?",
+        "options": {
+            "A": "Predictable, fixed monthly costs",
+            "B": "Pay only for the resources you use",
+            "C": "No need to scale resources manually",
+            "D": "Unlimited free usage of Azure services"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Which Azure service is designed for storing large amounts of unstructured data, such as images and videos?",
+        "options": {
+            "A": "Azure SQL Database",
+            "B": "Azure Blob Storage",
+            "C": "Azure File Storage",
+            "D": "Azure App Service"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of Azure Active Directory (Azure AD)?",
+        "options": {
+            "A": "To manage and secure on-premises user accounts",
+            "B": "To provide identity and access management services for Azure resources",
+            "C": "To store and manage encryption keys in the cloud",
+            "D": "To monitor the performance of Azure virtual machines"
+        },
+        "answer": "B"
+    }
+]
