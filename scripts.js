@@ -78,7 +78,10 @@ function setNextQuestion() {
   questionText.textContent = question.question;
   answerButtons.forEach(button => {
     const option = button.getAttribute('data-option');
-    button.textContent = question.options[option];
+    if (question.options[option] != undefined) {
+      button.textContent = question.options[option];
+      button.classList.remove("hidden")
+    }
   });
 }
 
@@ -145,7 +148,8 @@ function enableAnswerButtons() {
 // Reset the button colors to the default state
 function resetButtonColors() {
   answerButtons.forEach(button => {
-    button.classList.remove('correct', 'wrong', "hidden");
+    button.classList.remove('correct', 'wrong');
+    button.classList.add('hidden');
   });
 }
 
@@ -159,7 +163,7 @@ function shuffleArray(array) {
 
 // Update question counter
 function updateQuestionCounter() {
-  const remainingQuestions = questions.length - currentQuestionIndex;
+  const remainingQuestions = questions.length;
   questionCounter.textContent = `Questions left: ${remainingQuestions}`;
 }
 
