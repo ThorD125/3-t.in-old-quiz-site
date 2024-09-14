@@ -1,0 +1,33 @@
+[
+    {
+        "question": "Question default",
+        "options": {
+            "A": "option a",
+            "B": "option b",
+            "C": "option c",
+            "D": "option d"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Question truth false",
+        "options": {
+            "A": "option true",
+            "B": "option false"
+        },
+        "answer": "B"
+    },
+    {
+        "question": "Question multi",
+        "options": {
+            "A": "option a",
+            "B": "option b",
+            "C": "option c",
+            "D": "option d"
+        },
+        "answer": [
+            "B",
+            "C"
+        ]
+    }
+]

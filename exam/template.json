@@ -1,13 +1,18 @@
 [
     {
-        "question": "Question 3 1",
+        "question": "Question truth false a",
         "options": {
-            "A": "option a",
-            "B": "option b",
-            "C": "option c",
-            "D": "option d"
+            "A": "option true",
+            "B": "option false"
         },
-        "answer": "B",
-        "reason": "b is correct bcs it is"
+        "answer": "B"
+    },
+    {
+        "question": "Question truth false b",
+        "options": {
+            "A": "option true",
+            "B": "option false"
+        },
+        "answer": "B"
     }
 ]

@@ -63,21 +63,23 @@ nextBtn.addEventListener('click', () => {
 });
 
 function setNextQuestion() {
-  if (currentQuestionIndex >= questions.length) {
+  console.log(currentQuestionIndex, questions.length, questions)
+  if (questions.length == 0) {
     showGoodJobAnimation(); // Show "Good Job" animation when all questions are done
     return;
   }
 
-  const question = questions[currentQuestionIndex];
-  if (question) {
-    questionText.textContent = question.question;
-    answerButtons.forEach(button => {
-      const option = button.getAttribute('data-option');
-      button.textContent = question.options[option];
-    });
-  } else {
-    console.error("No question found for the current index.");
+  let question = questions[currentQuestionIndex];
+  if (!question) {
+    // console.error("No question found for the current index.");
+    currentQuestionIndex = Math.floor(Math.random() * questions.length);
+    question = questions[currentQuestionIndex];
   }
+  questionText.textContent = question.question;
+  answerButtons.forEach(button => {
+    const option = button.getAttribute('data-option');
+    button.textContent = question.options[option];
+  });
 }
 
 answerButtons.forEach(button => {
@@ -95,6 +97,8 @@ function selectAnswer(e) {
 
     // Highlight correct and incorrect answers
     if (selectedOption === currentQuestion.answer) {
+      delete questions[currentQuestionIndex];
+      questions = questions.filter(x => x != "empty")
       e.target.classList.add('correct'); // Correct button turns green
       feedbackText.textContent = `Correct! ${currentQuestion.reason}`;
       feedbackText.style.color = '#4CAF50'; // Green for correct
@@ -141,7 +145,7 @@ function enableAnswerButtons() {
 // Reset the button colors to the default state
 function resetButtonColors() {
   answerButtons.forEach(button => {
-    button.classList.remove('correct', 'wrong');
+    button.classList.remove('correct', 'wrong', "hidden");
   });
 }
 
