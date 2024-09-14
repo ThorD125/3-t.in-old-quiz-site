@@ -4,7 +4,7 @@ def parse_file_to_json(file_path):
     questions = []
     current_question = None
     options = {}
-    option_labels = ["A", "B", "C", "D"]  # Add or extend this if you expect more than 4 options
+    option_labels = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]  # Add or extend this if you expect more than 4 options
     current_label = 0
 
     with open(file_path, 'r', encoding='utf-8') as file:

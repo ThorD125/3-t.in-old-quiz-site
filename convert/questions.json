@@ -541,9 +541,10 @@
             "A": "https://admin.azure.com",
             "B": "https://admin.azurewebsites.com",
             "C": "https://portal.microsoft.com",
-            "D": "https://portal.azurewebsites.com"
+            "D": "https://portal.azurewebsites.com",
+            "E": "https://portal.azure.com"
         },
-        "answer": ""
+        "answer": "E"
     },
     {
         "question": "You need to create a virtual machine in Azure. Which of the following storage account service is used to store the data disks for the virtual machine?",
@@ -696,7 +697,8 @@
             "A": "Command Prompt.",
             "B": "Azure Resource Explorer.",
             "C": "Windowe PowerShell.",
-            "D": "Windows Defender Firewall."
+            "D": "Windows Defender Firewall.",
+            "E": "Network and Sharing Center."
         },
         "answer": "C"
     },
@@ -706,7 +708,8 @@
             "A": "Azure Data Lake.",
             "B": "Azure Cosmos DB.",
             "C": "Azure SQL Data Warehouse.",
-            "D": "Azure SQL Database."
+            "D": "Azure SQL Database.",
+            "E": "Azure Database for PostgreSQL."
         },
         "answer": "C"
     },
@@ -762,9 +765,10 @@
             "A": "A virtual network gateway.",
             "B": "A load balancer.",
             "C": "An application gateway.",
-            "D": "A virtual network."
+            "D": "A virtual network.",
+            "E": "A gateway subnet."
         },
-        "answer": "A"
+        "answer": "E"
     },
     {
         "question": "You have an Azure environment. You need to create a new Azure virtual machine from a tablet that runs the Android operating system. Solution: You use Bash in Azure Cloud Shell. Does this meet the goal?",
@@ -830,7 +834,8 @@
             "A": "Azure Data Lake.",
             "B": "Azure Queue storage.",
             "C": "Azure File Storage.",
-            "D": "Azure IoT Hub."
+            "D": "Azure IoT Hub.",
+            "E": "Azure Notification Hubs."
         },
         "answer": "D"
     },
@@ -840,7 +845,8 @@
             "A": "Azure CLI.",
             "B": "The Azure portal.",
             "C": "Azure Cloud Shell.",
-            "D": "Windows PowerShell."
+            "D": "Windows PowerShell.",
+            "E": "Azure Storage Explorer."
         },
         "answer": "C"
     },
@@ -994,7 +1000,8 @@
             "A": "A Canadian government contractor.",
             "B": "A European government contractor.",
             "C": "A United States government entity.",
-            "D": "A United States government contractor."
+            "D": "A United States government contractor.",
+            "E": "A European government entity."
         },
         "answer": "D"
     },
@@ -1283,9 +1290,10 @@
             "A": "Dedicated hardware.",
             "B": "Unsecured connections.",
             "C": "Limited storage.",
-            "D": "Metered pricing."
+            "D": "Metered pricing.",
+            "E": "Self-service management."
         },
-        "answer": "D"
+        "answer": "E"
     },
     {
         "question": "Your company plans to migrate all its data and resources to Azure. The company migration plan states that only Platform as a Service (PaaS) solutions must be used in Azure. You need to deploy an Azure environment that meets the company migration plan. Solution: You create an Azure App Service and Azure virtual machines that have Microsoft SQL Server installed. Does this meet the goal?",
@@ -1821,7 +1829,8 @@
             "A": "Configure a Site-to-Site (S2S) VPN.",
             "B": "Configure a VNet-toVNet VPN.",
             "C": "Configure a Point-to-Site (P2S) VPN.",
-            "D": "Configure DirectAccess on a Windows Server 2012 server VM."
+            "D": "Configure DirectAccess on a Windows Server 2012 server VM.",
+            "E": "Configure a Multi-Site VPN."
         },
         "answer": "C"
     },
@@ -2135,7 +2144,19 @@
             "A": "Azure Cosmos DB.",
             "B": "SQL databases.",
             "C": "Azure Database for MYSQL servers.",
-            "D": "Azure Database for PostgreSQL servers."
+            "D": "Azure Database for PostgreSQL servers.",
+            "E": "Azure Database for NariaDB servers.",
+            "F": "SQL servers.",
+            "G": "SQL Data warehouses.",
+            "H": "Azure Database Migration Services.",
+            "I": "Azure Cache for Redis.",
+            "J": "SQL Server stretch databases.",
+            "K": "Data factories.",
+            "L": "SQL elastic pools.",
+            "M": "Virtual Clusters.",
+            "N": "Managed databases.",
+            "O": "Elastic Job agents.",
+            "P": "SQL managed instances."
         },
         "answer": "A"
     },
@@ -2481,9 +2502,10 @@
             "A": "Use Bash in Azure Cloud Shell.",
             "B": "Use PowerShell in Azure Cloud Shell.",
             "C": "Use the PowerApps portal.",
-            "D": "Use the Security & Compliance admin center."
+            "D": "Use the Security & Compliance admin center.",
+            "E": "Use the Azure portal."
         },
-        "answer": "B"
+        "answer": "E"
     },
     {
         "question": "Azure Advisor provides recommendations on how to improve the security of an Azure Active Directory (Azure AD) environment.",
@@ -2555,9 +2577,10 @@
             "A": "A computer that runs macOS and has PowerShell Core 6.0 installed.",
             "B": "A computer that runs Windows 10 and has the Azure PowerShell module installed.",
             "C": "A computer that runs Linux and has the Azure PowerShell module installed.",
-            "D": "A computer that runs Linux and has the Azure CLI tools installed."
+            "D": "A computer that runs Linux and has the Azure CLI tools installed.",
+            "E": "A computer that runs Chrome OS and uses Azure Cloud Shell."
         },
-        "answer": "B"
+        "answer": "E"
     },
     {
         "question": "Azure Firewall will encrypt all the network traffic sent from Azure the Internet.",
@@ -3027,9 +3050,12 @@
             "A": "Quickstart.",
             "B": "Resource costs.",
             "C": "Deployments.",
-            "D": "Policies."
+            "D": "Policies.",
+            "E": "Properties.",
+            "F": "Locks.",
+            "G": "Automation script."
         },
-        "answer": ""
+        "answer": "F"
     },
     {
         "question": "You have a resource group named RG1. You need to prevent the creation of virtual machines only in RG1. The solution must ensure that other objects can be created in RG1. What should you use?",
@@ -3445,9 +3471,18 @@
             "A": "Create a resource.",
             "B": "All services.",
             "C": "Favorites.",
-            "D": "Dashboard."
+            "D": "Dashboard.",
+            "E": "All resources.",
+            "F": "Resource groups.",
+            "G": "App Services.",
+            "H": "Function Apps.",
+            "I": "SQL databases.",
+            "J": "Azure Cosmos DB.",
+            "K": "Virtual machines.",
+            "L": "Load balancers.",
+            "M": "Help + support."
         },
-        "answer": ""
+        "answer": "M"
     },
     {
         "question": "You can use in Azure to send email alerts when the cost of the current billing period for an Azure subscription exceeds a specified limit.",
@@ -3761,9 +3796,17 @@
             "A": "Virtual networks.",
             "B": "Load balancers.",
             "C": "Virtual networks gateways.",
-            "D": "DNS zones."
+            "D": "DNS zones.",
+            "E": "Traffic Manager profiles.",
+            "F": "Network  Watcher.",
+            "G": "Virtual networks (classic).",
+            "H": "Application gateways.",
+            "I": "Local network gateways.",
+            "J": "CDN profiles.",
+            "K": "ExpressRoute circuits.",
+            "L": "Network security groups."
         },
-        "answer": ""
+        "answer": "I"
     },
     {
         "question": "You have several virtual machines in an Azure subscription. You create a new subscription. [The virtual machines cannot be moved to the new subscription].",
@@ -4055,9 +4098,21 @@
             "A": "Dashboard.",
             "B": "All resources.",
             "C": "Resource groups.",
-            "D": "App Services."
+            "D": "App Services.",
+            "E": "Function Apps.",
+            "F": "SQL databases.",
+            "G": "Azure Cosmos DB.",
+            "H": "Virtual machines.",
+            "I": "Load balancers.",
+            "J": "Storage accounts.",
+            "K": "Virtual networks.",
+            "L": "Azure Active Directory.",
+            "M": "Monitor.",
+            "N": "Advisor.",
+            "O": "Security Center.",
+            "P": "Help + support."
         },
-        "answer": ""
+        "answer": "P"
     },
     {
         "question": "A company can extend the capacity of its internal network by using the public cloud.",
@@ -4224,7 +4279,8 @@
             "A": "Replacing failed server hardware.",
             "B": "Backing up application data.",
             "C": "Managing physical server security.",
-            "D": "Updating server operating systems."
+            "D": "Updating server operating systems.",
+            "E": "Managing permissions to shared documents."
         },
         "answer": "C"
     },
