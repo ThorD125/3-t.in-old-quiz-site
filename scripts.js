@@ -56,6 +56,7 @@ nextBtn.addEventListener('click', () => {
   feedbackText.style.color = ''; // Reset feedback color
   nextBtn.style.display = 'none';
   enableAnswerButtons(); // Re-enable the answer buttons for the new question
+  resetButtonColors(); // Reset button colors to default
 
   updateQuestionCounter();
   setNextQuestion();
@@ -89,12 +90,27 @@ function selectAnswer(e) {
   if (currentQuestion) {
     const selectedOption = e.target.getAttribute('data-option');
 
+    // Disable buttons after selection
+    disableAnswerButtons();
+
+    // Highlight correct and incorrect answers
     if (selectedOption === currentQuestion.answer) {
+      e.target.classList.add('correct'); // Correct button turns green
       feedbackText.textContent = `Correct! ${currentQuestion.reason}`;
       feedbackText.style.color = '#4CAF50'; // Green for correct
     } else {
+      e.target.classList.add('wrong'); // Wrong button turns red
       feedbackText.textContent = `Wrong! ${currentQuestion.reason}`;
       feedbackText.style.color = '#f44336'; // Red for wrong
+
+      // Highlight the correct button as well
+      answerButtons.forEach(button => {
+        if (button.getAttribute('data-option') === currentQuestion.answer) {
+          button.classList.add('correct'); // Green for correct answer
+        } else {
+          button.classList.add('wrong')
+        }
+      });
 
       // Push the incorrect question to the end of the array
       questions.push(currentQuestion);
@@ -102,7 +118,6 @@ function selectAnswer(e) {
 
     nextBtn.style.display = 'block';
     currentQuestionIndex++;
-    disableAnswerButtons();
     updateQuestionCounter();
   } else {
     console.error("No question available to select an answer for.");
@@ -113,7 +128,6 @@ function selectAnswer(e) {
 function disableAnswerButtons() {
   answerButtons.forEach(button => {
     button.disabled = true;
-    button.style.opacity = '0.6'; // Optional: Visually indicate buttons are disabled
   });
 }
 
@@ -121,7 +135,13 @@ function disableAnswerButtons() {
 function enableAnswerButtons() {
   answerButtons.forEach(button => {
     button.disabled = false;
-    button.style.opacity = '1'; // Reset button appearance
+  });
+}
+
+// Reset the button colors to the default state
+function resetButtonColors() {
+  answerButtons.forEach(button => {
+    button.classList.remove('correct', 'wrong');
   });
 }
 

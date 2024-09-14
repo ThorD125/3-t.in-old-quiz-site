@@ -77,3 +77,23 @@ button:hover {
 .hidden {
     display: none;
 }
+
+.btn {
+    background-color: darkgray;
+    color: black;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+/* Correct and wrong button colors */
+.correct {
+    background-color: #4CAF50 !important;
+    /* Green for correct */
+}
+
+.wrong {
+    background-color: #f44336 !important;
+    /* Red for wrong */
+}

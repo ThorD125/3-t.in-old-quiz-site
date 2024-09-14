@@ -9,16 +9,5 @@
         },
         "answer": "B",
         "reason": "b is correct bcs it is"
-    },
-    {
-        "question": "Question 3 2",
-        "options": {
-            "A": "option a",
-            "B": "option b",
-            "C": "option c",
-            "D": "option d"
-        },
-        "answer": "C",
-        "reason": "c is correct bcs it is"
     }
 ]

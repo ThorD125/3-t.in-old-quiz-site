@@ -2,9 +2,5 @@
     {
         "title": "Azure fundamentals aka AZ-900",
         "file": "az-900.json"
-    },
-    {
-        "title": "example 1",
-        "file": "example1.json"
     }
 ]
