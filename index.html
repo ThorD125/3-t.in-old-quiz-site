@@ -11,16 +11,13 @@
 <body>
   <div class="container">
     <h1>Quiz</h1>
-    <div>
+
+    <div id="exam-selection-container" class="absolute-top">
       <label for="exam-selection">Choose an exam:</label>
       <select id="exam-selection">
         <option value="" disabled selected>Select an exam</option>
-        <!-- These values correspond to the JSON files in the "exam" folder -->
-        <option value="example1.json">Example 1</option>
-        <option value="example2.json">Example 2</option>
-        <option value="example3.json">Example 3</option>
+        <!-- Options will be loaded dynamically from the JSON -->
       </select>
-      <button id="start-btn">Start Exam</button>
     </div>
 
     <div id="quiz-container" style="display:none;">

@@ -8,15 +8,31 @@ const nextBtn = document.getElementById('next-btn');
 const questionCounter = document.getElementById('question-counter');
 const goodJobAnimation = document.getElementById('good-job-animation');
 const quizContainer = document.getElementById('quiz-container');
-const startBtn = document.getElementById('start-btn');
 const examSelection = document.getElementById('exam-selection');
 
-startBtn.addEventListener('click', () => {
+// Load the available exams from "/exams.json" and populate the dropdown
+fetch('/exams.json')  // Correct path to your exams file
+  .then(response => response.json())
+  .then(exams => {
+    populateExamDropdown(exams);
+  })
+  .catch(error => console.error("Error loading exams:", error));
+
+// Populate the exam dropdown with options from the JSON file
+function populateExamDropdown(exams) {
+  exams.forEach(exam => {
+    const option = document.createElement('option');
+    option.value = exam.file;  // Use the file name for value
+    option.textContent = exam.title;  // Use the title for the display text
+    examSelection.appendChild(option);
+  });
+}
+
+// Automatically start the exam when an option is selected
+examSelection.addEventListener('change', () => {
   const selectedExam = examSelection.value;
   if (selectedExam) {
     loadExam(`exam/${selectedExam}`);
-  } else {
-    alert("Please select an exam.");
   }
 });
 

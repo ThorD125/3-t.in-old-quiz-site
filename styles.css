@@ -7,6 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
 }
 
 .container {
@@ -19,6 +20,41 @@ h1 {
     color: #fff;
 }
 
+/* Add a style for absolute positioning of the exam selection */
+.absolute-top {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #222;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+select {
+    padding: 8px;
+    margin-right: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Default layout: answer buttons in 2x2 grid */
 .btn-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,61 +62,18 @@ h1 {
     margin-top: 20px;
 }
 
-.btn {
-    background-color: #333;
-    color: #e0e0e0;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
+/* On small devices, stack answer buttons in 1x4 layout */
+@media (max-width: 600px) {
+    .btn-container {
+        grid-template-columns: 1fr;
+    }
 }
 
-.btn:hover {
-    background-color: #444;
-}
-
-#feedback {
-    margin-top: 20px;
-    color: #f44336;
-    /* Red color for feedback */
-}
-
-#next-btn {
-    margin-top: 20px;
-    display: none;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#next-btn:hover {
-    background-color: #45a049;
-}
-
+#quiz-container,
 #good-job-animation {
-    display: none;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
-#good-job-animation h2 {
-    color: #4CAF50;
-    font-size: 2em;
-    animation: pop 1s ease-in-out;
-}
-
-@keyframes pop {
-    0% {
-        transform: scale(0);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Hidden class */
 .hidden {
     display: none;
 }
