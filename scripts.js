@@ -1,3 +1,5 @@
+'use strict';
+
 let questions = [];
 let currentQuestionIndex = 0;
 
@@ -16,7 +18,7 @@ fetch('/exams.json')
   .then(exams => {
     populateExamDropdown(exams);
   })
-  .catch(error => console.error("Error loading exams:", error));
+  .catch(error => console.error('Error loading exams:', error));
 
 function populateExamDropdown(exams) {
   exams.forEach(exam => {
@@ -45,7 +47,7 @@ function loadExam(examFile) {
       setNextQuestion();
       quizContainer.style.display = 'block';
     })
-    .catch(error => console.error("Error loading exam:", error));
+    .catch(error => console.error('Error loading exam:', error));
 }
 
 nextBtn.addEventListener('click', () => {
@@ -72,11 +74,11 @@ function setNextQuestion() {
   }
   questionText.textContent = question.question;
   answerButtons.forEach(button => {
-    button.classList.add("hidden");
+    button.classList.add('hidden');
     const option = button.getAttribute('data-option');
     if (question.options[option] != undefined) {
       button.textContent = question.options[option];
-      button.classList.remove("hidden");
+      button.classList.remove('hidden');
     }
   });
 }
@@ -87,15 +89,23 @@ answerButtons.forEach(button => {
 
 function selectAnswer(e) {
   const currentQuestion = questions[currentQuestionIndex];
+  e.target.classList.toggle('selected');
+
+  const selectedAnswers = document.querySelectorAll('.btn.selected');
+  const answerAmount = currentQuestion.answer.length;
+  if (selectedAnswers.length != answerAmount) {
+    return;
+  }
 
   if (currentQuestion) {
-    const selectedOption = e.target.getAttribute('data-option');
+    const selectedAnswersFiltered = Array.from(selectedAnswers)
+      .map(x => x.getAttribute('data-option'));
 
     disableAnswerButtons();
 
-    if (currentQuestion.answer.includes(selectedOption)) {
+    if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
       delete questions[currentQuestionIndex];
-      questions = questions.filter(x => x != "empty")
+      questions = questions.filter(x => x != 'empty')
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
@@ -104,7 +114,9 @@ function selectAnswer(e) {
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
 
+      console.log(currentQuestion.answer);
       answerButtons.forEach(button => {
+        console.log(button.getAttribute('data-option'));
         if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
           button.classList.add('correct');
         } else {
@@ -119,8 +131,25 @@ function selectAnswer(e) {
     currentQuestionIndex++;
     updateQuestionCounter();
   } else {
-    console.error("No question available to select an answer for.");
+    console.error('No question available to select an answer for.');
   }
+}
+
+function arraysAreEqual(arr1, arr2) {
+  // Check if lengths are the same
+  if (arr1.length !== arr2.length) return false;
+
+  // Sort both arrays and compare them element by element
+  let sortedArr1 = arr1.slice().sort();
+  let sortedArr2 = arr2.slice().sort();
+
+  for (let i = 0; i < sortedArr1.length; i++) {
+    if (sortedArr1[i] !== sortedArr2[i]) {
+      return false;
+    }
+  }
+
+  return true;
 }
 
 function disableAnswerButtons() {
@@ -137,7 +166,7 @@ function enableAnswerButtons() {
 
 function resetButtonColors() {
   answerButtons.forEach(button => {
-    button.classList.remove('correct', 'wrong');
+    button.classList.remove('correct', 'wrong', 'selected');
     button.classList.add('hidden');
   });
 }

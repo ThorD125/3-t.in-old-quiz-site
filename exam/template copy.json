@@ -7,7 +7,9 @@
             "C": "option c",
             "D": "option d"
         },
-        "answer": "B"
+        "answer": [
+            "B"
+        ]
     },
     {
         "question": "Question truth false",
@@ -15,7 +17,9 @@
             "A": "option true",
             "B": "option false"
         },
-        "answer": "B"
+        "answer": [
+            "B"
+        ]
     },
     {
         "question": "Question multi",

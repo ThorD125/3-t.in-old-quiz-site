@@ -20,7 +20,6 @@ h1 {
     color: #fff;
 }
 
-/* Add a style for absolute positioning of the exam selection */
 .absolute-top {
     position: absolute;
     top: 10px;
@@ -54,7 +53,7 @@ button:hover {
     background-color: #45a049;
 }
 
-/* Default layout: answer buttons in 2x2 grid */
+
 .btn-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +61,7 @@ button:hover {
     margin-top: 20px;
 }
 
-/* On small devices, stack answer buttons in 1x4 layout */
+
 @media (max-width: 600px) {
     .btn-container {
         grid-template-columns: 1fr;
@@ -83,19 +82,32 @@ button:hover {
     color: black;
 }
 
+.btn.selected {
+    background-color: rgba(169, 169, 169, 0.816);
+    color: black;
+}
+
 .btn:hover {
     background-color: lightgray;
 }
 
-/* Correct and wrong button colors */
-.correct {
+
+.btn.selected.correct {
     background-color: #4CAF50 !important;
-    /* Green for correct */
+}
+
+.btn.correct {
+    background-color: #08880c8d !important;
 }
 
 .wrong {
     background-color: #f44336 !important;
-    /* Red for wrong */
+}
+
+.wrong,
+.correct,
+.wrong.selected {
+    color: white;
 }
 
 #good-job-animation {
