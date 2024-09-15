@@ -114,9 +114,7 @@ function selectAnswer(e) {
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
 
-      console.log(currentQuestion.answer);
       answerButtons.forEach(button => {
-        console.log(button.getAttribute('data-option'));
         if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
           button.classList.add('correct');
         } else {
