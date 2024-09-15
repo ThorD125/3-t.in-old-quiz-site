@@ -5,14 +5,20 @@
             "A": "option true",
             "B": "option false"
         },
-        "answer": "B"
+        "answer": [
+            "B"
+        ]
     },
     {
         "question": "Question truth false b",
         "options": {
             "A": "option true",
-            "B": "option false"
+            "B": "option false",
+            "C": "option false C",
+            "D": "option false D"
         },
-        "answer": "B"
+        "answer": [
+            "B"
+        ]
     }
 ]

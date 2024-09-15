@@ -72,10 +72,11 @@ function setNextQuestion() {
   }
   questionText.textContent = question.question;
   answerButtons.forEach(button => {
+    button.classList.add("hidden");
     const option = button.getAttribute('data-option');
     if (question.options[option] != undefined) {
       button.textContent = question.options[option];
-      button.classList.remove("hidden")
+      button.classList.remove("hidden");
     }
   });
 }
@@ -92,19 +93,19 @@ function selectAnswer(e) {
 
     disableAnswerButtons();
 
-    if (selectedOption === currentQuestion.answer) {
+    if (currentQuestion.answer.includes(selectedOption)) {
       delete questions[currentQuestionIndex];
       questions = questions.filter(x => x != "empty")
       e.target.classList.add('correct');
-      feedbackText.textContent = `Correct! ${currentQuestion.reason}`;
+      feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
     } else {
       e.target.classList.add('wrong');
-      feedbackText.textContent = `Wrong! ${currentQuestion.reason}`;
+      feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
 
       answerButtons.forEach(button => {
-        if (button.getAttribute('data-option') === currentQuestion.answer) {
+        if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
           button.classList.add('correct');
         } else {
           button.classList.add('wrong')

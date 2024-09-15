@@ -23,7 +23,7 @@ def parse_file_to_json(file_path):
                 current_question = {
                     "question": line[4:].strip(),  # Remove "### " from the line
                     "options": {},
-                    "answer": ""
+                    "answer": []
                 }
                 options = {}
                 current_label = 0
@@ -40,7 +40,7 @@ def parse_file_to_json(file_path):
             elif line.startswith("- [x]"):
                 if current_label < len(option_labels):
                     options[option_labels[current_label]] = line[6:].strip()  # Remove "- [x] "
-                    current_question["answer"] = option_labels[current_label]
+                    current_question["answer"].append(option_labels[current_label])
                     current_label += 1
                 else:
                     print(f"Warning: Too many options for question: {current_question['question']}")
