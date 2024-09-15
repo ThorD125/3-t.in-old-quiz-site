@@ -4,7 +4,6 @@ let questions = [];
 let currentQuestionIndex = 0;
 
 const questionText = document.getElementById('question-text');
-// const answerButtons = document.querySelectorAll('.btn');
 const header = document.querySelector('h1');
 const feedbackText = document.getElementById('feedback');
 const nextBtn = document.getElementById('next-btn');
@@ -13,7 +12,8 @@ const goodJobAnimation = document.getElementById('good-job-animation');
 const quizContainer = document.getElementById('quiz-container');
 const examSelection = document.getElementById('exam-selection');
 const answerButtonContainer = document.getElementById('answer-buttons');
-const examSelectionContainer = document.getElementById('exam-selection-container')
+const examSelectionContainer = document.getElementById('exam-selection-container');
+const explain = document.getElementById("explain");
 
 fetch('/exams.json')
   .then(response => response.json())
@@ -76,7 +76,7 @@ function setNextQuestion() {
   }
   questionText.textContent = question.question;
 
-  resetButtonColors()
+  resetButtonColors();
 
   Object.keys(question.options).forEach(key => {
     const button = document.createElement('button');
@@ -85,7 +85,7 @@ function setNextQuestion() {
     button.innerHTML = question.options[key];
     button.addEventListener('click', selectAnswer);
 
-    answerButtonContainer.appendChild(button)
+    answerButtonContainer.appendChild(button);
   });
 }
 
@@ -107,7 +107,7 @@ function selectAnswer(e) {
 
     if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
       delete questions[currentQuestionIndex];
-      questions = questions.filter(x => x != 'empty')
+      questions = questions.filter(x => x != 'empty');
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
@@ -120,7 +120,7 @@ function selectAnswer(e) {
         if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
           button.classList.add('correct');
         } else {
-          button.classList.add('wrong')
+          button.classList.add('wrong');
         }
       });
 
@@ -177,9 +177,9 @@ function updateQuestionCounter() {
 }
 
 function showGoodJobAnimation() {
-  quizContainer.style.display = 'none'
-  goodJobAnimation.style.marginTop = '0'
-  header.style.display = 'none'
+  quizContainer.style.display = 'none';
+  goodJobAnimation.style.marginTop = '0';
+  header.style.display = 'none';
   questionText.style.display = 'none';
   answerButtonContainer.style.display = 'none';
   nextBtn.style.display = 'none';
@@ -188,4 +188,18 @@ function showGoodJobAnimation() {
 
   goodJobAnimation.classList.remove('hidden');
   goodJobAnimation.style.display = 'block';
+}
+
+explain.addEventListener("click", ex => {
+  let text = "Can you please explain:\n\n";
+  const currentQuestion = questions[currentQuestionIndex];
+  text += currentQuestion.question + "\n";
+  Object.keys(currentQuestion.options).forEach(key => {
+    text += "-" + currentQuestion.options[key] + "\n";
+  })
+  copyToClipboard(text);
+})
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
 }
