@@ -1,27 +1,5 @@
 'use strict';
 
-let questions = [];
-let currentQuestionIndex = 0;
-
-const questionText = document.getElementById('question-text');
-const header = document.querySelector('h1');
-const feedbackText = document.getElementById('feedback');
-const nextBtn = document.getElementById('next-btn');
-const questionCounter = document.getElementById('question-counter');
-const goodJobAnimation = document.getElementById('good-job-animation');
-const quizContainer = document.getElementById('quiz-container');
-const examSelection = document.getElementById('exam-selection');
-const answerButtonContainer = document.getElementById('answer-buttons');
-const examSelectionContainer = document.getElementById('exam-selection-container');
-const explain = document.getElementById("explain");
-
-fetch('/exams.json')
-  .then(response => response.json())
-  .then(exams => {
-    populateExamDropdown(exams);
-  })
-  .catch(error => console.error('Error loading exams:', error));
-
 function populateExamDropdown(exams) {
   exams.forEach(exam => {
     const option = document.createElement('option');
@@ -30,13 +8,6 @@ function populateExamDropdown(exams) {
     examSelection.appendChild(option);
   });
 }
-
-examSelection.addEventListener('change', () => {
-  const selectedExam = examSelection.value;
-  if (selectedExam) {
-    loadExam(`exam/${selectedExam}`);
-  }
-});
 
 function loadExam(examFile) {
   fetch(examFile)
@@ -52,16 +23,6 @@ function loadExam(examFile) {
     })
     .catch(error => console.error('Error loading exam:', error));
 }
-
-nextBtn.addEventListener('click', () => {
-  feedbackText.textContent = '';
-  feedbackText.style.color = '';
-  nextBtn.style.display = 'none';
-  resetButtonColors();
-
-  updateQuestionCounter();
-  setNextQuestion();
-});
 
 function setNextQuestion() {
   if (questions.length == 0) {
@@ -190,6 +151,52 @@ function showGoodJobAnimation() {
   goodJobAnimation.style.display = 'block';
 }
 
+
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
+}
+
+let questions = [];
+let currentQuestionIndex = 0;
+
+const questionText = document.getElementById('question-text');
+const header = document.querySelector('h1');
+const feedbackText = document.getElementById('feedback');
+const nextBtn = document.getElementById('next-btn');
+const questionCounter = document.getElementById('question-counter');
+const goodJobAnimation = document.getElementById('good-job-animation');
+const quizContainer = document.getElementById('quiz-container');
+const examSelection = document.getElementById('exam-selection');
+const answerButtonContainer = document.getElementById('answer-buttons');
+const examSelectionContainer = document.getElementById('exam-selection-container');
+const explain = document.getElementById("explain");
+
+fetch('/exams.json')
+  .then(response => response.json())
+  .then(exams => {
+    populateExamDropdown(exams);
+  })
+  .catch(error => console.error('Error loading exams:', error));
+
+examSelection.addEventListener('change', () => {
+  const selectedExam = examSelection.value;
+  if (selectedExam) {
+    loadExam(`exam/${selectedExam}`);
+  }
+});
+
+nextBtn.addEventListener('click', () => {
+  feedbackText.textContent = '';
+  feedbackText.style.color = '';
+  nextBtn.style.display = 'none';
+  resetButtonColors();
+
+  updateQuestionCounter();
+  setNextQuestion();
+});
+
+
 explain.addEventListener("click", ex => {
   let text = "Can you please explain:\n\n";
   const currentQuestion = questions[currentQuestionIndex];
@@ -199,7 +206,3 @@ explain.addEventListener("click", ex => {
   })
   copyToClipboard(text);
 })
-
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text);
-}
