@@ -19,7 +19,7 @@ function loadExam(examFile) {
       updateQuestionCounter();
       setNextQuestion();
       quizContainer.style.display = 'block';
-      examSelectionContainer.style.display = 'none';
+     
     })
     .catch(error => console.error('Error loading exam:', error));
 }
