@@ -77,16 +77,16 @@ function selectAnswer(e) {
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
 
-      answerButtonContainer.querySelectorAll("button").forEach(button => {
+      questions.push(currentQuestion);
+    }
+
+answerButtonContainer.querySelectorAll("button").forEach(button => {
         if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
           button.classList.add('correct');
         } else {
           button.classList.add('wrong');
         }
       });
-
-      questions.push(currentQuestion);
-    }
 
     nextBtn.style.display = 'block';
     currentQuestionIndex++;
