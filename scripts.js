@@ -25,17 +25,13 @@ function loadExam(examFile) {
 }
 
 function setNextQuestion() {
-currentQuestionIndex++;
   if (questions.length == 0) {
     showGoodJobAnimation();
     return;
   }
-
-  let question = questions[currentQuestionIndex];
-  if (!question) {
-    currentQuestionIndex = Math.floor(Math.random() * questions.length);
-    question = questions[currentQuestionIndex];
-  }
+currentQuestionIndex = Math.floor(Math.random() * questions.length);
+  const question = questions[currentQuestionIndex];
+  
   questionText.textContent = question.question;
 
   resetButtonColors();
