@@ -25,6 +25,7 @@ function loadExam(examFile) {
 }
 
 function setNextQuestion() {
+currentQuestionIndex++;
   if (questions.length == 0) {
     showGoodJobAnimation();
     return;
@@ -89,7 +90,7 @@ answerButtonContainer.querySelectorAll("button").forEach(button => {
       });
 
     nextBtn.style.display = 'block';
-    currentQuestionIndex++;
+    
     updateQuestionCounter();
   } else {
     console.error('No question available to select an answer for.');
