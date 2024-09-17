@@ -21,14 +21,14 @@ function countUnique(arr) {
   });
 
   // Count how many objects have more than 1 occurrence
-  let duplicatesCount = 0;
+  let unique = 0;
   countMap.forEach(value => {
     if (value == 1) {
-      duplicatesCount += 1;
+      unique += 1;
     }
   });
-
-  return duplicatesCount;
+const totals = Array.from(countMap.keys()).length
+  return {"unique":unique, "total": totals, "dupes": totals-unique};
 }
 
 
@@ -155,7 +155,7 @@ function shuffleArray(array) {
 
 function updateQuestionCounter() {
   const remainingQuestions = questions.length;
-  const uniqueCount = countUnique(questions);
+  const uniqueCount = Array.from(countUnique(questions));
   questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount}uniq)`;
   
 }
