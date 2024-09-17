@@ -14,21 +14,19 @@ function populateExamDropdown(exams) {
 
 function countUnique(arr) {
   const countMap = new Map();
-
-  // Iterate over the array and count occurrences of each object by its unique id
   arr.forEach(obj => {
     countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
   });
 
-  // Count how many objects have more than 1 occurrence
   let unique = 0;
   countMap.forEach(value => {
     if (value == 1) {
       unique += 1;
     }
   });
-const totals = Array.from(countMap.keys()).length
-  return {"unique":unique, "total": totals, "dupes": totals-unique};
+  const totals = Array.from(countMap.keys()).length
+
+  return { "unique": unique, "total": totals, "dupes": totals - unique };
 }
 
 
@@ -36,15 +34,20 @@ function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
     .then(data => {
-      questions = data;
-      shuffleArray(questions);
-      currentQuestionIndex = 0;
-      updateQuestionCounter();
-      setNextQuestion();
-      quizContainer.style.display = 'block';
-     
+      fetchedQuestions = data;
+      questions = fetchedQuestions.filter(x => x.question.length < slider.value);
+
+      populateExams()
     })
     .catch(error => console.error('Error loading exam:', error));
+}
+
+function populateExams() {
+  shuffleArray(questions);
+  currentQuestionIndex = 0;
+  updateQuestionCounter();
+  setNextQuestion();
+  quizContainer.style.display = 'block';
 }
 
 function setNextQuestion() {
@@ -52,9 +55,9 @@ function setNextQuestion() {
     showGoodJobAnimation();
     return;
   }
-currentQuestionIndex = Math.floor(Math.random() * questions.length);
+  currentQuestionIndex = Math.floor(Math.random() * questions.length);
   const question = questions[currentQuestionIndex];
-  
+
   questionText.textContent = question.question;
 
   resetButtonColors();
@@ -94,6 +97,7 @@ function selectAnswer(e) {
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
     } else {
+      answerButtonContainer.classList.add('wrong');
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
@@ -101,16 +105,16 @@ function selectAnswer(e) {
       questions.push(currentQuestion);
     }
 
-answerButtonContainer.querySelectorAll("button").forEach(button => {
-        if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
-          button.classList.add('correct');
-        } else {
-          button.classList.add('wrong');
-        }
-      });
+    answerButtonContainer.querySelectorAll("button").forEach(button => {
+      if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
+        button.classList.add('correct');
+      } else {
+        button.classList.add('wrong');
+      }
+    });
 
     nextBtn.style.display = 'block';
-    
+
     updateQuestionCounter();
   } else {
     console.error('No question available to select an answer for.');
@@ -118,10 +122,7 @@ answerButtonContainer.querySelectorAll("button").forEach(button => {
 }
 
 function arraysAreEqual(arr1, arr2) {
-  // Check if lengths are the same
   if (arr1.length !== arr2.length) return false;
-
-  // Sort both arrays and compare them element by element
   let sortedArr1 = arr1.slice().sort();
   let sortedArr2 = arr2.slice().sort();
 
@@ -155,9 +156,8 @@ function shuffleArray(array) {
 
 function updateQuestionCounter() {
   const remainingQuestions = questions.length;
-  const uniqueCount = Array.from(countUnique(questions));
-  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount}uniq)`;
-  
+  const uniqueCount = countUnique(questions);
+  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
 }
 
 function showGoodJobAnimation() {
@@ -169,17 +169,16 @@ function showGoodJobAnimation() {
   nextBtn.style.display = 'none';
   questionCounter.style.display = 'none';
   feedbackText.textContent = '';
-
-  goodJobAnimation.classList.remove('hidden');
   goodJobAnimation.style.display = 'block';
+  goodJobAnimation.classList.remove('hidden');
 }
-
-
 
 function copyToClipboard(text) {
   navigator.clipboard.writeText(text);
 }
 
+
+let fetchedQuestions = [];
 let questions = [];
 let currentQuestionIndex = 0;
 
@@ -210,7 +209,7 @@ examSelection.addEventListener('change', () => {
 });
 
 nextBtn.addEventListener('click', () => {
-  answerButtonContainer.classList.remove('correct');
+  answerButtonContainer.classList.remove('correct', 'wrong');
   feedbackText.textContent = '';
   feedbackText.style.color = '';
   nextBtn.style.display = 'none';
@@ -230,3 +229,17 @@ explain.addEventListener("click", ex => {
   })
   copyToClipboard(text);
 })
+
+const slider = document.getElementById("rangeSlider");
+const output = document.getElementById("sliderValue");
+
+output.innerHTML = slider.value;
+
+slider.oninput = function () {
+  output.innerHTML = this.value;
+  if (fetchedQuestions.length == 0) {
+    examSelection.querySelectorAll("option")[1].selected = true;
+  }
+  questions = fetchedQuestions.filter(x => x.question.length < slider.value);
+  populateExams();
+}
