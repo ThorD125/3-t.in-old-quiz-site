@@ -92,15 +92,18 @@ button:hover {
 
 
 .btn.selected.correct {
-    background-color: #4CAF50 !important;
+    background-color: #4CAF50;
 }
 
 .btn.correct {
-    background-color: #08880c8d !important;
+    background-color: #08880c8d;
 }
 
+.correct .wrong {
+    background-color: #C3352B;
+}
 .wrong {
-    background-color: #f44336 !important;
+    background-color: #f44336;
 }
 
 .wrong,
