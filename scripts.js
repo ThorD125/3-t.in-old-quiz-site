@@ -64,6 +64,7 @@ function selectAnswer(e) {
     disableAnswerButtons();
 
     if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
+      answerButtonContainer.classList.add('correct');
       delete questions[currentQuestionIndex];
       questions = questions.filter(x => x != 'empty');
       e.target.classList.add('correct');
@@ -184,6 +185,7 @@ examSelection.addEventListener('change', () => {
 });
 
 nextBtn.addEventListener('click', () => {
+  answerButtonContainer.classList.remove('correct');
   feedbackText.textContent = '';
   feedbackText.style.color = '';
   nextBtn.style.display = 'none';
