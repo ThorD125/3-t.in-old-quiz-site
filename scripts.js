@@ -34,6 +34,14 @@ function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
     .then(data => {
+      quizContainer.style.display = '';
+      header.style.display = '';
+      questionText.style.display = '';
+      answerButtonContainer.style.display = '';
+      nextBtn.style.display = '';
+      questionCounter.style.display = '';
+      goodJobAnimation.style.display = 'none';
+
       fetchedQuestions = data;
       questions = fetchedQuestions.filter(x => x.question.length < slider.value);
 
