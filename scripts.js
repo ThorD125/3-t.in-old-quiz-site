@@ -24,7 +24,7 @@ function countUnique(arr) {
   let duplicatesCount = 0;
   countMap.forEach(value => {
     if (value == 1) {
-      duplicatesCount += value - 1;
+      duplicatesCount += 1;
     }
   });
 
