@@ -35,7 +35,7 @@ select:focus-visible,
 select {
     background-color: gray;
     color: white;
-    border: none !important;
+    border: none;
     border-radius: 4px;
     outline: none;
 }
