@@ -82,6 +82,10 @@ button:hover {
     color: black;
 }
 
+.btn.selected:hover {
+    background-color: rgba(169, 169, 169, 1);
+}
+
 .btn:hover {
     background-color: lightgray;
 }
