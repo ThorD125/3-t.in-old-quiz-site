@@ -1,5 +1,8 @@
 'use strict';
 
+//const filteredObjects = objects.filter(obj => obj.question.length > 100);
+
+
 function populateExamDropdown(exams) {
   exams.forEach(exam => {
     const option = document.createElement('option');
