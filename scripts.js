@@ -9,6 +9,26 @@ function populateExamDropdown(exams) {
   });
 }
 
+function countUnique(arr) {
+  const countMap = new Map();
+
+  // Iterate over the array and count occurrences of each object by its unique id
+  arr.forEach(obj => {
+    countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
+  });
+
+  // Count how many objects have more than 1 occurrence
+  let duplicatesCount = 0;
+  countMap.forEach(value => {
+    if (value == 1) {
+      duplicatesCount += value - 1;
+    }
+  });
+
+  return duplicatesCount;
+}
+
+
 function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
@@ -132,7 +152,9 @@ function shuffleArray(array) {
 
 function updateQuestionCounter() {
   const remainingQuestions = questions.length;
+  const uniqueCount = countUnique(questions);
   questionCounter.textContent = `Questions left: ${remainingQuestions}`;
+  
 }
 
 function showGoodJobAnimation() {
