@@ -68,11 +68,6 @@ button:hover {
     }
 }
 
-#quiz-container,
-#good-job-animation {
-    margin-top: 50px;
-}
-
 .hidden {
     display: none;
 }
@@ -134,4 +129,8 @@ button:hover {
 #answer-buttons {
     max-height: 30vh; 
 overflow-y: scroll;
+}
+
+#explain {
+    margin-left: 10px;
 }
