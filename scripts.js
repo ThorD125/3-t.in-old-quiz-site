@@ -153,7 +153,7 @@ function shuffleArray(array) {
 function updateQuestionCounter() {
   const remainingQuestions = questions.length;
   const uniqueCount = countUnique(questions);
-  questionCounter.textContent = `Questions left: ${remainingQuestions}`;
+  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount}uniq)`;
   
 }
 
