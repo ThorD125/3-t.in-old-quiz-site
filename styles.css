@@ -113,10 +113,6 @@ button.selected:hover {
     overflow-y: scroll;
 }
 
-#explain {
-    margin-left: 10px;
-}
-
 .slider-container {
     text-align: left;
 }
