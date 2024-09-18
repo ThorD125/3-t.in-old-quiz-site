@@ -81,6 +81,7 @@ function setNextQuestion() {
     answerButtonContainer.appendChild(button);
   });
 }
+let correctstreak = 0;
 
 function selectAnswer(e) {
   const currentQuestion = questions[currentQuestionIndex];
@@ -105,14 +106,17 @@ function selectAnswer(e) {
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
+        correctstreak += 1;
     } else {
       answerButtonContainer.classList.add('wrong');
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
+        correctstreak = 0;
 
       questions.push(currentQuestion);
     }
+      document.querySelector("h1 span").textContent = "w" + correctstreak;
 
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
@@ -129,6 +133,7 @@ function selectAnswer(e) {
     console.error('No question available to select an answer for.');
   }
 }
+
 
 function arraysAreEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
