@@ -12,10 +12,6 @@
 <body>
   <div class="container">
     <div id="exam-selection-container" class="absolute-top">
-      <label for="exam-selection">Choose an exam:</label>
-      <select id="exam-selection">
-        <option value="" disabled selected>Select an exam</option>
-      </select>
       <div class="slider-container">
         <label for="rangeSliderMin">Questionmin: <span id="sliderValueMin">50</span></label>
         <input type="range" id="rangeSliderMin" step="50" min="0" max="1000" value="0">
@@ -23,6 +19,10 @@
         <label for="rangeSliderMax">Questionmax: <span id="sliderValueMax">50</span></label>
         <input type="range" id="rangeSliderMax" step="50" min="50" max="1000" value="100">
       </div>
+      <label for="exam-selection">Choose an exam:</label>
+      <select id="exam-selection">
+        <option value="" disabled selected>Select an exam</option>
+      </select>
     </div>
 
     <div id="quiz-container" style="display:none;">
