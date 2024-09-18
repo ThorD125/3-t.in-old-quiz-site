@@ -106,17 +106,17 @@ function selectAnswer(e) {
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
-        correctstreak += 1;
+      correctstreak += 1;
     } else {
       answerButtonContainer.classList.add('wrong');
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
-        correctstreak = 0;
+      correctstreak = 0;
 
       questions.push(currentQuestion);
     }
-      document.querySelector("h1 span").textContent = "w" + correctstreak;
+    document.querySelector("h1 span").textContent = "w" + correctstreak;
 
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
@@ -192,20 +192,20 @@ function copyToClipboard(text) {
 }
 
 function randomizeButtons() {
-    const container = document.querySelector("#answer-buttons");
-    const buttons = Array.from(container.querySelectorAll("button"));
+  const container = document.querySelector("#answer-buttons");
+  const buttons = Array.from(container.querySelectorAll("button"));
 
-    // Shuffle the buttons array
-    for (let i = buttons.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [buttons[i], buttons[j]] = [buttons[j], buttons[i]]; // Swap
-    }
+  // Shuffle the buttons array
+  for (let i = buttons.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [buttons[i], buttons[j]] = [buttons[j], buttons[i]]; // Swap
+  }
 
-    // Clear the container
-    container.innerHTML = '';
+  // Clear the container
+  container.innerHTML = '';
 
-    // Append buttons in the new random order
-    buttons.forEach(button => container.appendChild(button));
+  // Append buttons in the new random order
+  buttons.forEach(button => container.appendChild(button));
 }
 
 
