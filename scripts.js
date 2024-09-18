@@ -185,6 +185,24 @@ function copyToClipboard(text) {
   navigator.clipboard.writeText(text);
 }
 
+function randomizeButtons() {
+    const container = document.querySelector("#answer-buttons");
+    const buttons = Array.from(container.querySelectorAll("button"));
+
+    // Shuffle the buttons array
+    for (let i = buttons.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [buttons[i], buttons[j]] = [buttons[j], buttons[i]]; // Swap
+    }
+
+    // Clear the container
+    container.innerHTML = '';
+
+    // Append buttons in the new random order
+    buttons.forEach(button => container.appendChild(button));
+}
+
+
 
 let fetchedQuestions = [];
 let questions = [];
@@ -225,6 +243,7 @@ nextBtn.addEventListener('click', () => {
 
   updateQuestionCounter();
   setNextQuestion();
+  randomizeButtons();
 });
 
 
