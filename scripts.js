@@ -43,7 +43,7 @@ function loadExam(examFile) {
       goodJobAnimation.style.display = 'none';
 
       fetchedQuestions = data;
-      questions = fetchedQuestions.filter(x => x.question.length < slider.value);
+      questions = fetchedQuestions.filter(x => x.question.length < sliderMax.value);
 
       populateExams()
     })
@@ -263,16 +263,36 @@ explain.addEventListener("click", ex => {
   copyToClipboard(text);
 })
 
-const slider = document.getElementById("rangeSlider");
-const output = document.getElementById("sliderValue");
+function fixSliders(slider, output) {
+  output.innerHTML = slider.value;
 
-output.innerHTML = slider.value;
+  slider.oninput = function () {
+    output.innerHTML = this.value;
 
-slider.oninput = function () {
-  output.innerHTML = this.value;
-  if (fetchedQuestions.length == 0) {
-    examSelection.querySelectorAll("option")[1].selected = true;
+    // if (fetchedQuestions.length == 0) {
+    //   examSelection.querySelectorAll("option")[1].selected = true;
+    // }
+
+    if (!(sliderMin.value < sliderMax.value - sliderMax.step)) {
+      sliderMin.value = sliderMax.value - sliderMax.step;
+      outputMin.innerHTML = sliderMin.value;
+    } else if (!(sliderMin.value + sliderMin.step < sliderMax)) {
+      sliderMax.value = sliderMin.value + sliderMin.step;
+      outputMax.innerHTML = sliderMax.value;
+    }
+
+    questions = fetchedQuestions.filter(x => {
+      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
+    });
+
+    populateExams();
   }
-  questions = fetchedQuestions.filter(x => x.question.length < slider.value);
-  populateExams();
 }
+
+const sliderMax = document.getElementById("rangeSliderMax");
+const outputMax = document.getElementById("sliderValueMax");
+fixSliders(sliderMax, outputMax);
+
+const sliderMin = document.getElementById("rangeSliderMin");
+const outputMin = document.getElementById("sliderValueMin");
+fixSliders(sliderMin, outputMin);
