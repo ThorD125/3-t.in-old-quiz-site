@@ -55,6 +55,7 @@ function populateExams() {
   currentQuestionIndex = 0;
   updateQuestionCounter();
   setNextQuestion();
+  randomizeButtons()
   quizContainer.style.display = 'block';
 }
 
