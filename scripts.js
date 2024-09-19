@@ -60,6 +60,9 @@ function populateExams() {
 }
 
 function setNextQuestion() {
+  document.querySelector("h1 span").textContent = "w" + correctstreak;
+questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
+
   if (questions.length == 0) {
     showGoodJobAnimation();
     return;
@@ -116,8 +119,7 @@ function selectAnswer(e) {
 
       questions.push(currentQuestion);
     }
-    document.querySelector("h1 span").textContent = "w" + correctstreak;
-
+    
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
         button.classList.add('correct');
@@ -171,7 +173,6 @@ function shuffleArray(array) {
 function updateQuestionCounter() {
   const remainingQuestions = questions.length;
   const uniqueCount = countUnique(questions);
-  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
 }
 
 function showGoodJobAnimation() {
