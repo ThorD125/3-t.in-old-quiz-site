@@ -170,9 +170,11 @@ function shuffleArray(array) {
   }
 }
 
+let uniqueCount = 0;
+let remainingQuestions = 0;
 function updateQuestionCounter() {
-  const remainingQuestions = questions.length;
-  const uniqueCount = countUnique(questions);
+  remainingQuestions = questions.length;
+  uniqueCount = countUnique(questions);
 }
 
 function showGoodJobAnimation() {
