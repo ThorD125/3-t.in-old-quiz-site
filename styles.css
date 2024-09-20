@@ -163,6 +163,10 @@ input[type="range"] {
     background-color: #f44336;
 }
 
+#next-btn {
+    width: 100%;
+}
+
 ::-webkit-scrollbar {
     width: 4px;
 }
