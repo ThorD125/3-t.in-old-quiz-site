@@ -1,0 +1,1836 @@
+[
+    {
+        "question": "1. A company plans to migrate to Microsoft 365.\nYou need to advise the company about how Microsoft provides protection in a multitenancy environment.\nWhat are three ways that Microsoft provides protection? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Customer content at rest is encrypted on the server by using BitLocker.correct",
+            "1": "Microsoft Azure AD provides authorization and role based access control at the tenant layer.correct",
+            "2": "Customer content at rest is encrypted on the server by using transport layer security (TLS).",
+            "3": "Microsoft Azure AD provides authorization and role based access control at the transport layer.",
+            "4": "Mailbox databases in Microsoft Exchange Online contain only mailboxes from a single tenant.",
+            "5": "Mailbox databases in Microsoft Exchange Online contain mailboxes from multiple tenants.correct"
+        },
+        "answer": [
+            0,
+            1,
+            5
+        ]
+    },
+    {
+        "question": "2. You are the Microsoft 365 administrator for a company.\nYour company plans to open a new office in the United Kingdom.\nYou need to provide penetration test and security assessment reports for the new office.\nWhere can you locate the required reports?",
+        "options": {
+            "0": "Data Governance page of the Security and Compliance portal.",
+            "1": "Compliance Manager page of the Services Trust portal",
+            "2": "Data Loss Prevention page of the Security and Compliance portal",
+            "3": "Regional Compliance page of the Services Trust portalcorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "9. Your organization plans to deploy Microsoft 365 in a hybrid scenario.\nYou need to ensure that employees can use a smart card for authentication.\nWhich hybrid identity solution should you implement?",
+        "options": {
+            "0": "password hash synchronization with single sign on",
+            "1": "Active Directory federation Services (AD FS)correct",
+            "2": "Ping federate and federation integration",
+            "3": "pass-through authentication and single sign-on"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "12. You are the Microsoft 365 administrator for a company.\nAn employee requests personal data under General Data Protection Regulation (GDPR) guidelines.\nYou need to retrieve data for the employee.\nWhat should you do?",
+        "options": {
+            "0": "Create a data subject request case.correct",
+            "1": "Create a retention policy.",
+            "2": "Create a data-loss prevention policy.",
+            "3": "Create a GDPR assessment"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "18. You are the Microsoft 365 administrator for a company.\nUsers in the IT department must receive new Office 365 preview features before the features are deployed to other users in the company.\nYou need to ensure only the users in the IT department receive preview features.\nWhich two actions should you perform? Each correct answer represents part of the solution. NOTE: Each correct selection is worth one point. (Choose two.)",
+        "options": {
+            "0": "Instruct users to navigate to http://insider.office.com and sign up for Office Insider.correct",
+            "1": "Instruct users to update Office ProPlus.",
+            "2": "In the organizational profile, set the update preference to Targeted release for selected users.correct",
+            "3": "Instruct users to uninstall Office ProPlus and then reinstall the software.",
+            "4": "In the organizational profile, set the update preference to Standard release."
+        },
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "question": "19. A company is a Microsoft 365 reseller. The company does not provide managed services or direct customer support. You need to provide licenses for customers and earn commissions for each license sold.\nWhat should you do?",
+        "options": {
+            "0": "Buy licenses for customers by using the Microsoft admin portal",
+            "1": "Sign up as a Cloud Solution Provider direct reseller.",
+            "2": "Sign up as a Cloud Solution Provider indirect reseller.",
+            "3": "Buy licenses for customers from a Microsoft authorized distributor.correct"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "20. A company that has 50 employees plans to purchase a Microsoft 365 Business subscription.\nWhich two payment methods are available? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "PayPalcorrect",
+            "1": "automatic bank transfercorrect",
+            "2": "Enterprise Agreement",
+            "3": "credit card or debit cardcorrect"
+        },
+        "answer": [
+            0,
+            1,
+            3
+        ]
+    },
+    {
+        "question": "21. A company has 250 employees.\nYou need to migrate all users to Microsoft 365 and meet the following requirements:\n✑ Provide a user-centric licensing solution for all users.\n✑ Manage devices from a single location.\n✑ Minimize licensing costs.\nWhich licensing model should you use?",
+        "options": {
+            "0": "Microsoft 365 Businesscorrect",
+            "1": "Microsoft 365 Education",
+            "2": "Microsoft 365 Enterprise E3",
+            "3": "Microsoft 365 Enterprise E5"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "22. You are the Microsoft 365 administrator for a company.\nA user experiences an issue with SharePoint Online.\nYou need to resolve the issue.\nWhich two options can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Go to the SharePoint admin center and create a support request.correct",
+            "1": "Contact Microsoft technical support by telephone.correct",
+            "2": "Create a new service request from the Microsoft 365 admin center.correct",
+            "3": "Create a service request from the SharePoint portal."
+        },
+        "answer": [
+            0,
+            1,
+            2
+        ]
+    },
+    {
+        "question": "24. You are a Microsoft 36S administrator for a company.\nMicrosoft plans to release a new feature for Microsoft Excel.\nYou need to ensure that the feature becomes available for employees to install as soon as possible To which release channel should you subscribe?",
+        "options": {
+            "0": "Microsoft release",
+            "1": "Standard release",
+            "2": "Office 36S team release",
+            "3": "Targeted releasecorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "26. You are the Microsoft 365 administrator for a company.\nYour company wants lo team more about what happens if the availability the Microsoft Office 365 services are not met.\nWhere can you find this information?",
+        "options": {
+            "0": "Service Level agreementcorrect",
+            "1": "Microsoft Services agreement",
+            "2": "Microsoft Cloud agreement",
+            "3": "Microsoft Products and Services agreement",
+            "4": "Microsoft Enterprise agreement"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "29. You are the Microsoft 365 administrator for a company.\nYou install Microsoft Office 365 ProPlus on five devices. You deactivate one device.\nWhich task can you perform on the deactivated device?",
+        "options": {
+            "0": "Print a document.correct",
+            "1": "Leave a comment in a document.",
+            "2": "Start a new document from a template.",
+            "3": "Set properties on a document."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "32. This question requires that you evaluate the bold text to determine if it is correct.\nA company needs to protect documents and emails by automatically applying classifications and labels. You must minimize costs. You should implement Microsoft Azure Information Protection for Microsoft Office 365.\nReview the underlined text If it makes the statement correct select No change is needed. If the statement is incorrect, select the answer choice that makes the statement correct.",
+        "options": {
+            "0": "No change needed.",
+            "1": "Azure Information Protection Premium P2correct",
+            "2": "Azure Information Protection Premium PI",
+            "3": "Microsoft 365 E3"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "34. You use Microsoft 365 Usage Analytics.\nYou need to know the number of users who are active today and were also active last month.\nWinch metric should you use?",
+        "options": {
+            "0": "MoMReturningUserscorrect",
+            "1": "EnabledUsers",
+            "2": "ActiveUsers",
+            "3": "CumulativeActiveUsers"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "35. Your organization plans to deploy a subscription-based licensing model of Microsoft Office to devices. You must use group policy to enforce Office application settings.\nYou need to deploy Office to the enterprise.\nWhich version of Office should you deploy?",
+        "options": {
+            "0": "Office 365 ProPluscorrect",
+            "1": "Office Professional Plus 2016",
+            "2": "Office Online",
+            "3": "Office Home and Business 2016"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "37. An organization plans to deploy Microsoft Office 2019 of Office 365 ProPlus.\nWhat are two advantages of Office 365 ProPlus? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point",
+        "options": {
+            "0": "Features remain constant through the lifetime of the applications.correct",
+            "1": "Office 365 ProPlus includes downgrade rights.",
+            "2": "A single license may be deployed to multiple devices.correct",
+            "3": "Fully functional Office mobile apps are free to install and use.correct"
+        },
+        "answer": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "question": "42. A company plans to migrate to Microsoft 365.\nEmployees must be able to collaborate by using Microsoft Yammer, SharePoint Online, Staff Hub, and Teams. You must minimize costs.\nYou need to subscribe to Microsoft Office 365.\nWhich subscription type should you use?",
+        "options": {
+            "0": "E3",
+            "1": "ProPlus",
+            "2": "E1",
+            "3": "Personal",
+            "4": "F1correct"
+        },
+        "answer": [
+            4
+        ]
+    },
+    {
+        "question": "44. You need to identify which Microsoft platforms provide hybrid capacities for migrating from an on premises deployment.\nWhich two platforms provide hybrid capabilities for migration? Each correct answer provides a complete solution. NOTE: Each correct selection & worth one point.",
+        "options": {
+            "0": "Microsoft Skype for Businesscorrect",
+            "1": "Microsoft Yammer",
+            "2": "Microsoft Exchangecorrect",
+            "3": "Microsoft Teams"
+        },
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "question": "45. A company is moving to Microsoft Azure. Some applications cannot be moved.\nYou need to identity which application will remain in a hybrid environment after the migration.\nWhich applications will remain in a hybrid environment?",
+        "options": {
+            "0": "applications that manage sensitive informationcorrect",
+            "1": "applications that use a USB token device to control access",
+            "2": "legacy applications that use a message based interlace",
+            "3": "a new server that runs several line-of business applications"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "47. A company is purchasing a Microsoft 365 subscription to replace the current on premises IT infrastructure.\nYou need to identify the impacts of subscribing to Microsoft 365.\nWhich three outcomes can the company expect? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Predictable Microsoft licensing costscorrect",
+            "1": "Increased Exchange Server Client Access license (CAL) costs",
+            "2": "Increased Windows Server Client Access License (CAL) costs",
+            "3": "Increased service scalabilitycorrect",
+            "4": "Decreased on-premises infrastructure maintenancecorrect"
+        },
+        "answer": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "question": "49. You are the Microsoft 365 administrator for a company.\nThe company runs SharePoint Server and Exchange Server in an on-premises datacenter. The site collection for the finance department is currently encrypted using third party software.\nYou need to move as many services to Microsoft 365 as possible.\nWhat should you do?",
+        "options": {
+            "0": "Migrate all SharePoint data and Exchange mailboxes to Microsoft 365.correct",
+            "1": "Leave SharePoint data for finance department users on-premises. Migrate all other SharePoint data and Exchange mailboxes to Microsoft 365.",
+            "2": "Leave mailboxes for finance department users on-premises. Migrate all other SharePoint data and Exchange mailboxes to Microsoft 365.",
+            "3": "Leave SharePoint data and mailboxes for finance department users on premises. Migrate al other SharePoint data and Exchange mailboxes to Microsoft 365."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "51. A company has an Exchange Server environment. The company plans to migrate to the cloud.\nYou need to recommend a cloud model that meets the following requirements:\n✑ Upgrade the existing email environment\n✑ Minimize server and application maintenance\nWhich model should you recommend?",
+        "options": {
+            "0": "Platform as a service (PaaS)",
+            "1": "Windows as a service (WaaS)",
+            "2": "Software as a service (SaaS)correct",
+            "3": "Infrastructure as a service (IAAS)"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "54. A company assigns a Microsoft 365 license to each employee.\nYou need to install Microsoft Office 365 ProPlus on each employee device.\nWhich three methods can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from a local distribution source.correct",
+            "1": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from an Office Windows Installer (MSI) package.",
+            "2": "Download the Office 365 ProPlus Windows Installer (MSI) package. Install Office 365 ProPlus from a local distribution source.",
+            "3": "Use the Office Deployment Tool (ODT) to download installation files to a local distribution source. Install Office 365 ProPlus by using the downloaded files.correct",
+            "4": "Enable users to download and install Office 365 ProPlus from the Office 365 portal.correct"
+        },
+        "answer": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "question": "55. When you enable external access by using the Microsoft 365 admin portal, data is available to anonymous users.\nReview the Bold text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct.",
+        "options": {
+            "0": "No change needed.",
+            "1": "the Everyone group is applied to all shares with full control",
+            "2": "you must configure Active Directory Federation Services (AD FS)",
+            "3": "users can send sharing invitations for specific contentcorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal? Each correct answer presents a part of a solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Use the self-install option on the Office 365 dashboardcorrect",
+            "1": "Download and install the Office ProPlus Windows Installer (MSI) package",
+            "2": "Enable auto-deployment of Office 365 apps for all devicescorrect",
+            "3": "Update the Windows AutoPilot deployment profile to include the Office 365 apps"
+        },
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "question": "58. You are the Microsoft 365 administrator for a company.\nYou need to customize a usage report for Microsoft Yammer.\nWhich two tools can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Microsoft SQL Server Analysis Servicescorrect",
+            "1": "Microsoft SQL Server Reporting Services",
+            "2": "Microsoft Power BI in a browsercorrect",
+            "3": "Microsoft Power BI Desktopcorrect",
+            "4": "Microsoft Visual Studio"
+        },
+        "answer": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "question": "60. You are the Microsoft 365 administrator for an organization.\nA group of employees and users outside the company must be able to collaborate on a project in real time by using a whiteboard.\nIn the Microsoft 365 admin portal, which Office 365 product should you configure?",
+        "options": {
+            "0": "Microsoft Yammer",
+            "1": "Microsoft Office Delve",
+            "2": "Microsoft SharePoint Online",
+            "3": "Microsoft Teamscorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "61. You need to reduce the amount of time that the IT team spends on user support.\nWhat are three possible ways to achieve this goal? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Enable Microsoft Office 365 Customer Lockboxcorrect",
+            "1": "Upgrade all client devices to Windows 10",
+            "2": "Use Windows AutoPilot to deploy devicescorrect",
+            "3": "Deploy Microsoft MyAnalytics to devices",
+            "4": "Deploy Microsoft Office 365 Professional Plus to all client devicescorrect"
+        },
+        "answer": [
+            0,
+            2,
+            4
+        ]
+    },
+    {
+        "question": "62. A company has a Microsoft 365 subscription. Employees use personal devices to access company data in the cloud.\nYou need to restrict employees from copying data to personal OneDrive folders.\nWhat should you use?",
+        "options": {
+            "0": "Information Rights Management",
+            "1": "Microsoft Azure Security Center",
+            "2": "Office 365 Advanced Threat Protection",
+            "3": "Intune App Protectioncorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "63. This question requires that you evaluate the bold text to determine if it is correct.\nYou use Microsoft Intune for device management. You must determine how many devices run each operating system.\nYou must launch Intune and navigate to the Mobile Apps blade.\nSelect the correct answer if the underlined text does not make the statement correct. Select “No change is needed” if the underlined text makes the statement correct.",
+        "options": {
+            "0": "Device configuration",
+            "1": "Device compliance",
+            "2": "No change is needed",
+            "3": "Devicescorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "64. You are the Microsoft 365 administrator for a company.You need to ensure that users receive a warning message if they select links in emails that might be unsafe.\nWhat should you do?",
+        "options": {
+            "0": "Use Windows PowerShell to install the latest antimalware engine updates",
+            "1": "Enable Microsoft Office 365 Advanced Threat Protectioncorrect",
+            "2": "Use the Microsoft Exchange Admin Center to configure a new spam-filter policy",
+            "3": "Use the Microsoft Exchange Admin Center to create a new antimalware policy"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "65. You are a Microsoft 365 administrator for a company. Employees use Microsoft Office 365 ProPlus to create documents.\nYou need to implement document classification and protection by using Microsoft Azure Information Protection.\nWhich two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "Add an Azure subscription to your Microsoft 365 tenantcorrect",
+            "1": "Install the Azure Information Protection client",
+            "2": "Create a custom Azure Information Protection policy with the Confidential label",
+            "3": "Enable the default Azure Information Protection policycorrect",
+            "4": "Install the Rights Management Service client"
+        },
+        "answer": [
+            0,
+            3
+        ]
+    },
+    {
+        "question": "66. A company deploys Microsoft Azure AD. You enable multi-factor authentication.\nYou need to inform users about the multi-factor authentication methods that they can use.\nWhich of the following methods is NOT a valid multi-factor authentication method in Microsoft 365?",
+        "options": {
+            "0": "Receive an automated call on the desk phone that includes a verification code",
+            "1": "Insert a small card in to a desktop computer and provide a PIN code when promptedcorrect",
+            "2": "Receive a call on a mobile phone and select the pound sign (#) when prompted",
+            "3": "Receive an SMS text message that includes a verification code"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "67. You are a Microsoft 365 administrator for a company.\nSeveral users report that they receive emails which have a PDF attachment. The PDF attachment launches malicious code.\nYou need to remove the message from inboxes and disable the PDF threat if an affected document is opened.\nWhich feature should you implement?",
+        "options": {
+            "0": "Microsoft Exchange Admin Center block lists",
+            "1": "Sender Policy Framework",
+            "2": "Advanced Threat Protection anti-phishing",
+            "3": "zero-hour auto purgecorrect",
+            "4": "DKIM signed messages with mail flow rules"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "70. You are the Microsoft 365 administrator for a company.\nAll staff must use Microsoft Outlook to access corporate email. When users access Outlook on mobile devices,\nthey must use a PIN to open the application.\nYou need to implement a Microsoft Intune policy to enforce the security requirements.\nWhich policy should you use?",
+        "options": {
+            "0": "device compliance",
+            "1": "device configuration",
+            "2": "app protectioncorrect",
+            "3": "app configuration"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "73. A company deploys Exchange Online and SharePoint Online.\nYou must audit and assessment report for the Microsoft 365 cloud services that the company uses.\nYou need to provide the required documents.\nWhich Microsoft site should you use to obtain this information?",
+        "options": {
+            "0": "Compliance Manager",
+            "1": "Service Trust Portalcorrect",
+            "2": "Office 365 Security and Compliance Center",
+            "3": "Azure portal"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "76. You are the Microsoft 365 administrator for a company.\nWhich two admin roles can purchase more licenses? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "service administratorcorrect",
+            "1": "user management administrator",
+            "2": "global administratorcorrect",
+            "3": "billing administratorcorrect"
+        },
+        "answer": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "question": "77. A company plans to purchase Microsoft 365 Enterprise licenses.\nWhich two options can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "options": {
+            "0": "through a Cloud Solution Provider (CSP)correct",
+            "1": "from the Microsoft website using a corporate credit card",
+            "2": "from the Microsoft retail store",
+            "3": "with an Enterprise Agreement (EA) subscription from Microsoftcorrect"
+        },
+        "answer": [
+            0,
+            3
+        ]
+    },
+    {
+        "question": "78. You use Microsoft Business Products.\nWhen you try to create a support request, you receive the following message:\nYou don't have permission to access this page or perform this action.\nYou need to determine the cause of the error message.\nWhat is the cause?",
+        "options": {
+            "0": "Your password is expired",
+            "1": "Your account is disabled",
+            "2": "Your company does not have Premier support",
+            "3": "Your account is not a member of the global admin rolecorrect"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "79. A company experiences a Microsoft 365 outage that affects an entire region.\nYou check the Service Health Dashboard and observe that the service is healthy.\nYou need to find information in Service Health Dashboard that describes what happened during the outage.\nWhat should you use?",
+        "options": {
+            "0": "Message Center",
+            "1": "incident closure summary",
+            "2": "Post-Incident Review (PIR)correct",
+            "3": "service request"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "Data protection can be selectively applied to applications.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Microsoft Intune can define where corporate data is stored.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Once a device is registered with Microsoft Intune, device wipe will include the user’s personal data.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Use the Microsoft Authenticator app to enable multi-factor authentication.",
+        "options": {
+            "a": "Compliance Manager",
+            "b": "Identity and access management (IAM)",
+            "c": "Information rights management (IRM)"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Classify documents to restrict permission to content.",
+        "options": {
+            "a": "Compliance Manager",
+            "b": "Identity and access management (IAM)",
+            "c": "Information rights management (IRM)"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Use a dashboard for data-protection recommendations.",
+        "options": {
+            "a": "Compliance Manager",
+            "b": "Identity and access management (IAM)",
+            "c": "Information rights management (IRM)"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Provide auditors and regulators with reports on data-protection status.",
+        "options": {
+            "a": "Compliance Manager",
+            "b": "Identity and access management (IAM)",
+            "c": "Information rights management (IRM)"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "You can manage Azure AD-joined machines by using group policy.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Azure AD requires integration with Active Directory Domain Services by using secure lightweight Directory Access Protocol (LDAP).",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Azure AD supports Azure AD Authentication Library (ADAL) authentication.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Users have the same passwords in the cloud and on-premises.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Users must sign in again when using Microsoft 365.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "You can configure federated authentication to require a smart card.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Configure multi-factor authentication for cloud services.",
+        "options": {
+            "a": "Microsoft 365 only",
+            "b": "on-premises only",
+            "c": "both Microsoft 365 and on-premises"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Configure email disclaimers.",
+        "options": {
+            "a": "Microsoft 365 only",
+            "b": "on-premises only",
+            "c": "both Microsoft 365 and on-premises"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Configure compliance.",
+        "options": {
+            "a": "Microsoft 365 only",
+            "b": "on-premises only",
+            "c": "both Microsoft 365 and on-premises"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Set frequency of Microsoft Office 365 updates.",
+        "options": {
+            "a": "Microsoft 365 only",
+            "b": "on-premises only",
+            "c": "both Microsoft 365 and on-premises"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Restrict access to Microsoft Outlook by using a PIN.",
+        "options": {
+            "a": "Mobile application protection policy",
+            "b": "Device configuration policy"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Secure members of the Global Administrators group by using dynamic risk profiles.",
+        "options": {
+            "a": "Microsoft Azure AD Identity Protection",
+            "b": "Microsoft Azure AD Conditional Access",
+            "c": "Microsoft Azure AD Privilege Identity Management"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Secure admin roles by requiring approvals.",
+        "options": {
+            "a": "Microsoft Azure AD Identity Protection",
+            "b": "Microsoft Azure AD Privilege Identity Management",
+            "c": "Microsoft Azure AD Domain Services"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "You can supplement the default templates to apply restrictive controls.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Classification and protection information is available for on-premises file servers.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Installing the Azure Information Protection client installs an information protection bar to Microsoft Excel.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Enable a federation option for authentication in a hybrid environment.",
+        "options": {
+            "a": "Active Directory Federation Services (AD FS)",
+            "b": "PingFederate and federation integration",
+            "c": "Password hash synchronization with single sign-on",
+            "d": "Pass-through authentication and single sign-on"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Allow administrators to reset user passwords in Microsoft Azure AD.",
+        "options": {
+            "a": "Active Directory Federation Services (AD FS)",
+            "b": "PingFederate and federation integration",
+            "c": "Password hash synchronization with single sign-on",
+            "d": "Pass-through authentication and single sign-on"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Support nonfederated users authenticating with on-premises AD and supports multi-factor authentication.",
+        "options": {
+            "a": "Active Directory Federation Services (AD FS)",
+            "b": "PingFederate and federation integration",
+            "c": "Password hash synchronization with single sign-on",
+            "d": "Pass-through authentication and single sign-on"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Intune app protection policies can protect access to Exchange Server on-premises mailboxes.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Intune app protection policies support apps that connect to on-premises Microsoft SharePoint Server.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Intune app protection policies require a mobile-device management (MDM) solution.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Log on to devices by using Windows Hello.",
+        "options": {
+            "a": "AD DS only",
+            "b": "Azure AD only",
+            "c": "AD DS and Azure AD"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Log on to devices that are managed by Microsoft Intune.",
+        "options": {
+            "a": "AD DS only",
+            "b": "Azure AD only",
+            "c": "AD DS and Azure AD"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Sign in to Outlook on the web by using multi-factor authentication.",
+        "options": {
+            "a": "AD DS only",
+            "b": "Azure AD only",
+            "c": "AD DS and Azure AD"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Complete compliance testing.",
+        "options": {
+            "a": "Private",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Complete QA testing for recently released features.",
+        "options": {
+            "a": "Private",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Prepare QA results and end-user documentation.",
+        "options": {
+            "a": "Private",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "You have a legacy application that requires connectivity with an on-premises data store.",
+        "options": {
+            "a": "Migrate to the cloud",
+            "b": "Remain on-premises"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "You need to deploy an external-facing website.",
+        "options": {
+            "a": "Migrate to the cloud",
+            "b": "Remain on-premises"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "You need to deploy a Microsoft SharePoint collaboration site for partners.",
+        "options": {
+            "a": "Migrate to the cloud",
+            "b": "Remain on-premises"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Which messages do you want to see in Message center?",
+        "options": {
+            "a": "Azure Information Protection",
+            "b": "Identity Management Service",
+            "c": "Microsoft Exchange",
+            "d": "Microsoft Intune",
+            "e": "Mobile Device Management for Office 365",
+            "f": "Office 365 Portal",
+            "g": "Office Subscription"
+        },
+        "answer": [
+            "a",
+            "b",
+            "c",
+            "d",
+            "e",
+            "f",
+            "g"
+        ]
+    },
+    {
+        "question": "Would you like to receive email communication?",
+        "options": {
+            "a": "Send a weekly email digest of my messages",
+            "b": "Send me emails for major updates"
+        },
+        "answer": [
+            "a",
+            "b"
+        ]
+    },
+    {
+        "question": "Local copy of Microsoft Outlook that connects to an Exchange Server instance.",
+        "options": {
+            "a": "ProPlus",
+            "b": "Enterprise E1",
+            "c": "Enterprise E3",
+            "d": "Enterprise E5"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Search and discovery with Delve.",
+        "options": {
+            "a": "ProPlus",
+            "b": "Enterprise E1",
+            "c": "Enterprise E3",
+            "d": "Enterprise E5"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "eDiscovery with in-place, hold, and export.",
+        "options": {
+            "a": "ProPlus",
+            "b": "Enterprise E1",
+            "c": "Enterprise E3",
+            "d": "Enterprise E5"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Advanced eDiscovery with in-place search, hold, export, and analytics.",
+        "options": {
+            "a": "ProPlus",
+            "b": "Enterprise E1",
+            "c": "Enterprise E3",
+            "d": "Enterprise E5"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Windows 10 version",
+        "options": {
+            "a": "Windows 10 Pro",
+            "b": "Windows 10 Home",
+            "c": "Windows 10 Enterprise",
+            "d": "Windows 10 Enterprise LTS8"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Servicing channel",
+        "options": {
+            "a": "Semi-annual channel",
+            "b": "Long-term servicing channel",
+            "c": "Semi-annual channel (targeted)",
+            "d": "Insider"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Servicing tool",
+        "options": {
+            "a": "Microsoft Intune",
+            "b": "Windows Autopilot",
+            "c": "Windows Server Update Services",
+            "d": "System Center Configuration Manager"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Centralized archiving.",
+        "options": {
+            "a": "Teams only",
+            "b": "Skype for Business Server only",
+            "c": "Teams and Skype for Business Server"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Broadcast meetings.",
+        "options": {
+            "a": "Teams only",
+            "b": "Skype for Business Server only",
+            "c": "Teams and Skype for Business Server"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Federated meetings.",
+        "options": {
+            "a": "Teams only",
+            "b": "Skype for Business Server only",
+            "c": "Teams and Skype for Business Server"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "You can assign apps to devices that are not enrolled with Microsoft Intune.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "You can assign wrapped apps, or apps that incorporate the Intune SDK, only if the device is enrolled with Intune.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "You can install available apps from the web-based Company Portal app regardless of whether the device is enrolled with Intune.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Included in office 365 E5 license.",
+        "options": {
+            "a": "MyAnalytics",
+            "b": "Workspace Analytics"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Can be purchased only as an add-on license.",
+        "options": {
+            "a": "MyAnalytics",
+            "b": "Workspace Analytics"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Provides employee work and collaboration metrics.",
+        "options": {
+            "a": "MyAnalytics",
+            "b": "Workspace Analytics"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Permits upload of custom organizational data.",
+        "options": {
+            "a": "MyAnalytics",
+            "b": "Workspace Analytics"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Provides team work and collaboration metrics.",
+        "options": {
+            "a": "MyAnalytics",
+            "b": "Workspace Analytics"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "After users are enrolled in multi-factor authentication, they must configure a second authentication factor the next time they sign in.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Enabling multi-factor authentication requires an additional subscription purchase.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Complete multi-factor authentication by using text messages, a smartphone app, or a phone call.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Send an email to a distribution list.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Author a document at the same time as someone else and use document versioning.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Hold a voice and video conversation with other employees.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Register a personal device with the company.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "e"
+        ]
+    },
+    {
+        "question": "View a personal calendar.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Send an email to a distribution list.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Author a document at the same time as someone else and use document versioning.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Hold a voice and video conversation with other employees.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Register a personal device with the company.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "e"
+        ]
+    },
+    {
+        "question": "View a personal calendar.",
+        "options": {
+            "a": "Windows 10 Enterprise",
+            "b": "Microsoft Exchange Online",
+            "c": "Microsoft SharePoint Online",
+            "d": "Microsoft Teams",
+            "e": "Microsoft Enterprise Mobility + Security"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "A chat based workspace that facilitates real-time collaboration and enables members of an organization to have conversations and create work plans.",
+        "options": {
+            "a": "Microsoft Teams",
+            "b": "OneDrive for Business",
+            "c": "SharePoint Online",
+            "d": "Microsoft Yammer",
+            "e": "Office 365 ProPlus"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "A cloud service that enables you to store and protect files, share files with others, access files from anywhere on all devices, and restore files to an earlier date.",
+        "options": {
+            "a": "Microsoft Teams",
+            "b": "OneDrive for Business",
+            "c": "SharePoint Online",
+            "d": "Microsoft Yammer",
+            "e": "Office 365 ProPlus"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "A service that enables you to store, organize, share, add third-party apps, and access information from all devices by using a web browser.",
+        "options": {
+            "a": "Microsoft Teams",
+            "b": "OneDrive for Business",
+            "c": "SharePoint Online",
+            "d": "Microsoft Yammer",
+            "e": "Office 365 ProPlus"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "A private social network that you can use to efficiently resolve support issues and gather feedback on projects and documents.",
+        "options": {
+            "a": "Microsoft Teams",
+            "b": "OneDrive for Business",
+            "c": "SharePoint Online",
+            "d": "Microsoft Yammer",
+            "e": "Office 365 ProPlus"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Exchange Web Services (EWS) access to accounts.",
+        "options": {
+            "a": "Exchange Server only",
+            "b": "Exchange Online only",
+            "c": "Exchange Server and Exchange Online"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Custom EWS throttling settings.",
+        "options": {
+            "a": "Exchange Server only",
+            "b": "Exchange Online only",
+            "c": "Exchange Server and Exchange Online"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Information rights management, archiving, and legal holds.",
+        "options": {
+            "a": "Exchange Server only",
+            "b": "Exchange Online only",
+            "c": "Exchange Server and Exchange Online"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Custom web and mobile application securely connected to an on-premises data store.",
+        "options": {
+            "a": "Software as a service (SaaS)",
+            "b": "Platform as a service (PaaS)",
+            "c": "Infrastructure as a service (IaaS)"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Exchange Online integrated with on-premises Skype for Business Server.",
+        "options": {
+            "a": "Software as a service (SaaS)",
+            "b": "Platform as a service (PaaS)",
+            "c": "Infrastructure as a service (IaaS)"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Server-based workloads on a virtual machine that are connected to an on-premises network.",
+        "options": {
+            "a": "Software as a service (SaaS)",
+            "b": "Platform as a service (PaaS)",
+            "c": "Infrastructure as a service (IaaS)"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Microsoft cloud services offer significant energy savings for Microsoft and its customers.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Lower costs, no hardware maintenance, near-unlimited scalability, and high reliability are all advantages of a private cloud.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Microsoft cloud services offer security options and have the ability to provision resources quickly.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Compliance Manager performs an assessment against your entire Microsoft 365 environment and evaluates both Microsoft and customer controls.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Compliance Manager allows you to assign individuals within the organization to be responsible for the control.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Compliance Manager provides the ability to take corrective actions from within the Service Trust portal.",
+        "options": {
+            "a": "Yes",
+            "b": "No"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Responsible party for Applications.",
+        "options": {
+            "a": "IT staff",
+            "b": "Microsoft"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Responsible party for Operating systems.",
+        "options": {
+            "a": "IT staff",
+            "b": "Microsoft"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Responsible party for Storage.",
+        "options": {
+            "a": "IT staff",
+            "b": "Microsoft"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Responsible party for Application data.",
+        "options": {
+            "a": "IT staff",
+            "b": "Microsoft"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Users must be able to use incompatible applications on a Windows 10 device.",
+        "options": {
+            "a": "Windows Virtual Desktop",
+            "b": "Azure AD Application Proxy",
+            "c": "Azure AD Connect",
+            "d": "Microsoft Intune"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Cloud-based application must use the same credentials as on-premises applications.",
+        "options": {
+            "a": "Windows Virtual Desktop",
+            "b": "Azure AD Application Proxy",
+            "c": "Azure AD Connect",
+            "d": "Microsoft Intune"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Users must be prevented from copying company data from managed applications installed on unmanaged devices.",
+        "options": {
+            "a": "Windows Virtual Desktop",
+            "b": "Azure AD Application Proxy",
+            "c": "Azure AD Connect",
+            "d": "Microsoft Intune"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Engineering team requirement: Application and operating system updates to devices must originate from an on-premises server.",
+        "options": {
+            "a": "Engineering",
+            "b": "Sales",
+            "c": "Finance",
+            "d": "Developers"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Sales team requirement: Devices must be updated periodically and not require an on-premises server.",
+        "options": {
+            "a": "Engineering",
+            "b": "Sales",
+            "c": "Finance",
+            "d": "Developers"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Finance team requirement: Devices must be updated periodically and monitored using one system.",
+        "options": {
+            "a": "Engineering",
+            "b": "Sales",
+            "c": "Finance",
+            "d": "Developers"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Developers team requirement: Choose when updates are installed.",
+        "options": {
+            "a": "Engineering",
+            "b": "Sales",
+            "c": "Finance",
+            "d": "Developers"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Windows Insider previews: Early build that are released to the public during the feature-development phase.",
+        "options": {
+            "a": "Windows Insider previews",
+            "b": "Servicing channels",
+            "c": "Deployment rings"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Servicing channels: A method for controlling the frequency at which organizations deploy Windows 10 features.",
+        "options": {
+            "a": "Windows Insider previews",
+            "b": "Servicing channels",
+            "c": "Deployment rings"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Deployment rings: A method of gradually deploying Windows 10 features by using multiple sets of targeted devices.",
+        "options": {
+            "a": "Windows Insider previews",
+            "b": "Servicing channels",
+            "c": "Deployment rings"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Search method for Microsoft SharePoint Online.",
+        "options": {
+            "a": "Content Search eDiscovery",
+            "b": "In the app"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Search method for Microsoft Access.",
+        "options": {
+            "a": "Content Search eDiscovery",
+            "b": "In the app"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Search method for Microsoft Outlook.",
+        "options": {
+            "a": "Content Search eDiscovery",
+            "b": "In the app"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Search method for Microsoft PowerApps.",
+        "options": {
+            "a": "Content Search eDiscovery",
+            "b": "In the app"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Classify documents.",
+        "options": {
+            "a": "Publish labels",
+            "b": "Define file and folder structures",
+            "c": "Apply Microsoft SharePoint permissions"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Ensure that classifications are enforced.",
+        "options": {
+            "a": "Apply supervision policies",
+            "b": "Configure document approval",
+            "c": "Configure Microsoft Outlook Mail Tips"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Delete documents that are no longer used.",
+        "options": {
+            "a": "Apply retention policies",
+            "b": "Apply preservation policies",
+            "c": "Configure the Microsoft SharePoint second-stage recycle bin"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Provide insight into which apps are being used in the organization and the risk levels for the apps.",
+        "options": {
+            "a": "Cloud Discovery dashboard",
+            "b": "Microsoft Azure AD Conditional Access",
+            "c": "Microsoft Azure Security Center",
+            "d": "Microsoft Azure Information Protection"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Classify and label emails and documents in the organization.",
+        "options": {
+            "a": "Cloud Discovery dashboard",
+            "b": "Microsoft Azure AD Conditional Access",
+            "c": "Microsoft Azure Security Center",
+            "d": "Microsoft Azure Information Protection"
+        },
+        "answer": [
+            "d"
+        ]
+    },
+    {
+        "question": "Block users from accessing cloud apps from certain devices.",
+        "options": {
+            "a": "Cloud Discovery dashboard",
+            "b": "Microsoft Azure AD Conditional Access",
+            "c": "Microsoft Azure Security Center",
+            "d": "Microsoft Azure Information Protection"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Manage security policies, monitor attacks against virtual machines, and provide remediation for vulnerabilities.",
+        "options": {
+            "a": "Cloud Discovery dashboard",
+            "b": "Microsoft Azure AD Conditional Access",
+            "c": "Microsoft Azure Security Center",
+            "d": "Microsoft Azure Information Protection"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "License required for Windows 10 Pro Upgrade.",
+        "options": {
+            "a": "Required",
+            "b": "Not required"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "License required for Microsoft Office Professional.",
+        "options": {
+            "a": "Required",
+            "b": "Not required"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "License required for Windows Server.",
+        "options": {
+            "a": "Required",
+            "b": "Not required"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "License required for Microsoft Exchange Client Access.",
+        "options": {
+            "a": "Required",
+            "b": "Not required"
+        },
+        "answer": [
+            "a"
+        ]
+    },
+    {
+        "question": "Widespread deployment.",
+        "options": {
+            "a": "Private release",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "c"
+        ]
+    },
+    {
+        "question": "Limited deployment for a short duration.",
+        "options": {
+            "a": "Private release",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "b"
+        ]
+    },
+    {
+        "question": "Limited deployment for a small number of organizations for a short duration.",
+        "options": {
+            "a": "Private release",
+            "b": "Public Preview",
+            "c": "General Availability"
+        },
+        "answer": [
+            "a"
+        ]
+    }
+]

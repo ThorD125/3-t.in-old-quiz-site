@@ -4,7 +4,11 @@
         "file": "az-900.json"
     },
     {
-        "title": "template",
-        "file": "template.json"
+        "title": "SC-900",
+        "file": "sc-900.json"
+    },
+    {
+        "title": "MS-365 | MS-900",
+        "file": "ms-900.json"
     }
 ]

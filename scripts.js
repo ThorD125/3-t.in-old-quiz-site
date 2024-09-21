@@ -1,8 +1,5 @@
 'use strict';
 
-//const filteredObjects = objects.filter(obj => obj.question.length > 100);
-
-
 function populateExamDropdown(exams) {
   exams.forEach(exam => {
     const option = document.createElement('option');
@@ -28,8 +25,6 @@ function countUnique(arr) {
 
   return { "unique": unique, "total": totals, "dupes": totals - unique };
 }
-
-
 function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
@@ -61,7 +56,7 @@ function populateExams() {
 
 function setNextQuestion() {
   document.querySelector("h1 span").textContent = "w" + correctstreak;
-questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
+  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
 
   if (questions.length == 0) {
     showGoodJobAnimation();
@@ -84,6 +79,7 @@ questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCo
     answerButtonContainer.appendChild(button);
   });
 }
+
 let correctstreak = 0;
 
 function selectAnswer(e) {
@@ -119,7 +115,7 @@ function selectAnswer(e) {
 
       questions.push(currentQuestion);
     }
-    
+
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
         button.classList.add('correct');
@@ -135,15 +131,13 @@ function selectAnswer(e) {
     console.error('No question available to select an answer for.');
   }
 }
-
-
 function arraysAreEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
   let sortedArr1 = arr1.slice().sort();
   let sortedArr2 = arr2.slice().sort();
 
   for (let i = 0; i < sortedArr1.length; i++) {
-    if (sortedArr1[i] !== sortedArr2[i]) {
+    if (sortedArr1[i].toString() !== sortedArr2[i].toString()) {
       return false;
     }
   }
@@ -197,21 +191,13 @@ function copyToClipboard(text) {
 function randomizeButtons() {
   const container = document.querySelector("#answer-buttons");
   const buttons = Array.from(container.querySelectorAll("button"));
-
-  // Shuffle the buttons array
   for (let i = buttons.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [buttons[i], buttons[j]] = [buttons[j], buttons[i]]; // Swap
+    [buttons[i], buttons[j]] = [buttons[j], buttons[i]];
   }
-
-  // Clear the container
   container.innerHTML = '';
-
-  // Append buttons in the new random order
   buttons.forEach(button => container.appendChild(button));
 }
-
-
 
 let fetchedQuestions = [];
 let questions = [];
@@ -255,7 +241,6 @@ nextBtn.addEventListener('click', () => {
   randomizeButtons();
 });
 
-
 explain.addEventListener("click", ex => {
   let text = "Can you please explain:\n\n";
   const currentQuestion = questions[currentQuestionIndex];
@@ -271,10 +256,6 @@ function fixSliders(slider, output) {
 
   slider.oninput = function () {
     output.innerHTML = this.value;
-
-    // if (fetchedQuestions.length == 0) {
-    //   examSelection.querySelectorAll("option")[1].selected = true;
-    // }
 
     if (!(sliderMin.value < sliderMax.value - sliderMax.step)) {
       sliderMin.value = sliderMax.value - sliderMax.step;
