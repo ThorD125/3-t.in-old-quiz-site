@@ -54,7 +54,7 @@ function populateExams() {
   quizContainer.style.display = 'block';
 }
 
-bestStreak = 0;
+let bestStreak = 0;
 function setNextQuestion() {
   document.querySelector("h1 span").textContent = `w${correctstreak}-bw${bestStreak}`;
   questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
