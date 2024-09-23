@@ -56,8 +56,8 @@ function populateExams() {
 
 let bestStreak = 0;
 function setNextQuestion() {
-  document.querySelector("h1 span").textContent = `w${correctstreak}-bw${bestStreak}`;
-  questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
+  document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
+  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique+uniqueCount.dupes}unique questions)`;
 
   if (questions.length == 0) {
     showGoodJobAnimation();
