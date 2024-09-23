@@ -54,8 +54,9 @@ function populateExams() {
   quizContainer.style.display = 'block';
 }
 
+bestStreak = 0;
 function setNextQuestion() {
-  document.querySelector("h1 span").textContent = "w" + correctstreak;
+  document.querySelector("h1 span").textContent = `w${correctstreak}-bw${bestStreak}`;
   questionCounter.textContent = `Questions left: ${remainingQuestions} (${uniqueCount.unique}u ${uniqueCount.dupes}d)`;
 
   if (questions.length == 0) {
@@ -111,7 +112,11 @@ function selectAnswer(e) {
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
+      if (bestStreak < correctstreak){
+        bestStreak = correctstreak;
+      }
       correctstreak = 0;
+      
 
       questions.push(currentQuestion);
     }
