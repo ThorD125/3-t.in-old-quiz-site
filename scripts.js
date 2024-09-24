@@ -57,7 +57,7 @@ function populateExams() {
 let bestStreak = 0;
 function setNextQuestion() {
   document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
-  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique+uniqueCount.dupes}unique questions)`;
+  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
 
   if (questions.length == 0) {
     showGoodJobAnimation();
@@ -112,11 +112,11 @@ function selectAnswer(e) {
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
-      if (bestStreak < correctstreak){
+      if (bestStreak < correctstreak) {
         bestStreak = correctstreak;
       }
       correctstreak = 0;
-      
+
 
       questions.push(currentQuestion);
     }
@@ -142,6 +142,10 @@ function arraysAreEqual(arr1, arr2) {
   let sortedArr2 = arr2.slice().sort();
 
   for (let i = 0; i < sortedArr1.length; i++) {
+    console.log(sortedArr1[i].toString() !== sortedArr2[i].toString());
+    console.log(sortedArr2[i].toString());
+    console.log(sortedArr1[i].toString());
+
     if (sortedArr1[i].toString() !== sortedArr2[i].toString()) {
       return false;
     }

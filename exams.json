@@ -10,5 +10,9 @@
     {
         "title": "MS-365 | MS-900",
         "file": "ms-900.json"
+    },
+    {
+        "title": "test",
+        "file": "test.json"
     }
 ]

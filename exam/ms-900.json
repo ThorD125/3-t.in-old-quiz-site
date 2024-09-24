@@ -628,16 +628,6 @@
         ]
     },
     {
-        "question": "Users must sign in again when using Microsoft 365.",
-        "options": {
-            "a": "Yes",
-            "b": "No"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
         "question": "You can configure federated authentication to require a smart card.",
         "options": {
             "a": "Yes",
@@ -649,39 +639,6 @@
     },
     {
         "question": "Configure multi-factor authentication for cloud services.",
-        "options": {
-            "a": "Microsoft 365 only",
-            "b": "on-premises only",
-            "c": "both Microsoft 365 and on-premises"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Configure email disclaimers.",
-        "options": {
-            "a": "Microsoft 365 only",
-            "b": "on-premises only",
-            "c": "both Microsoft 365 and on-premises"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Configure compliance.",
-        "options": {
-            "a": "Microsoft 365 only",
-            "b": "on-premises only",
-            "c": "both Microsoft 365 and on-premises"
-        },
-        "answer": [
-            "c"
-        ]
-    },
-    {
-        "question": "Set frequency of Microsoft Office 365 updates.",
         "options": {
             "a": "Microsoft 365 only",
             "b": "on-premises only",
@@ -710,17 +667,6 @@
         },
         "answer": [
             "a"
-        ]
-    },
-    {
-        "question": "Secure admin roles by requiring approvals.",
-        "options": {
-            "a": "Microsoft Azure AD Identity Protection",
-            "b": "Microsoft Azure AD Privilege Identity Management",
-            "c": "Microsoft Azure AD Domain Services"
-        },
-        "answer": [
-            "b"
         ]
     },
     {
@@ -820,17 +766,6 @@
         ]
     },
     {
-        "question": "Log on to devices by using Windows Hello.",
-        "options": {
-            "a": "AD DS only",
-            "b": "Azure AD only",
-            "c": "AD DS and Azure AD"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
         "question": "Log on to devices that are managed by Microsoft Intune.",
         "options": {
             "a": "AD DS only",
@@ -853,17 +788,6 @@
         ]
     },
     {
-        "question": "Complete compliance testing.",
-        "options": {
-            "a": "Private",
-            "b": "Public Preview",
-            "c": "General Availability"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
         "question": "Complete QA testing for recently released features.",
         "options": {
             "a": "Private",
@@ -875,17 +799,6 @@
         ]
     },
     {
-        "question": "Prepare QA results and end-user documentation.",
-        "options": {
-            "a": "Private",
-            "b": "Public Preview",
-            "c": "General Availability"
-        },
-        "answer": [
-            "c"
-        ]
-    },
-    {
         "question": "You have a legacy application that requires connectivity with an on-premises data store.",
         "options": {
             "a": "Migrate to the cloud",
@@ -893,16 +806,6 @@
         },
         "answer": [
             "b"
-        ]
-    },
-    {
-        "question": "You need to deploy an external-facing website.",
-        "options": {
-            "a": "Migrate to the cloud",
-            "b": "Remain on-premises"
-        },
-        "answer": [
-            "a"
         ]
     },
     {
@@ -937,17 +840,6 @@
         ]
     },
     {
-        "question": "Would you like to receive email communication?",
-        "options": {
-            "a": "Send a weekly email digest of my messages",
-            "b": "Send me emails for major updates"
-        },
-        "answer": [
-            "a",
-            "b"
-        ]
-    },
-    {
         "question": "Local copy of Microsoft Outlook that connects to an Exchange Server instance.",
         "options": {
             "a": "ProPlus",
@@ -960,30 +852,6 @@
         ]
     },
     {
-        "question": "Search and discovery with Delve.",
-        "options": {
-            "a": "ProPlus",
-            "b": "Enterprise E1",
-            "c": "Enterprise E3",
-            "d": "Enterprise E5"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "eDiscovery with in-place, hold, and export.",
-        "options": {
-            "a": "ProPlus",
-            "b": "Enterprise E1",
-            "c": "Enterprise E3",
-            "d": "Enterprise E5"
-        },
-        "answer": [
-            "c"
-        ]
-    },
-    {
         "question": "Advanced eDiscovery with in-place search, hold, export, and analytics.",
         "options": {
             "a": "ProPlus",
@@ -993,75 +861,6 @@
         },
         "answer": [
             "d"
-        ]
-    },
-    {
-        "question": "Windows 10 version",
-        "options": {
-            "a": "Windows 10 Pro",
-            "b": "Windows 10 Home",
-            "c": "Windows 10 Enterprise",
-            "d": "Windows 10 Enterprise LTS8"
-        },
-        "answer": [
-            "c"
-        ]
-    },
-    {
-        "question": "Servicing channel",
-        "options": {
-            "a": "Semi-annual channel",
-            "b": "Long-term servicing channel",
-            "c": "Semi-annual channel (targeted)",
-            "d": "Insider"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Servicing tool",
-        "options": {
-            "a": "Microsoft Intune",
-            "b": "Windows Autopilot",
-            "c": "Windows Server Update Services",
-            "d": "System Center Configuration Manager"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Centralized archiving.",
-        "options": {
-            "a": "Teams only",
-            "b": "Skype for Business Server only",
-            "c": "Teams and Skype for Business Server"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Broadcast meetings.",
-        "options": {
-            "a": "Teams only",
-            "b": "Skype for Business Server only",
-            "c": "Teams and Skype for Business Server"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Federated meetings.",
-        "options": {
-            "a": "Teams only",
-            "b": "Skype for Business Server only",
-            "c": "Teams and Skype for Business Server"
-        },
-        "answer": [
-            "c"
         ]
     },
     {
@@ -1095,56 +894,6 @@
         ]
     },
     {
-        "question": "Included in office 365 E5 license.",
-        "options": {
-            "a": "MyAnalytics",
-            "b": "Workspace Analytics"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Can be purchased only as an add-on license.",
-        "options": {
-            "a": "MyAnalytics",
-            "b": "Workspace Analytics"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Provides employee work and collaboration metrics.",
-        "options": {
-            "a": "MyAnalytics",
-            "b": "Workspace Analytics"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Permits upload of custom organizational data.",
-        "options": {
-            "a": "MyAnalytics",
-            "b": "Workspace Analytics"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Provides team work and collaboration metrics.",
-        "options": {
-            "a": "MyAnalytics",
-            "b": "Workspace Analytics"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
         "question": "After users are enrolled in multi-factor authentication, they must configure a second authentication factor the next time they sign in.",
         "options": {
             "a": "Yes",
@@ -1175,19 +924,6 @@
         ]
     },
     {
-        "question": "Send an email to a distribution list.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
         "question": "Author a document at the same time as someone else and use document versioning.",
         "options": {
             "a": "Windows 10 Enterprise",
@@ -1214,45 +950,6 @@
         ]
     },
     {
-        "question": "Register a personal device with the company.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "e"
-        ]
-    },
-    {
-        "question": "View a personal calendar.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Send an email to a distribution list.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
         "question": "Author a document at the same time as someone else and use document versioning.",
         "options": {
             "a": "Windows 10 Enterprise",
@@ -1276,32 +973,6 @@
         },
         "answer": [
             "d"
-        ]
-    },
-    {
-        "question": "Register a personal device with the company.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "e"
-        ]
-    },
-    {
-        "question": "View a personal calendar.",
-        "options": {
-            "a": "Windows 10 Enterprise",
-            "b": "Microsoft Exchange Online",
-            "c": "Microsoft SharePoint Online",
-            "d": "Microsoft Teams",
-            "e": "Microsoft Enterprise Mobility + Security"
-        },
-        "answer": [
-            "b"
         ]
     },
     {
@@ -1354,28 +1025,6 @@
         },
         "answer": [
             "d"
-        ]
-    },
-    {
-        "question": "Exchange Web Services (EWS) access to accounts.",
-        "options": {
-            "a": "Exchange Server only",
-            "b": "Exchange Online only",
-            "c": "Exchange Server and Exchange Online"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Custom EWS throttling settings.",
-        "options": {
-            "a": "Exchange Server only",
-            "b": "Exchange Online only",
-            "c": "Exchange Server and Exchange Online"
-        },
-        "answer": [
-            "b"
         ]
     },
     {
@@ -1477,46 +1126,6 @@
         "options": {
             "a": "Yes",
             "b": "No"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Responsible party for Applications.",
-        "options": {
-            "a": "IT staff",
-            "b": "Microsoft"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Responsible party for Operating systems.",
-        "options": {
-            "a": "IT staff",
-            "b": "Microsoft"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Responsible party for Storage.",
-        "options": {
-            "a": "IT staff",
-            "b": "Microsoft"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Responsible party for Application data.",
-        "options": {
-            "a": "IT staff",
-            "b": "Microsoft"
         },
         "answer": [
             "a"
@@ -1640,79 +1249,6 @@
         ]
     },
     {
-        "question": "Search method for Microsoft SharePoint Online.",
-        "options": {
-            "a": "Content Search eDiscovery",
-            "b": "In the app"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Search method for Microsoft Access.",
-        "options": {
-            "a": "Content Search eDiscovery",
-            "b": "In the app"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Search method for Microsoft Outlook.",
-        "options": {
-            "a": "Content Search eDiscovery",
-            "b": "In the app"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Search method for Microsoft PowerApps.",
-        "options": {
-            "a": "Content Search eDiscovery",
-            "b": "In the app"
-        },
-        "answer": [
-            "b"
-        ]
-    },
-    {
-        "question": "Classify documents.",
-        "options": {
-            "a": "Publish labels",
-            "b": "Define file and folder structures",
-            "c": "Apply Microsoft SharePoint permissions"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Ensure that classifications are enforced.",
-        "options": {
-            "a": "Apply supervision policies",
-            "b": "Configure document approval",
-            "c": "Configure Microsoft Outlook Mail Tips"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "Delete documents that are no longer used.",
-        "options": {
-            "a": "Apply retention policies",
-            "b": "Apply preservation policies",
-            "c": "Configure the Microsoft SharePoint second-stage recycle bin"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
         "question": "Provide insight into which apps are being used in the organization and the risk levels for the apps.",
         "options": {
             "a": "Cloud Discovery dashboard",
@@ -1761,27 +1297,7 @@
         ]
     },
     {
-        "question": "License required for Windows 10 Pro Upgrade.",
-        "options": {
-            "a": "Required",
-            "b": "Not required"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
         "question": "License required for Microsoft Office Professional.",
-        "options": {
-            "a": "Required",
-            "b": "Not required"
-        },
-        "answer": [
-            "a"
-        ]
-    },
-    {
-        "question": "License required for Windows Server.",
         "options": {
             "a": "Required",
             "b": "Not required"
@@ -1798,28 +1314,6 @@
         },
         "answer": [
             "a"
-        ]
-    },
-    {
-        "question": "Widespread deployment.",
-        "options": {
-            "a": "Private release",
-            "b": "Public Preview",
-            "c": "General Availability"
-        },
-        "answer": [
-            "c"
-        ]
-    },
-    {
-        "question": "Limited deployment for a short duration.",
-        "options": {
-            "a": "Private release",
-            "b": "Public Preview",
-            "c": "General Availability"
-        },
-        "answer": [
-            "b"
         ]
     },
     {

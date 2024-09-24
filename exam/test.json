@@ -1,0 +1,14 @@
+[
+    {
+        "question": "64. You are the Microsoft 365 administrator for a company.You need to ensure that users receive a warning message if they select links in emails that might be unsafe.\nWhat should you do?",
+        "options": {
+            "0": "Use Windows PowerShell to install the latest antimalware engine updates",
+            "1": "Enable Microsoft Office 365 Advanced Threat Protectioncorrect",
+            "2": "Use the Microsoft Exchange Admin Center to configure a new spam-filter policy",
+            "3": "Use the Microsoft Exchange Admin Center to create a new antimalware policy"
+        },
+        "answer": [
+            1
+        ]
+    }
+]
