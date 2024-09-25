@@ -54,7 +54,6 @@ function populateExams() {
   quizContainer.style.display = 'block';
 }
 
-let bestStreak = 0;
 function setNextQuestion() {
   document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
   questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
@@ -80,8 +79,6 @@ function setNextQuestion() {
     answerButtonContainer.appendChild(button);
   });
 }
-
-let correctstreak = 0;
 
 function selectAnswer(e) {
   const currentQuestion = questions[currentQuestionIndex];
@@ -136,6 +133,7 @@ function selectAnswer(e) {
     console.error('No question available to select an answer for.');
   }
 }
+
 function arraysAreEqual(arr1, arr2) {
   if (arr1.length !== arr2.length) return false;
   let sortedArr1 = arr1.slice().sort();
@@ -173,8 +171,6 @@ function shuffleArray(array) {
   }
 }
 
-let uniqueCount = 0;
-let remainingQuestions = 0;
 function updateQuestionCounter() {
   remainingQuestions = questions.length;
   uniqueCount = countUnique(questions);
@@ -208,6 +204,10 @@ function randomizeButtons() {
   buttons.forEach(button => container.appendChild(button));
 }
 
+let bestStreak = 0;
+let correctstreak = 0;
+let uniqueCount = 0;
+let remainingQuestions = 0;
 let fetchedQuestions = [];
 let questions = [];
 let currentQuestionIndex = 0;
