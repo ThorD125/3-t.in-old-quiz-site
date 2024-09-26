@@ -291,3 +291,9 @@ fixSliders(sliderMax, outputMax);
 const sliderMin = document.getElementById("rangeSliderMin");
 const outputMin = document.getElementById("sliderValueMin");
 fixSliders(sliderMin, outputMin);
+
+const sliderAmount = document.getElementById("maxAmount");
+
+sliderAmount.addEventListener("change", sl => {
+  questions = fetchedQuestions.slice(0, sl.value);
+})
