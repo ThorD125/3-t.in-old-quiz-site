@@ -60,7 +60,7 @@ function populateExams() {
 }
 
 function visualLoadCounters() {
-  document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
+  document.querySelector(".correctDiv").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
   questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
 }
 
