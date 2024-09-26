@@ -182,3 +182,47 @@ input[type="range"] {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+
+
+
+
+.tooltip{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0%;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tooltip-text{
+    visibility: hidden;
+    position: absolute;
+    width: clamp(100px, 100%, 250px);
+    padding: 0px 4px 2px 4px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(72, 72, 71);
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    /* center the tooltip text box*/
+    transform: translate(-50%);
+    /* animation */
+    opacity: 0;
+}
+.tooltip-text::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 10px solid;
+    border-color:  rgb(72, 71, 71) transparent transparent transparent;
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
