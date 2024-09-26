@@ -287,7 +287,7 @@ const sliderMax = document.getElementById("rangeSliderMax");
 const outputMax = document.getElementById("sliderValueMax");
 fixSliders(sliderMax, outputMax);
 sliderMax.oninput = function () {
- if (!(sliderMin.value < sliderMax - sliderMin.step)) {
+ if (sliderMin.value >= sliderMax - sliderMin.step) {
       sliderMax.value = sliderMin.value + sliderMin.step;
       outputMax.innerHTML = sliderMax.value;
       console.log("testslidmax");
@@ -303,7 +303,7 @@ const sliderMin = document.getElementById("rangeSliderMin");
 const outputMin = document.getElementById("sliderValueMin");
 fixSliders(sliderMin, outputMin);
 sliderMin.oninput = function () {
-    if (!(sliderMin.value + sliderMax.step < sliderMax.value)) {
+    if (sliderMin.value + sliderMax.step >= sliderMax.value) {
       sliderMin.value = sliderMax.value - sliderMax.step;
       outputMin.innerHTML = sliderMin.value;
       console.log("testslidmin");
