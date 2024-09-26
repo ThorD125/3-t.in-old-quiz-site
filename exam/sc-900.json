@@ -1190,7 +1190,7 @@
         ]
     },
     {
-        "question": "Match the types of compliance score actions to the appropriate tasks. [...] Use encryption to protect data at rest.",
+        "question": "[...]: Use encryption to protect data at rest.",
         "options": {
             "A": "Corrective.",
             "B": "Detective.",
@@ -1201,7 +1201,7 @@
         ]
     },
     {
-        "question": "Match the types of compliance score actions to the appropriate tasks. [...] Actively monitor systems to identify irregularities that might represent risks.",
+        "question": "[...]: Actively monitor systems to identify irregularities that might represent risks.",
         "options": {
             "A": "Corrective.",
             "B": "Detective.",
@@ -2066,7 +2066,7 @@
         ]
     },
     {
-        "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Encrypt data at rest.",
+        "question": "You are evaluating the compliance score in Compliance Manager. [...]: Encrypt data at rest.",
         "options": {
             "A": "Corrective.",
             "B": "Detective.",
@@ -2077,7 +2077,7 @@
         ]
     },
     {
-        "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Perform a system access audit.",
+        "question": "You are evaluating the compliance score in Compliance Manager. [...]: Perform a system access audit.",
         "options": {
             "A": "Corrective.",
             "B": "Detective.",
@@ -2088,7 +2088,7 @@
         ]
     },
     {
-        "question": "You are evaluating the compliance score in Compliance Manager. Match the compliance score action subcategories to the appropriate actions. [...] Make configuration changes in response to a security incident.",
+        "question": "You are evaluating the compliance score in Compliance Manager. [...]: Make configuration changes in response to a security incident.",
         "options": {
             "A": "Corrective.",
             "B": "Detective.",
@@ -2227,7 +2227,7 @@
         ]
     },
     {
-        "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Review and filter alerts.",
+        "question": "[...]: Review and filter alerts.",
         "options": {
             "A": "Triage.",
             "B": "Investigate.",
@@ -2238,7 +2238,7 @@
         ]
     },
     {
-        "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Create cases in the Case dashboard.",
+        "question": "[...]: Create cases in the Case dashboard.",
         "options": {
             "A": "Triage.",
             "B": "Investigate.",
@@ -2249,7 +2249,7 @@
         ]
     },
     {
-        "question": "Match the Microsoft 365 insider risk management workflow step to the appropriate task. [...] Send a reminder of corporate policies to users.",
+        "question": "[...]: Send a reminder of corporate policies to users.",
         "options": {
             "A": "Triage.",
             "B": "Investigate.",
