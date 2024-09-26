@@ -57,6 +57,8 @@ function populateExams() {
 function setNextQuestion() {
   
   delete questions[currentQuestionIndex];
+  questions = questions.filter(x => x != 'empty');
+  
   document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
   questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
 
@@ -100,7 +102,6 @@ function selectAnswer(e) {
 
     if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
       answerButtonContainer.classList.add('correct');
-      questions = questions.filter(x => x != 'empty');
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
@@ -143,10 +144,6 @@ function arraysAreEqual(arr1, arr2) {
   let sortedArr2 = arr2.slice().sort();
 
   for (let i = 0; i < sortedArr1.length; i++) {
-    console.log(sortedArr1[i].toString() !== sortedArr2[i].toString());
-    console.log(sortedArr2[i].toString());
-    console.log(sortedArr1[i].toString());
-
     if (sortedArr1[i].toString() !== sortedArr2[i].toString()) {
       return false;
     }
@@ -272,9 +269,11 @@ function fixSliders(slider, output) {
     if (!(sliderMin.value < sliderMax.value - sliderMax.step)) {
       sliderMin.value = sliderMax.value - sliderMax.step;
       outputMin.innerHTML = sliderMin.value;
+      console.log("testslidmin");
     } else if (!(sliderMin.value + sliderMin.step < sliderMax)) {
       sliderMax.value = sliderMin.value + sliderMin.step;
       outputMax.innerHTML = sliderMax.value;
+      console.log("testslidmax");
     }
 
     questions = fetchedQuestions.filter(x => {
