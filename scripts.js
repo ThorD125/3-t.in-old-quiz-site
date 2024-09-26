@@ -29,7 +29,7 @@ function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
     .then(data => {
-resetAnimations()
+resetAnimations();
       fetchedQuestions = data;
       questions = fetchedQuestions.filter(x => x.question.length < sliderMax.value);
 
@@ -49,7 +49,8 @@ function resetAnimations(){
 }
 
 function populateExams() {
-  hideGoodJobAnimation()
+  resetAnimations();
+  hideGoodJobAnimation();
   shuffleArray(questions);
   currentQuestionIndex = 0;
   updateQuestionCounter();
