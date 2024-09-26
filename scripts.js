@@ -274,34 +274,44 @@ function fixSliders(slider, output) {
 
   slider.oninput = function () {
     output.innerHTML = this.value;
-
-    if (!(sliderMin.value < sliderMax.value - sliderMax.step)) {
-      sliderMin.value = sliderMax.value - sliderMax.step;
-      outputMin.innerHTML = sliderMin.value;
-      console.log("testslidmin");
-    } else if (!(sliderMin.value + sliderMin.step < sliderMax)) {
-      sliderMax.value = sliderMin.value + sliderMin.step;
-      outputMax.innerHTML = sliderMax.value;
-      console.log("testslidmax");
-    }
-
-    questions = fetchedQuestions.filter(x => {
-      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
-    });
-
     populateExams();
   }
 }
 
+
 const sliderMax = document.getElementById("rangeSliderMax");
 const outputMax = document.getElementById("sliderValueMax");
 fixSliders(sliderMax, outputMax);
+sliderMax.oninput = function () {
+ if (!(sliderMin.value < sliderMax - sliderMin.step)) {
+      sliderMax.value = sliderMin.value + sliderMin.step;
+      outputMax.innerHTML = sliderMax.value;
+      console.log("testslidmax");
+    }
+  questions = fetchedQuestions.filter(x => {
+      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
+    });
+}
+
+
 
 const sliderMin = document.getElementById("rangeSliderMin");
 const outputMin = document.getElementById("sliderValueMin");
 fixSliders(sliderMin, outputMin);
+sliderMin.oninput = function () {
+    if (!(sliderMin.value + sliderMax.step < sliderMax.value)) {
+      sliderMin.value = sliderMax.value - sliderMax.step;
+      outputMin.innerHTML = sliderMin.value;
+      console.log("testslidmin");
+    }
+  questions = fetchedQuestions.filter(x => {
+      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
+    });
+  }
 
 const sliderAmount = document.getElementById("maxAmount");
+const outputMaxAmount = document.getElementById("sliderValueMaxAmount");
+fixSliders(sliderAmount, outputMaxAmount);
 
 sliderAmount.oninput = function () {
   questions = fetchedQuestions.slice(0, this.value);
