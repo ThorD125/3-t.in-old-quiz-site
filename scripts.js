@@ -55,6 +55,8 @@ function populateExams() {
 }
 
 function setNextQuestion() {
+  
+  delete questions[currentQuestionIndex];
   document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
   questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
 
@@ -98,7 +100,6 @@ function selectAnswer(e) {
 
     if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
       answerButtonContainer.classList.add('correct');
-      delete questions[currentQuestionIndex];
       questions = questions.filter(x => x != 'empty');
       e.target.classList.add('correct');
       feedbackText.textContent = `Correct!`;
@@ -109,15 +110,17 @@ function selectAnswer(e) {
       e.target.classList.add('wrong');
       feedbackText.textContent = `Wrong!`;
       feedbackText.style.color = '#f44336';
-      if (bestStreak < correctstreak) {
-        bestStreak = correctstreak;
-      }
+
       correctstreak = 0;
 
 
       questions.push(currentQuestion);
     }
-
+    
+    if (bestStreak < correctstreak) {
+        bestStreak = correctstreak;
+      }
+    
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
         button.classList.add('correct');
