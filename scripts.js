@@ -29,23 +29,27 @@ function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
     .then(data => {
-      quizContainer.style.display = '';
+resetAnimations()
+      fetchedQuestions = data;
+      questions = fetchedQuestions.filter(x => x.question.length < sliderMax.value);
+
+      populateExams();
+    })
+    .catch(error => console.error('Error loading exam:', error));
+}
+
+function resetAnimations(){
+        quizContainer.style.display = '';
       header.style.display = '';
       questionText.style.display = '';
       answerButtonContainer.style.display = '';
       nextBtn.style.display = '';
       questionCounter.style.display = '';
       goodJobAnimation.style.display = 'none';
-
-      fetchedQuestions = data;
-      questions = fetchedQuestions.filter(x => x.question.length < sliderMax.value);
-
-      populateExams()
-    })
-    .catch(error => console.error('Error loading exam:', error));
 }
 
 function populateExams() {
+  hideGoodJobAnimation()
   shuffleArray(questions);
   currentQuestionIndex = 0;
   updateQuestionCounter();
@@ -176,9 +180,13 @@ function updateQuestionCounter() {
   uniqueCount = countUnique(questions);
 }
 
+function hideGoodJobAnimation() { 
+  goodJobAnimation.style.display = 'none';
+  goodJobAnimation.classList.add('hidden');
+}
+
 function showGoodJobAnimation() {
   quizContainer.style.display = 'none';
-  goodJobAnimation.style.marginTop = '0';
   header.style.display = 'none';
   questionText.style.display = 'none';
   answerButtonContainer.style.display = 'none';
