@@ -59,14 +59,18 @@ function populateExams() {
   quizContainer.style.display = 'block';
 }
 
+function visualLoadCounters() {
+  document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
+  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
+}
+
 function setNextQuestion() {
   
   delete questions[currentQuestionIndex];
   questions = questions.filter(x => x != 'empty');
   
-  document.querySelector("h1 span").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
-  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
-
+  visualLoadCounters();
+  
   if (questions.length == 0) {
     showGoodJobAnimation();
     return;
