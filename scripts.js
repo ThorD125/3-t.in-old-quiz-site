@@ -296,4 +296,5 @@ const sliderAmount = document.getElementById("maxAmount");
 
 sliderAmount.oninput = function () {
   questions = fetchedQuestions.slice(0, this.value);
+  populateExams();
 }
