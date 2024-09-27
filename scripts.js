@@ -65,10 +65,10 @@ function visualLoadCounters() {
 }
 
 function setNextQuestion() {
-  
+  if(answer_correct){
   delete questions[currentQuestionIndex];
   questions = questions.filter(x => x != 'empty');
-  
+  }
   visualLoadCounters();
   
   if (questions.length == 0) {
@@ -93,7 +93,9 @@ function setNextQuestion() {
   });
 }
 
+let answer_correct = false;
 function selectAnswer(e) {
+  answer_correct = false;
   const currentQuestion = questions[currentQuestionIndex];
   e.target.classList.toggle('selected');
 
@@ -115,6 +117,7 @@ function selectAnswer(e) {
       feedbackText.textContent = `Correct!`;
       feedbackText.style.color = '#4CAF50';
       correctstreak += 1;
+      answer_correct = true;
     } else {
       answerButtonContainer.classList.add('wrong');
       e.target.classList.add('wrong');
