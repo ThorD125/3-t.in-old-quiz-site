@@ -52,7 +52,6 @@ function populateExams() {
   resetAnimations();
   hideGoodJobAnimation();
   shuffleArray(questions);
-  currentQuestionIndex = 0;
   updateQuestionCounter();
   setNextQuestion();
   randomizeButtons()
