@@ -321,3 +321,9 @@ sliderAmount.oninput = function () {
   questions = fetchedQuestions.slice(0, this.value);
   populateExams();
 }
+
+function test(testvar){console.log("aaaaaaa");testvar()}
+
+function test2() {console.log("sefesfs")}
+
+test(test2)
