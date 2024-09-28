@@ -11,21 +11,14 @@
 
 <body>
   <div class="container">
-    <div id="exam-selection-container" class="absolute-top">
-      <div class="slider-container">
-        <label for="rangeSliderMin">Question min char length: <span id="sliderValueMin">50</span></label>
-        <input type="range" id="rangeSliderMin" step="50" min="0" max="1000" value="0">
-        <br>
-        <label for="rangeSliderMax">Question max char length: <span id="sliderValueMax">50</span></label>
-        <input type="range" id="rangeSliderMax" step="50" min="50" max="1000" value="200">
-        <br>
-        <label for="maxAmount">Max amount of questions: <span id="sliderValueMaxAmount">50</span></label>
-        <input type="range" id="maxAmount" step="1" min="1" max="500" value="200">
-      </div>
-      <label for="exam-selection">Choose an exam:</label>
+    <div id="exam-selection-container" class="absolute-top"><label for="exam-selection">Choose an exam:</label>
       <select id="exam-selection">
         <option value="" disabled selected>Select an exam</option>
       </select>
+      <div class="slider-container">
+        <label for="maxAmount">Max amount of questions: <span id="sliderValueMaxAmount">50</span></label>
+        <input type="range" id="maxAmount" step="1" min="1" max="500" value="200">
+      </div>
     </div>
 
     <div id="quiz-container" style="display:none;">
@@ -42,11 +35,11 @@
       <h2>Good Job! 🎉</h2>
     </div>
     <div class="tooltip hidden">
-  test
-  <span class="tooltip-text">
-    included
-  </span>
-</div>
+      test
+      <span class="tooltip-text">
+        included
+      </span>
+    </div>
   </div>
   <script src="scripts.js"></script>
 </body>

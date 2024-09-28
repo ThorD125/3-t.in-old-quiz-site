@@ -29,29 +29,34 @@ function loadExam(examFile) {
   fetch(examFile)
     .then(response => response.json())
     .then(data => {
-resetAnimations();
+      resetAnimations();
       fetchedQuestions = data;
-      questions = fetchedQuestions.filter(x => x.question.length < sliderMax.value);
+      loadQuestions();
 
       populateExams();
     })
     .catch(error => console.error('Error loading exam:', error));
 }
 
-function resetAnimations(){
-        quizContainer.style.display = '';
-      header.style.display = '';
-      questionText.style.display = '';
-      answerButtonContainer.style.display = '';
-      nextBtn.style.display = '';
-      questionCounter.style.display = '';
-      goodJobAnimation.style.display = 'none';
+let amountOfQuestions = 200;
+
+function loadQuestions() {
+  questions = shuffleArray(fetchedQuestions).slice(0, amountOfQuestions);
+}
+
+function resetAnimations() {
+  quizContainer.style.display = '';
+  header.style.display = '';
+  questionText.style.display = '';
+  answerButtonContainer.style.display = '';
+  nextBtn.style.display = '';
+  questionCounter.style.display = '';
+  goodJobAnimation.style.display = 'none';
 }
 
 function populateExams() {
   resetAnimations();
   hideGoodJobAnimation();
-  shuffleArray(questions);
   updateQuestionCounter();
   setNextQuestion();
   randomizeButtons()
@@ -64,12 +69,12 @@ function visualLoadCounters() {
 }
 
 function setNextQuestion() {
-  if(answer_correct){
-  delete questions[currentQuestionIndex];
-  questions = questions.filter(x => x != 'empty');
+  if (answer_correct) {
+    delete questions[currentQuestionIndex];
+    questions = questions.filter(x => x != 'empty');
   }
   visualLoadCounters();
-  
+
   if (questions.length == 0) {
     showGoodJobAnimation();
     return;
@@ -128,11 +133,11 @@ function selectAnswer(e) {
 
       questions.push(currentQuestion);
     }
-    
+
     if (bestStreak < correctstreak) {
-        bestStreak = correctstreak;
-      }
-    
+      bestStreak = correctstreak;
+    }
+
     answerButtonContainer.querySelectorAll("button").forEach(button => {
       if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
         button.classList.add('correct');
@@ -180,6 +185,7 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
+  return array
 }
 
 function updateQuestionCounter() {
@@ -187,7 +193,7 @@ function updateQuestionCounter() {
   uniqueCount = countUnique(questions);
 }
 
-function hideGoodJobAnimation() { 
+function hideGoodJobAnimation() {
   goodJobAnimation.style.display = 'none';
   goodJobAnimation.classList.add('hidden');
 }
@@ -275,57 +281,11 @@ explain.addEventListener("click", ex => {
   copyToClipboard(text);
 })
 
-function fixSliders(slider, output) {
-  output.innerHTML = slider.value;
-
-  slider.oninput = function () {
-    output.innerHTML = this.value;
-    populateExams();
-  }
-}
-
-
-const sliderMax = document.getElementById("rangeSliderMax");
-const outputMax = document.getElementById("sliderValueMax");
-fixSliders(sliderMax, outputMax);
-sliderMax.oninput = function () {
- if (sliderMin.value >= sliderMax - sliderMin.step) {
-      sliderMax.value = sliderMin.value + sliderMin.step;
-      outputMax.innerHTML = sliderMax.value;
-      console.log("testslidmax");
-    }
-  questions = fetchedQuestions.filter(x => {
-      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
-    });
-}
-
-
-
-const sliderMin = document.getElementById("rangeSliderMin");
-const outputMin = document.getElementById("sliderValueMin");
-fixSliders(sliderMin, outputMin);
-sliderMin.oninput = function () {
-    if (sliderMin.value + sliderMax.step >= sliderMax.value) {
-      sliderMin.value = sliderMax.value - sliderMax.step;
-      outputMin.innerHTML = sliderMin.value;
-      console.log("testslidmin");
-    }
-  questions = fetchedQuestions.filter(x => {
-      return sliderMin.value < x.question.length && x.question.length < sliderMax.value;
-    });
-  }
-
 const sliderAmount = document.getElementById("maxAmount");
 const outputMaxAmount = document.getElementById("sliderValueMaxAmount");
-fixSliders(sliderAmount, outputMaxAmount);
-
 sliderAmount.oninput = function () {
-  questions = fetchedQuestions.slice(0, this.value);
+  outputMaxAmount.innerHTML = sliderAmount.value;
+  amountOfQuestions = sliderAmount.value;
+  loadQuestions();
   populateExams();
 }
-
-function test(testvar){console.log("aaaaaaa");testvar()}
-
-function test2() {console.log("sefesfs")}
-
-test(test2)
