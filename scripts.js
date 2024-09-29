@@ -289,3 +289,6 @@ sliderAmount.oninput = function () {
   loadQuestions();
   populateExams();
 }
+
+outputMaxAmount.innerHTML = sliderAmount.value;
+amountOfQuestions = sliderAmount.value;
