@@ -22,23 +22,81 @@
     </div>
 
     <div id="quiz-container" style="display:none;">
-      <h1>Quiz<button id="explain">Explain</button></h1>
-      <div class="correctDiv">w0</div>
+      <h1>Quiz
+        <div class="tooltip">
+          <div class="text">
+            <button id="explain">Explain</button>
+          </div>
+          <span class="tooltip-text normalText">
+            Click to copy question and paste it into chatgpt
+          </span>
+        </div>
+
+        <div class="correctDiv">
+          <div class="tooltip correctStreak">
+            <div class="text">
+              cs0
+            </div>
+            <span class="tooltip-text">
+              correct streak
+            </span>
+          </div>
+          -
+          <div class="tooltip mostCorrectStreak">
+            <div class="text">
+              cs0
+            </div>
+            <span class="tooltip-text">
+              most correct streak
+            </span>
+          </div>
+        </div>
+      </h1>
+
       <p id="question-text"></p>
       <div id="answer-buttons" class="btn-container"></div>
-      <p id="feedback"></p>
-      <p id="question-counter"></p>
+
+      <div id="question-counter">
+        <div>
+          Total questions left:
+          <span class="total"></span>
+          <div class="tooltip">
+            <div class="text">
+              t
+            </div>
+            <span class="tooltip-text">
+              Total questions
+            </span>
+          </div>
+        </div>
+        <div>
+          <span class="unique"></span>
+          <div class="tooltip">
+            <div class="text">
+              u
+            </div>
+            <span class="tooltip-text">
+              Unique questions
+            </span>
+          </div>
+        </div>
+        <div>
+          <span class="dupe"></span>
+          <div class="tooltip">
+            <div class="text">
+              d
+            </div>
+            <span class="tooltip-text">
+              Duplicate questions
+            </span>
+          </div>
+        </div>
+      </div>
       <button id="next-btn" class="next-btn">Next Question</button>
     </div>
 
     <div id="good-job-animation" class="hidden">
       <h2>Good Job! 🎉</h2>
-    </div>
-    <div class="tooltip hidden">
-      test
-      <span class="tooltip-text">
-        included
-      </span>
     </div>
   </div>
   <script src="scripts.js"></script>

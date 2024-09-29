@@ -64,8 +64,11 @@ function populateExams() {
 }
 
 function visualLoadCounters() {
-  document.querySelector(".correctDiv").textContent = `correct streak${correctstreak}- most correct streak${bestStreak}`;
-  questionCounter.textContent = `Total questions left: ${remainingQuestions} (${uniqueCount.unique + uniqueCount.dupes}unique questions)`;
+  document.querySelector(".correctDiv .correctStreak .text").textContent = `cs${correctstreak}`;
+  document.querySelector(".correctDiv .mostCorrectStreak .text").textContent = `mcs${bestStreak}`;
+  questionCounter.querySelector(".total").textContent = `${remainingQuestions}`;
+  questionCounter.querySelector(".unique").textContent = `${uniqueCount.unique}`;
+  questionCounter.querySelector(".dupe").textContent = `${uniqueCount.dupes}`;
 }
 
 function setNextQuestion() {

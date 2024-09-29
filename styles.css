@@ -26,8 +26,8 @@ h1 {
 .absolute-top {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    /* transform: translateX(-50%); */
     background-color: #222;
     padding: 10px 20px;
     border-radius: 5px;
@@ -184,17 +184,33 @@ input[type="range"] {
 }
 
 
+#question-counter {
+    margin: 1em;
+}
+
+#question-counter>div,
+#question-counter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.correctDiv {
+    display: flex;
+    justify-content: space-around;
+    font-size: medium;
+}
+
+.normalText {
+    font-size: medium;
+}
 
 
-
-.tooltip{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.tooltip {
+    position: relative;
     cursor: pointer;
 }
-.tooltip-text{
+
+.tooltip-text {
     visibility: hidden;
     position: absolute;
     width: clamp(100px, 100%, 250px);
@@ -208,7 +224,8 @@ input[type="range"] {
     /* animation */
     opacity: 0;
 }
-.tooltip:hover .tooltip-text{
+
+.tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
 }
