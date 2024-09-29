@@ -64,6 +64,8 @@ function populateExams() {
 }
 
 function visualLoadCounters() {
+  updateQuestionCounter();
+
   document.querySelector(".correctDiv .correctStreak .text").textContent = `cs${correctstreak}`;
   document.querySelector(".correctDiv .mostCorrectStreak .text").textContent = `mcs${bestStreak}`;
   questionCounter.querySelector(".total").textContent = `${remainingQuestions}`;
@@ -82,6 +84,7 @@ function setNextQuestion() {
     showGoodJobAnimation();
     return;
   }
+
   currentQuestionIndex = Math.floor(Math.random() * questions.length);
   const question = questions[currentQuestionIndex];
 
