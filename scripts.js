@@ -140,7 +140,8 @@ function selectAnswer(e) {
       correctstreak = 0;
 
       if (hardModus) {
-  questions = tempQuestions; 
+        
+  questions = shuffleArray(tempQuestions); 
       } else {
 
       questions.push(currentQuestion);
