@@ -82,7 +82,7 @@ function visualLoadCounters() {
 function setNextQuestion() {
   if (answer_correct) {
     delete questions[currentQuestionIndex];
-    questions = questions.filter(x => x != 'empty');
+    questions = questions.filter(x => x != 'empty').filter(x => x != undefined);
   }
   visualLoadCounters();
 
