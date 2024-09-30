@@ -12,7 +12,7 @@ function populateExamDropdown(exams) {
 function countUnique(arr) {
   const countMap = new Map();
   arr.forEach(obj => {
-    console.log(obj);
+    // console.log(obj);
     countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
   });
 
