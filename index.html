@@ -16,7 +16,17 @@
         <option value="" disabled selected>Select an exam</option>
       </select>
       <div class="slider-container">
-        <label for="maxAmount">Max amount of questions: <span id="sliderValueMaxAmount">50</span></label>
+        
+        <label for="maxAmount">
+          <div class="tooltip">
+          <div class="text">
+            Max Q:
+          </div>
+          <span class="tooltip-text normalText">
+            Max amount of questions.
+          </span>
+        </div>
+          <span id="sliderValueMaxAmount">50</span></label>
         <input type="range" id="maxAmount" step="1" min="1" max="500" value="200">
       </div>
       <div class="slider-container">
