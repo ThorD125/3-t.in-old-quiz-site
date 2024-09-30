@@ -71,7 +71,7 @@ function visualLoadCounters() {
 
   document.querySelector(".correctDiv .correctStreak .text").textContent = `cs${correctstreak}`;
   document.querySelector(".correctDiv .mostCorrectStreak .text").textContent = `mcs${bestStreak}`;
-  questionCounter.querySelector(".total").textContent = `${remainingQuestions}`;
+  questionCounter.querySelector(".total").textContent = `${questions.length}`;
   questionCounter.querySelector(".unique").textContent = `${uniqueCount.unique}`;
   questionCounter.querySelector(".dupe").textContent = `${uniqueCount.dupes}`;
 }
@@ -202,7 +202,6 @@ function shuffleArray(array) {
 }
 
 function updateQuestionCounter() {
-  remainingQuestions = questions.length;
   uniqueCount = countUnique(questions);
 }
 
@@ -241,7 +240,6 @@ function randomizeButtons() {
 let bestStreak = 0;
 let correctstreak = 0;
 let uniqueCount = 0;
-let remainingQuestions = 0;
 let fetchedQuestions = [];
 let questions = [];
 let currentQuestionIndex = 0;
