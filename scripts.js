@@ -47,7 +47,7 @@ let tempQuestions = "";
 
 function loadQuestions() {
   tempQuestions = shuffleArray(fetchedQuestions).filter(x => x != 'empty').filter(x => x != undefined).slice(0, amountOfQuestions);
-  questions = tempQuestions; 
+  questions = tempQuestions.filter(x => x != undefined); 
 }
 
 function resetAnimations() {
@@ -144,7 +144,7 @@ function selectAnswer(e) {
 
       if (hardModus) {
         
-  questions = shuffleArray(tempQuestions);
+  questions = shuffleArray(tempQuestions).filter(x => x != undefined);
       } else {
 
       questions.push(currentQuestion);
@@ -202,7 +202,7 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
-  return array;
+  return array.filter(x => x != undefined);
 }
 
 function updateQuestionCounter() {
