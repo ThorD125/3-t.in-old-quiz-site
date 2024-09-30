@@ -229,3 +229,8 @@ input[type="range"] {
     visibility: visible;
     opacity: 1;
 }
+
+
+.slider-container .text {
+    width: max-content;
+}
