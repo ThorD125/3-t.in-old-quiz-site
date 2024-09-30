@@ -40,8 +40,11 @@ function loadExam(examFile) {
 
 let amountOfQuestions = 200;
 
+let tempQuestions = "";
+
 function loadQuestions() {
-  questions = shuffleArray(fetchedQuestions).slice(0, amountOfQuestions);
+  tempQuestions = shuffleArray(fetchedQuestions).slice(0, amountOfQuestions);
+  questions = tempQuestions; 
 }
 
 function resetAnimations() {
@@ -136,8 +139,12 @@ function selectAnswer(e) {
 
       correctstreak = 0;
 
+      if (hardModus) {
+  questions = tempQuestions; 
+      } else {
 
       questions.push(currentQuestion);
+    }
     }
 
     if (bestStreak < correctstreak) {
