@@ -11,7 +11,9 @@ function populateExamDropdown(exams) {
 
 function countUnique(arr) {
   const countMap = new Map();
-  arr.forEach(obj => {
+  arr
+    .filter(x => x != undefined)
+    .forEach(obj => {
     // console.log(obj);
     countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
   });
@@ -44,7 +46,7 @@ let amountOfQuestions = 200;
 let tempQuestions = "";
 
 function loadQuestions() {
-  tempQuestions = shuffleArray(fetchedQuestions).filter(x => x != 'empty').slice(0, amountOfQuestions);
+  tempQuestions = shuffleArray(fetchedQuestions).filter(x => x != 'empty').filter(x => x != undefined).slice(0, amountOfQuestions);
   questions = tempQuestions; 
 }
 
