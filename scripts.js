@@ -298,3 +298,17 @@ sliderAmount.oninput = function () {
 
 outputMaxAmount.innerHTML = sliderAmount.value;
 amountOfQuestions = sliderAmount.value;
+
+const hardMode = document.getElementById("hardMode");
+let hardModus = false;
+hardMode.onclick = function () {
+  hardModus = hardMode.checked;
+}
+
+
+
+
+
+
+
+
