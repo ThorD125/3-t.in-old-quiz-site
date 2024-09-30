@@ -43,7 +43,7 @@ let amountOfQuestions = 200;
 let tempQuestions = "";
 
 function loadQuestions() {
-  tempQuestions = shuffleArray(fetchedQuestions).slice(0, amountOfQuestions);
+  tempQuestions = shuffleArray(fetchedQuestions).filter(x => x != 'empty').slice(0, amountOfQuestions);
   questions = tempQuestions; 
 }
 
