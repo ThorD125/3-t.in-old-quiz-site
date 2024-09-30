@@ -141,7 +141,7 @@ function selectAnswer(e) {
 
       if (hardModus) {
         
-  questions = shuffleArray(tempQuestions); 
+  questions = shuffleArray(tempQuestions);
       } else {
 
       questions.push(currentQuestion);
@@ -199,7 +199,7 @@ function shuffleArray(array) {
     const j = Math.floor(Math.random() * (i + 1));
     [array[i], array[j]] = [array[j], array[i]];
   }
-  return array
+  return array;
 }
 
 function updateQuestionCounter() {
