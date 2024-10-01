@@ -1,13 +1,13 @@
 [
     {
-        "question": "1. A company plans to migrate to Microsoft 365.\nYou need to advise the company about how Microsoft provides protection in a multitenancy environment.\nWhat are three ways that Microsoft provides protection? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point.",
+        "question": "1. A company plans to migrate to Microsoft 365.\nYou need to advise the company about how Microsoft provides protection in a multitenancy environment.\nWhat are three ways that Microsoft provides protection? Each correct answer presents part of the solution.",
         "options": {
-            "0": "Customer content at rest is encrypted on the server by using BitLocker.correct",
-            "1": "Microsoft Azure AD provides authorization and role based access control at the tenant layer.correct",
+            "0": "Customer content at rest is encrypted on the server by using BitLocker.",
+            "1": "Microsoft Azure AD provides authorization and role based access control at the tenant layer.",
             "2": "Customer content at rest is encrypted on the server by using transport layer security (TLS).",
             "3": "Microsoft Azure AD provides authorization and role based access control at the transport layer.",
             "4": "Mailbox databases in Microsoft Exchange Online contain only mailboxes from a single tenant.",
-            "5": "Mailbox databases in Microsoft Exchange Online contain mailboxes from multiple tenants.correct"
+            "5": "Mailbox databases in Microsoft Exchange Online contain mailboxes from multiple tenants."
         },
         "answer": [
             0,
@@ -21,7 +21,7 @@
             "0": "Data Governance page of the Security and Compliance portal.",
             "1": "Compliance Manager page of the Services Trust portal",
             "2": "Data Loss Prevention page of the Security and Compliance portal",
-            "3": "Regional Compliance page of the Services Trust portalcorrect"
+            "3": "Regional Compliance page of the Services Trust portal"
         },
         "answer": [
             3
@@ -31,7 +31,7 @@
         "question": "9. Your organization plans to deploy Microsoft 365 in a hybrid scenario.\nYou need to ensure that employees can use a smart card for authentication.\nWhich hybrid identity solution should you implement?",
         "options": {
             "0": "password hash synchronization with single sign on",
-            "1": "Active Directory federation Services (AD FS)correct",
+            "1": "Active Directory federation Services (AD FS)",
             "2": "Ping federate and federation integration",
             "3": "pass-through authentication and single sign-on"
         },
@@ -42,7 +42,7 @@
     {
         "question": "12. You are the Microsoft 365 administrator for a company.\nAn employee requests personal data under General Data Protection Regulation (GDPR) guidelines.\nYou need to retrieve data for the employee.\nWhat should you do?",
         "options": {
-            "0": "Create a data subject request case.correct",
+            "0": "Create a data subject request case.",
             "1": "Create a retention policy.",
             "2": "Create a data-loss prevention policy.",
             "3": "Create a GDPR assessment"
@@ -52,11 +52,11 @@
         ]
     },
     {
-        "question": "18. You are the Microsoft 365 administrator for a company.\nUsers in the IT department must receive new Office 365 preview features before the features are deployed to other users in the company.\nYou need to ensure only the users in the IT department receive preview features.\nWhich two actions should you perform? Each correct answer represents part of the solution. NOTE: Each correct selection is worth one point. (Choose two.)",
+        "question": "18. You are the Microsoft 365 administrator for a company.\nUsers in the IT department must receive new Office 365 preview features before the features are deployed to other users in the company.\nYou need to ensure only the users in the IT department receive preview features.\nWhich two actions should you perform? Each correct answer represents part of the solution. (Choose two.)",
         "options": {
-            "0": "Instruct users to navigate to http://insider.office.com and sign up for Office Insider.correct",
+            "0": "Instruct users to navigate to http://insider.office.com and sign up for Office Insider.",
             "1": "Instruct users to update Office ProPlus.",
-            "2": "In the organizational profile, set the update preference to Targeted release for selected users.correct",
+            "2": "In the organizational profile, set the update preference to Targeted release for selected users.",
             "3": "Instruct users to uninstall Office ProPlus and then reinstall the software.",
             "4": "In the organizational profile, set the update preference to Standard release."
         },
@@ -71,19 +71,19 @@
             "0": "Buy licenses for customers by using the Microsoft admin portal",
             "1": "Sign up as a Cloud Solution Provider direct reseller.",
             "2": "Sign up as a Cloud Solution Provider indirect reseller.",
-            "3": "Buy licenses for customers from a Microsoft authorized distributor.correct"
+            "3": "Buy licenses for customers from a Microsoft authorized distributor."
         },
         "answer": [
             3
         ]
     },
     {
-        "question": "20. A company that has 50 employees plans to purchase a Microsoft 365 Business subscription.\nWhich two payment methods are available? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "20. A company that has 50 employees plans to purchase a Microsoft 365 Business subscription.\nWhich two payment methods are available? Each correct answer presents a complete solution.",
         "options": {
-            "0": "PayPalcorrect",
-            "1": "automatic bank transfercorrect",
+            "0": "PayPal",
+            "1": "automatic bank transfer",
             "2": "Enterprise Agreement",
-            "3": "credit card or debit cardcorrect"
+            "3": "credit card or debit card"
         },
         "answer": [
             0,
@@ -94,7 +94,7 @@
     {
         "question": "21. A company has 250 employees.\nYou need to migrate all users to Microsoft 365 and meet the following requirements:\n✑ Provide a user-centric licensing solution for all users.\n✑ Manage devices from a single location.\n✑ Minimize licensing costs.\nWhich licensing model should you use?",
         "options": {
-            "0": "Microsoft 365 Businesscorrect",
+            "0": "Microsoft 365 Business",
             "1": "Microsoft 365 Education",
             "2": "Microsoft 365 Enterprise E3",
             "3": "Microsoft 365 Enterprise E5"
@@ -104,11 +104,11 @@
         ]
     },
     {
-        "question": "22. You are the Microsoft 365 administrator for a company.\nA user experiences an issue with SharePoint Online.\nYou need to resolve the issue.\nWhich two options can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "22. You are the Microsoft 365 administrator for a company.\nA user experiences an issue with SharePoint Online.\nYou need to resolve the issue.\nWhich two options can you use? Each correct answer presents a complete solution.",
         "options": {
-            "0": "Go to the SharePoint admin center and create a support request.correct",
-            "1": "Contact Microsoft technical support by telephone.correct",
-            "2": "Create a new service request from the Microsoft 365 admin center.correct",
+            "0": "Go to the SharePoint admin center and create a support request.",
+            "1": "Contact Microsoft technical support by telephone.",
+            "2": "Create a new service request from the Microsoft 365 admin center.",
             "3": "Create a service request from the SharePoint portal."
         },
         "answer": [
@@ -123,7 +123,7 @@
             "0": "Microsoft release",
             "1": "Standard release",
             "2": "Office 36S team release",
-            "3": "Targeted releasecorrect"
+            "3": "Targeted release"
         },
         "answer": [
             3
@@ -132,7 +132,7 @@
     {
         "question": "26. You are the Microsoft 365 administrator for a company.\nYour company wants lo team more about what happens if the availability the Microsoft Office 365 services are not met.\nWhere can you find this information?",
         "options": {
-            "0": "Service Level agreementcorrect",
+            "0": "Service Level agreement",
             "1": "Microsoft Services agreement",
             "2": "Microsoft Cloud agreement",
             "3": "Microsoft Products and Services agreement",
@@ -145,7 +145,7 @@
     {
         "question": "29. You are the Microsoft 365 administrator for a company.\nYou install Microsoft Office 365 ProPlus on five devices. You deactivate one device.\nWhich task can you perform on the deactivated device?",
         "options": {
-            "0": "Print a document.correct",
+            "0": "Print a document.",
             "1": "Leave a comment in a document.",
             "2": "Start a new document from a template.",
             "3": "Set properties on a document."
@@ -158,7 +158,7 @@
         "question": "32. This question requires that you evaluate the bold text to determine if it is correct.\nA company needs to protect documents and emails by automatically applying classifications and labels. You must minimize costs. You should implement Microsoft Azure Information Protection for Microsoft Office 365.\nReview the underlined text If it makes the statement correct select No change is needed. If the statement is incorrect, select the answer choice that makes the statement correct.",
         "options": {
             "0": "No change needed.",
-            "1": "Azure Information Protection Premium P2correct",
+            "1": "Azure Information Protection Premium P2",
             "2": "Azure Information Protection Premium PI",
             "3": "Microsoft 365 E3"
         },
@@ -169,7 +169,7 @@
     {
         "question": "34. You use Microsoft 365 Usage Analytics.\nYou need to know the number of users who are active today and were also active last month.\nWinch metric should you use?",
         "options": {
-            "0": "MoMReturningUserscorrect",
+            "0": "MoMReturningUsers",
             "1": "EnabledUsers",
             "2": "ActiveUsers",
             "3": "CumulativeActiveUsers"
@@ -181,7 +181,7 @@
     {
         "question": "35. Your organization plans to deploy a subscription-based licensing model of Microsoft Office to devices. You must use group policy to enforce Office application settings.\nYou need to deploy Office to the enterprise.\nWhich version of Office should you deploy?",
         "options": {
-            "0": "Office 365 ProPluscorrect",
+            "0": "Office 365 ProPlus",
             "1": "Office Professional Plus 2016",
             "2": "Office Online",
             "3": "Office Home and Business 2016"
@@ -193,10 +193,10 @@
     {
         "question": "37. An organization plans to deploy Microsoft Office 2019 of Office 365 ProPlus.\nWhat are two advantages of Office 365 ProPlus? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point",
         "options": {
-            "0": "Features remain constant through the lifetime of the applications.correct",
+            "0": "Features remain constant through the lifetime of the applications.",
             "1": "Office 365 ProPlus includes downgrade rights.",
-            "2": "A single license may be deployed to multiple devices.correct",
-            "3": "Fully functional Office mobile apps are free to install and use.correct"
+            "2": "A single license may be deployed to multiple devices.",
+            "3": "Fully functional Office mobile apps are free to install and use."
         },
         "answer": [
             0,
@@ -211,7 +211,7 @@
             "1": "ProPlus",
             "2": "E1",
             "3": "Personal",
-            "4": "F1correct"
+            "4": "F1"
         },
         "answer": [
             4
@@ -220,9 +220,9 @@
     {
         "question": "44. You need to identify which Microsoft platforms provide hybrid capacities for migrating from an on premises deployment.\nWhich two platforms provide hybrid capabilities for migration? Each correct answer provides a complete solution. NOTE: Each correct selection & worth one point.",
         "options": {
-            "0": "Microsoft Skype for Businesscorrect",
+            "0": "Microsoft Skype for Business",
             "1": "Microsoft Yammer",
-            "2": "Microsoft Exchangecorrect",
+            "2": "Microsoft Exchange",
             "3": "Microsoft Teams"
         },
         "answer": [
@@ -233,7 +233,7 @@
     {
         "question": "45. A company is moving to Microsoft Azure. Some applications cannot be moved.\nYou need to identity which application will remain in a hybrid environment after the migration.\nWhich applications will remain in a hybrid environment?",
         "options": {
-            "0": "applications that manage sensitive informationcorrect",
+            "0": "applications that manage sensitive information",
             "1": "applications that use a USB token device to control access",
             "2": "legacy applications that use a message based interlace",
             "3": "a new server that runs several line-of business applications"
@@ -243,13 +243,13 @@
         ]
     },
     {
-        "question": "47. A company is purchasing a Microsoft 365 subscription to replace the current on premises IT infrastructure.\nYou need to identify the impacts of subscribing to Microsoft 365.\nWhich three outcomes can the company expect? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "47. A company is purchasing a Microsoft 365 subscription to replace the current on premises IT infrastructure.\nYou need to identify the impacts of subscribing to Microsoft 365.\nWhich three outcomes can the company expect? Each correct answer presents a complete solution.",
         "options": {
-            "0": "Predictable Microsoft licensing costscorrect",
+            "0": "Predictable Microsoft licensing costs",
             "1": "Increased Exchange Server Client Access license (CAL) costs",
             "2": "Increased Windows Server Client Access License (CAL) costs",
-            "3": "Increased service scalabilitycorrect",
-            "4": "Decreased on-premises infrastructure maintenancecorrect"
+            "3": "Increased service scalability",
+            "4": "Decreased on-premises infrastructure maintenance"
         },
         "answer": [
             0,
@@ -260,7 +260,7 @@
     {
         "question": "49. You are the Microsoft 365 administrator for a company.\nThe company runs SharePoint Server and Exchange Server in an on-premises datacenter. The site collection for the finance department is currently encrypted using third party software.\nYou need to move as many services to Microsoft 365 as possible.\nWhat should you do?",
         "options": {
-            "0": "Migrate all SharePoint data and Exchange mailboxes to Microsoft 365.correct",
+            "0": "Migrate all SharePoint data and Exchange mailboxes to Microsoft 365.",
             "1": "Leave SharePoint data for finance department users on-premises. Migrate all other SharePoint data and Exchange mailboxes to Microsoft 365.",
             "2": "Leave mailboxes for finance department users on-premises. Migrate all other SharePoint data and Exchange mailboxes to Microsoft 365.",
             "3": "Leave SharePoint data and mailboxes for finance department users on premises. Migrate al other SharePoint data and Exchange mailboxes to Microsoft 365."
@@ -274,7 +274,7 @@
         "options": {
             "0": "Platform as a service (PaaS)",
             "1": "Windows as a service (WaaS)",
-            "2": "Software as a service (SaaS)correct",
+            "2": "Software as a service (SaaS)",
             "3": "Infrastructure as a service (IAAS)"
         },
         "answer": [
@@ -282,13 +282,13 @@
         ]
     },
     {
-        "question": "54. A company assigns a Microsoft 365 license to each employee.\nYou need to install Microsoft Office 365 ProPlus on each employee device.\nWhich three methods can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "54. A company assigns a Microsoft 365 license to each employee.\nYou need to install Microsoft Office 365 ProPlus on each employee device.\nWhich three methods can you use? Each correct answer presents a complete solution.",
         "options": {
-            "0": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from a local distribution source.correct",
+            "0": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from a local distribution source.",
             "1": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from an Office Windows Installer (MSI) package.",
             "2": "Download the Office 365 ProPlus Windows Installer (MSI) package. Install Office 365 ProPlus from a local distribution source.",
-            "3": "Use the Office Deployment Tool (ODT) to download installation files to a local distribution source. Install Office 365 ProPlus by using the downloaded files.correct",
-            "4": "Enable users to download and install Office 365 ProPlus from the Office 365 portal.correct"
+            "3": "Use the Office Deployment Tool (ODT) to download installation files to a local distribution source. Install Office 365 ProPlus by using the downloaded files.",
+            "4": "Enable users to download and install Office 365 ProPlus from the Office 365 portal."
         },
         "answer": [
             0,
@@ -302,18 +302,18 @@
             "0": "No change needed.",
             "1": "the Everyone group is applied to all shares with full control",
             "2": "you must configure Active Directory Federation Services (AD FS)",
-            "3": "users can send sharing invitations for specific contentcorrect"
+            "3": "users can send sharing invitations for specific content"
         },
         "answer": [
             3
         ]
     },
     {
-        "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal? Each correct answer presents a part of a solution. NOTE: Each correct selection is worth one point.",
+        "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal? Each correct answer presents a part of a solution.",
         "options": {
-            "0": "Use the self-install option on the Office 365 dashboardcorrect",
+            "0": "Use the self-install option on the Office 365 dashboard",
             "1": "Download and install the Office ProPlus Windows Installer (MSI) package",
-            "2": "Enable auto-deployment of Office 365 apps for all devicescorrect",
+            "2": "Enable auto-deployment of Office 365 apps for all devices",
             "3": "Update the Windows AutoPilot deployment profile to include the Office 365 apps"
         },
         "answer": [
@@ -322,12 +322,12 @@
         ]
     },
     {
-        "question": "58. You are the Microsoft 365 administrator for a company.\nYou need to customize a usage report for Microsoft Yammer.\nWhich two tools can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "58. You are the Microsoft 365 administrator for a company.\nYou need to customize a usage report for Microsoft Yammer.\nWhich two tools can you use? Each correct answer presents a complete solution.",
         "options": {
-            "0": "Microsoft SQL Server Analysis Servicescorrect",
+            "0": "Microsoft SQL Server Analysis Services",
             "1": "Microsoft SQL Server Reporting Services",
-            "2": "Microsoft Power BI in a browsercorrect",
-            "3": "Microsoft Power BI Desktopcorrect",
+            "2": "Microsoft Power BI in a browser",
+            "3": "Microsoft Power BI Desktop",
             "4": "Microsoft Visual Studio"
         },
         "answer": [
@@ -342,20 +342,20 @@
             "0": "Microsoft Yammer",
             "1": "Microsoft Office Delve",
             "2": "Microsoft SharePoint Online",
-            "3": "Microsoft Teamscorrect"
+            "3": "Microsoft Teams"
         },
         "answer": [
             3
         ]
     },
     {
-        "question": "61. You need to reduce the amount of time that the IT team spends on user support.\nWhat are three possible ways to achieve this goal? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "61. You need to reduce the amount of time that the IT team spends on user support.\nWhat are three possible ways to achieve this goal? Each correct answer presents a complete solution.",
         "options": {
-            "0": "Enable Microsoft Office 365 Customer Lockboxcorrect",
+            "0": "Enable Microsoft Office 365 Customer Lockbox",
             "1": "Upgrade all client devices to Windows 10",
-            "2": "Use Windows AutoPilot to deploy devicescorrect",
+            "2": "Use Windows AutoPilot to deploy devices",
             "3": "Deploy Microsoft MyAnalytics to devices",
-            "4": "Deploy Microsoft Office 365 Professional Plus to all client devicescorrect"
+            "4": "Deploy Microsoft Office 365 Professional Plus to all client devices"
         },
         "answer": [
             0,
@@ -369,7 +369,7 @@
             "0": "Information Rights Management",
             "1": "Microsoft Azure Security Center",
             "2": "Office 365 Advanced Threat Protection",
-            "3": "Intune App Protectioncorrect"
+            "3": "Intune App Protection"
         },
         "answer": [
             3
@@ -381,7 +381,7 @@
             "0": "Device configuration",
             "1": "Device compliance",
             "2": "No change is needed",
-            "3": "Devicescorrect"
+            "3": "Devices"
         },
         "answer": [
             3
@@ -391,7 +391,7 @@
         "question": "64. You are the Microsoft 365 administrator for a company.You need to ensure that users receive a warning message if they select links in emails that might be unsafe.\nWhat should you do?",
         "options": {
             "0": "Use Windows PowerShell to install the latest antimalware engine updates",
-            "1": "Enable Microsoft Office 365 Advanced Threat Protectioncorrect",
+            "1": "Enable Microsoft Office 365 Advanced Threat Protection",
             "2": "Use the Microsoft Exchange Admin Center to configure a new spam-filter policy",
             "3": "Use the Microsoft Exchange Admin Center to create a new antimalware policy"
         },
@@ -400,12 +400,12 @@
         ]
     },
     {
-        "question": "65. You are a Microsoft 365 administrator for a company. Employees use Microsoft Office 365 ProPlus to create documents.\nYou need to implement document classification and protection by using Microsoft Azure Information Protection.\nWhich two actions should you perform? Each correct answer presents part of the solution. NOTE: Each correct selection is worth one point. NOTE: Each correct selection is worth one point.",
+        "question": "65. You are a Microsoft 365 administrator for a company. Employees use Microsoft Office 365 ProPlus to create documents.\nYou need to implement document classification and protection by using Microsoft Azure Information Protection.\nWhich two actions should you perform? Each correct answer presents part of the solution.",
         "options": {
-            "0": "Add an Azure subscription to your Microsoft 365 tenantcorrect",
+            "0": "Add an Azure subscription to your Microsoft 365 tenant",
             "1": "Install the Azure Information Protection client",
             "2": "Create a custom Azure Information Protection policy with the Confidential label",
-            "3": "Enable the default Azure Information Protection policycorrect",
+            "3": "Enable the default Azure Information Protection policy",
             "4": "Install the Rights Management Service client"
         },
         "answer": [
@@ -417,7 +417,7 @@
         "question": "66. A company deploys Microsoft Azure AD. You enable multi-factor authentication.\nYou need to inform users about the multi-factor authentication methods that they can use.\nWhich of the following methods is NOT a valid multi-factor authentication method in Microsoft 365?",
         "options": {
             "0": "Receive an automated call on the desk phone that includes a verification code",
-            "1": "Insert a small card in to a desktop computer and provide a PIN code when promptedcorrect",
+            "1": "Insert a small card in to a desktop computer and provide a PIN code when prompted",
             "2": "Receive a call on a mobile phone and select the pound sign (#) when prompted",
             "3": "Receive an SMS text message that includes a verification code"
         },
@@ -431,7 +431,7 @@
             "0": "Microsoft Exchange Admin Center block lists",
             "1": "Sender Policy Framework",
             "2": "Advanced Threat Protection anti-phishing",
-            "3": "zero-hour auto purgecorrect",
+            "3": "zero-hour auto purge",
             "4": "DKIM signed messages with mail flow rules"
         },
         "answer": [
@@ -443,7 +443,7 @@
         "options": {
             "0": "device compliance",
             "1": "device configuration",
-            "2": "app protectioncorrect",
+            "2": "app protection",
             "3": "app configuration"
         },
         "answer": [
@@ -454,7 +454,7 @@
         "question": "73. A company deploys Exchange Online and SharePoint Online.\nYou must audit and assessment report for the Microsoft 365 cloud services that the company uses.\nYou need to provide the required documents.\nWhich Microsoft site should you use to obtain this information?",
         "options": {
             "0": "Compliance Manager",
-            "1": "Service Trust Portalcorrect",
+            "1": "Service Trust Portal",
             "2": "Office 365 Security and Compliance Center",
             "3": "Azure portal"
         },
@@ -463,12 +463,12 @@
         ]
     },
     {
-        "question": "76. You are the Microsoft 365 administrator for a company.\nWhich two admin roles can purchase more licenses? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "76. You are the Microsoft 365 administrator for a company.\nWhich two admin roles can purchase more licenses? Each correct answer presents a complete solution.",
         "options": {
-            "0": "service administratorcorrect",
+            "0": "service administrator",
             "1": "user management administrator",
-            "2": "global administratorcorrect",
-            "3": "billing administratorcorrect"
+            "2": "global administrator",
+            "3": "billing administrator"
         },
         "answer": [
             0,
@@ -477,12 +477,12 @@
         ]
     },
     {
-        "question": "77. A company plans to purchase Microsoft 365 Enterprise licenses.\nWhich two options can you use? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point.",
+        "question": "77. A company plans to purchase Microsoft 365 Enterprise licenses.\nWhich two options can you use? Each correct answer presents a complete solution.",
         "options": {
-            "0": "through a Cloud Solution Provider (CSP)correct",
+            "0": "through a Cloud Solution Provider (CSP)",
             "1": "from the Microsoft website using a corporate credit card",
             "2": "from the Microsoft retail store",
-            "3": "with an Enterprise Agreement (EA) subscription from Microsoftcorrect"
+            "3": "with an Enterprise Agreement (EA) subscription from Microsoft"
         },
         "answer": [
             0,
@@ -495,7 +495,7 @@
             "0": "Your password is expired",
             "1": "Your account is disabled",
             "2": "Your company does not have Premier support",
-            "3": "Your account is not a member of the global admin rolecorrect"
+            "3": "Your account is not a member of the global admin role"
         },
         "answer": [
             3
@@ -506,7 +506,7 @@
         "options": {
             "0": "Message Center",
             "1": "incident closure summary",
-            "2": "Post-Incident Review (PIR)correct",
+            "2": "Post-Incident Review (PIR)",
             "3": "service request"
         },
         "answer": [
