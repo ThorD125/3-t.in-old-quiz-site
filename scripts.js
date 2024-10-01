@@ -142,21 +142,21 @@ function selectAnswer(e) {
 
       correctstreak = 0;
 
-      if (hardModus) {
-        
-  questions = shuffleArray(tempQuestions).filter(x => x != undefined);
+      if (hardModus) {  
+        questions = shuffleArray(tempQuestions).filter(x => x != undefined);
       } else {
-
-      questions.push(currentQuestion);
-    }
+        questions.push(currentQuestion);
+      }
     }
 
     if (bestStreak < correctstreak) {
       bestStreak = correctstreak;
     }
 
+    const stringAnswers = currentQuestion.answer.map(num => num.toString());
+
     answerButtonContainer.querySelectorAll("button").forEach(button => {
-      if (currentQuestion.answer.includes(button.getAttribute('data-option'))) {
+      if (stringAnswers.includes(button.getAttribute('data-option').toString())) {
         button.classList.add('correct');
       } else {
         button.classList.add('wrong');
