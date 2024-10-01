@@ -1,6 +1,6 @@
 [
     {
-        "question": "1. A company plans to migrate to Microsoft 365.\nYou need to advise the company about how Microsoft provides protection in a multitenancy environment.\nWhat are three ways that Microsoft provides protection? Each correct answer presents part of the solution.",
+        "question": "1. A company plans to migrate to Microsoft 365.\nYou need to advise the company about how Microsoft provides protection in a multitenancy environment.\nWhat are three ways that Microsoft provides protection?",
         "options": {
             "0": "Customer content at rest is encrypted on the server by using BitLocker.",
             "1": "Microsoft Azure AD provides authorization and role based access control at the tenant layer.",
@@ -52,7 +52,7 @@
         ]
     },
     {
-        "question": "18. You are the Microsoft 365 administrator for a company.\nUsers in the IT department must receive new Office 365 preview features before the features are deployed to other users in the company.\nYou need to ensure only the users in the IT department receive preview features.\nWhich two actions should you perform? Each correct answer represents part of the solution. (Choose two.)",
+        "question": "18. You are the Microsoft 365 administrator for a company.\nUsers in the IT department must receive new Office 365 preview features before the features are deployed to other users in the company.\nYou need to ensure only the users in the IT department receive preview features.\nWhich two actions should you perform?",
         "options": {
             "0": "Instruct users to navigate to http://insider.office.com and sign up for Office Insider.",
             "1": "Instruct users to update Office ProPlus.",
@@ -78,7 +78,7 @@
         ]
     },
     {
-        "question": "20. A company that has 50 employees plans to purchase a Microsoft 365 Business subscription.\nWhich two payment methods are available? Each correct answer presents a complete solution.",
+        "question": "20. A company that has 50 employees plans to purchase a Microsoft 365 Business subscription.\nWhich two payment methods are available?",
         "options": {
             "0": "PayPal",
             "1": "automatic bank transfer",
@@ -86,7 +86,6 @@
             "3": "credit card or debit card"
         },
         "answer": [
-            0,
             1,
             3
         ]
@@ -104,7 +103,7 @@
         ]
     },
     {
-        "question": "22. You are the Microsoft 365 administrator for a company.\nA user experiences an issue with SharePoint Online.\nYou need to resolve the issue.\nWhich two options can you use? Each correct answer presents a complete solution.",
+        "question": "22. You are the Microsoft 365 administrator for a company.\nA user experiences an issue with SharePoint Online.\nYou need to resolve the issue.\nWhich two options can you use?",
         "options": {
             "0": "Go to the SharePoint admin center and create a support request.",
             "1": "Contact Microsoft technical support by telephone.",
@@ -112,7 +111,6 @@
             "3": "Create a service request from the SharePoint portal."
         },
         "answer": [
-            0,
             1,
             2
         ]
@@ -191,7 +189,7 @@
         ]
     },
     {
-        "question": "37. An organization plans to deploy Microsoft Office 2019 of Office 365 ProPlus.\nWhat are two advantages of Office 365 ProPlus? Each correct answer presents a complete solution. NOTE: Each correct selection is worth one point",
+        "question": "37. An organization plans to deploy Microsoft Office 2019 of Office 365 ProPlus.\nWhat are two advantages of Office 365 ProPlus?",
         "options": {
             "0": "Features remain constant through the lifetime of the applications.",
             "1": "Office 365 ProPlus includes downgrade rights.",
@@ -199,7 +197,6 @@
             "3": "Fully functional Office mobile apps are free to install and use."
         },
         "answer": [
-            0,
             2,
             3
         ]
@@ -218,7 +215,7 @@
         ]
     },
     {
-        "question": "44. You need to identify which Microsoft platforms provide hybrid capacities for migrating from an on premises deployment.\nWhich two platforms provide hybrid capabilities for migration? Each correct answer provides a complete solution. NOTE: Each correct selection & worth one point.",
+        "question": "44. You need to identify which Microsoft platforms provide hybrid capacities for migrating from an on premises deployment.\nWhich two platforms provide hybrid capabilities for migration?",
         "options": {
             "0": "Microsoft Skype for Business",
             "1": "Microsoft Yammer",
@@ -243,7 +240,7 @@
         ]
     },
     {
-        "question": "47. A company is purchasing a Microsoft 365 subscription to replace the current on premises IT infrastructure.\nYou need to identify the impacts of subscribing to Microsoft 365.\nWhich three outcomes can the company expect? Each correct answer presents a complete solution.",
+        "question": "47. A company is purchasing a Microsoft 365 subscription to replace the current on premises IT infrastructure.\nYou need to identify the impacts of subscribing to Microsoft 365.\nWhich three outcomes can the company expect?",
         "options": {
             "0": "Predictable Microsoft licensing costs",
             "1": "Increased Exchange Server Client Access license (CAL) costs",
@@ -282,7 +279,7 @@
         ]
     },
     {
-        "question": "54. A company assigns a Microsoft 365 license to each employee.\nYou need to install Microsoft Office 365 ProPlus on each employee device.\nWhich three methods can you use? Each correct answer presents a complete solution.",
+        "question": "54. A company assigns a Microsoft 365 license to each employee.\nYou need to install Microsoft Office 365 ProPlus on each employee device.\nWhich three methods can you use?",
         "options": {
             "0": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from a local distribution source.",
             "1": "Use System Center Configuration Manager (SCCM) to deploy Office 365 ProPlus from an Office Windows Installer (MSI) package.",
@@ -309,7 +306,7 @@
         ]
     },
     {
-        "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal? Each correct answer presents a part of a solution.",
+        "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal?",
         "options": {
             "0": "Use the self-install option on the Office 365 dashboard",
             "1": "Download and install the Office ProPlus Windows Installer (MSI) package",
@@ -322,7 +319,7 @@
         ]
     },
     {
-        "question": "58. You are the Microsoft 365 administrator for a company.\nYou need to customize a usage report for Microsoft Yammer.\nWhich two tools can you use? Each correct answer presents a complete solution.",
+        "question": "58. You are the Microsoft 365 administrator for a company.\nYou need to customize a usage report for Microsoft Yammer.\nWhich two tools can you use?",
         "options": {
             "0": "Microsoft SQL Server Analysis Services",
             "1": "Microsoft SQL Server Reporting Services",
@@ -331,7 +328,6 @@
             "4": "Microsoft Visual Studio"
         },
         "answer": [
-            0,
             2,
             3
         ]
@@ -349,7 +345,7 @@
         ]
     },
     {
-        "question": "61. You need to reduce the amount of time that the IT team spends on user support.\nWhat are three possible ways to achieve this goal? Each correct answer presents a complete solution.",
+        "question": "61. You need to reduce the amount of time that the IT team spends on user support.\nWhat are three possible ways to achieve this goal?",
         "options": {
             "0": "Enable Microsoft Office 365 Customer Lockbox",
             "1": "Upgrade all client devices to Windows 10",
@@ -400,7 +396,7 @@
         ]
     },
     {
-        "question": "65. You are a Microsoft 365 administrator for a company. Employees use Microsoft Office 365 ProPlus to create documents.\nYou need to implement document classification and protection by using Microsoft Azure Information Protection.\nWhich two actions should you perform? Each correct answer presents part of the solution.",
+        "question": "65. You are a Microsoft 365 administrator for a company. Employees use Microsoft Office 365 ProPlus to create documents.\nYou need to implement document classification and protection by using Microsoft Azure Information Protection.\nWhich two actions should you perform?",
         "options": {
             "0": "Add an Azure subscription to your Microsoft 365 tenant",
             "1": "Install the Azure Information Protection client",
@@ -463,7 +459,7 @@
         ]
     },
     {
-        "question": "76. You are the Microsoft 365 administrator for a company.\nWhich two admin roles can purchase more licenses? Each correct answer presents a complete solution.",
+        "question": "76. You are the Microsoft 365 administrator for a company.\nWhich two admin roles can purchase more licenses?",
         "options": {
             "0": "service administrator",
             "1": "user management administrator",
@@ -477,7 +473,7 @@
         ]
     },
     {
-        "question": "77. A company plans to purchase Microsoft 365 Enterprise licenses.\nWhich two options can you use? Each correct answer presents a complete solution.",
+        "question": "77. A company plans to purchase Microsoft 365 Enterprise licenses.\nWhich two options can you use?",
         "options": {
             "0": "through a Cloud Solution Provider (CSP)",
             "1": "from the Microsoft website using a corporate credit card",
