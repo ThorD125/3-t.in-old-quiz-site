@@ -512,5 +512,221 @@
         "answer": [
             2
         ]
+    },
+    {
+        "question": "Data protection can be selectively applied to applications.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Microsoft Intune can define where corporate data is stored.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Once a device is registered with Microsoft Intune, device wipe will include the user's personal data.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "You can manage Azure AD-joined machines by using group policy.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Azure AD requires integration with Active Directory Domain Services by using secure lightweight Directory Access Protocol (LDAP).",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Azure AD supports Azure AD Authentication Library (ADAL) authentication.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Users have the same passwords in the cloud and on-premises.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Users must sign in again when using Microsoft 365.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "You can configure federated authentication to require a smart card.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "You can supplement the default templates to apply restrictive controls.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Classification and protection information is available for on-premises file servers.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Installing the Azure Information Protection client installs an information protection bar to Microsoft Excel.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Intune app protection policies can protect access to Exchange Server on-premises mailboxes.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Intune app protection policies support apps that connect to on-premises Microsoft SharePoint Server.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Intune app protection policies require a mobile-device management (MDM) solution.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "You can assign apps to devices that are not enrolled with Microsoft Intune.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "You can assign wrapped apps, or apps that incorporate the Intune SDK, only if the device is enrolled with Intune.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "You can install available apps from the web-based Company Portal app regardless of whether the device if enrolled with Intune.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "After users are enrolled in multi-factor authentication, they must configure a second authentication factor the next time they sign in.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Enabling multi-factor authentication requires an additional subscription purchase.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Complete multi-factor authentication by using text messages, a smartphone app, or a phone call.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Microsoft cloud services offer significant energy savings for Microsoft and its customers.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Lower costs, no hardware maintenance, near-unlimited scalability, and high reliability are all advantages of a private cloud.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["B"]
+    },
+    {
+        "question": "Microsoft cloud services offer security options and have the ability to provision resources quickly.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Compliance Manager performs an assessment against your entire Microsoft 365 environment and evaluates both Microsoft and customer controls.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Compliance Manager allows you to assign individuals within the organization to be responsible for the control.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
+    },
+    {
+        "question": "Compliance Manager provides the ability to take corrective actions from within the Service Trust portal.",
+        "options": {
+            "A": "Yes",
+            "B": "No"
+        },
+        "answer": ["A"]
     }
 ]
