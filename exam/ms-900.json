@@ -1164,7 +1164,7 @@
         ]
     },
     {
-        "question": "Engineering team requirement: Application and operating system updates to devices must originate from an on-premises server.",
+        "question": "[..]: Application and operating system updates to devices must originate from an on-premises server.",
         "options": {
             "a": "Engineering",
             "b": "Sales",
@@ -1176,7 +1176,7 @@
         ]
     },
     {
-        "question": "Sales team requirement: Devices must be updated periodically and not require an on-premises server.",
+        "question": "[..]: Devices must be updated periodically and not require an on-premises server.",
         "options": {
             "a": "Engineering",
             "b": "Sales",
@@ -1188,7 +1188,7 @@
         ]
     },
     {
-        "question": "Finance team requirement: Devices must be updated periodically and monitored using one system.",
+        "question": "[..]: Devices must be updated periodically and monitored using one system.",
         "options": {
             "a": "Engineering",
             "b": "Sales",
@@ -1200,7 +1200,7 @@
         ]
     },
     {
-        "question": "Developers team requirement: Choose when updates are installed.",
+        "question": "[..]: Choose when updates are installed.",
         "options": {
             "a": "Engineering",
             "b": "Sales",
