@@ -153,18 +153,6 @@
         ]
     },
     {
-        "question": "32. This question requires that you evaluate the bold text to determine if it is correct.\nA company needs to protect documents and emails by automatically applying classifications and labels. You must minimize costs. You should implement Microsoft Azure Information Protection for Microsoft Office 365.\nReview the underlined text If it makes the statement correct select No change is needed. If the statement is incorrect, select the answer choice that makes the statement correct.",
-        "options": {
-            "0": "No change needed.",
-            "1": "Azure Information Protection Premium P2",
-            "2": "Azure Information Protection Premium PI",
-            "3": "Microsoft 365 E3"
-        },
-        "answer": [
-            1
-        ]
-    },
-    {
         "question": "34. You use Microsoft 365 Usage Analytics.\nYou need to know the number of users who are active today and were also active last month.\nWinch metric should you use?",
         "options": {
             "0": "MoMReturningUsers",
