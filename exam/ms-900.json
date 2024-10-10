@@ -294,18 +294,6 @@
         ]
     },
     {
-        "question": "55. When you enable external access by using the Microsoft 365 admin portal, data is available to anonymous users.\nReview the Bold text. If it makes the statement correct, select “No change is needed”. If the statement is incorrect, select the answer choice that makes the statement correct.",
-        "options": {
-            "0": "No change needed.",
-            "1": "the Everyone group is applied to all shares with full control",
-            "2": "you must configure Active Directory Federation Services (AD FS)",
-            "3": "users can send sharing invitations for specific content"
-        },
-        "answer": [
-            3
-        ]
-    },
-    {
         "question": "56. You are the Microsoft 365 administrator for a company. You deploy Windows 10 to all devices by using Windows Autopilot.\nYou need to ensure that employees can install Microsoft Office 365 ProPlus on their devices.\nWhat are two possible ways to achieve this goal?",
         "options": {
             "0": "Use the self-install option on the Office 365 dashboard",
@@ -366,18 +354,6 @@
             "1": "Microsoft Azure Security Center",
             "2": "Office 365 Advanced Threat Protection",
             "3": "Intune App Protection"
-        },
-        "answer": [
-            3
-        ]
-    },
-    {
-        "question": "63. This question requires that you evaluate the bold text to determine if it is correct.\nYou use Microsoft Intune for device management. You must determine how many devices run each operating system.\nYou must launch Intune and navigate to the Mobile Apps blade.\nSelect the correct answer if the underlined text does not make the statement correct. Select “No change is needed” if the underlined text makes the statement correct.",
-        "options": {
-            "0": "Device configuration",
-            "1": "Device compliance",
-            "2": "No change is needed",
-            "3": "Devices"
         },
         "answer": [
             3
