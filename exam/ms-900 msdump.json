@@ -1,0 +1,1304 @@
+[
+    {
+        "question": "A company needs to migrate on-premises Microsoft Exchange and SharePoint servers to the cloud.\n\nThe company plans to implement Microsoft 365 and needs to understand cloud management responsibilities for a Software-as-a-Service (SaaS) cloud model.\n\nYou need to describe the areas the company will be responsible for.\n\nWhich two areas is the company responsible for? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "Operating systems",
+            "1": "Data",
+            "2": "Compute",
+            "3": "Virtual machines",
+            "4": "Storage",
+            "5": "Access"
+        },
+        "answer": [
+            1,
+            5
+        ]
+    },
+    {
+        "question": "A company uses a Microsoft SQL Server with several databases in their data center.\n\nThe company plans to move the databases to the cloud.\n\nThe cloud provider should be responsible for:\n\n- Software installation\n- Database backups\n- Database engine upgrades\n   \nYou need to recommend a service.\n\nWhich type of service should you recommend?",
+        "options": {
+            "0": "Software-as-a-Service (SaaS)",
+            "1": "Platform-as-a-Service (PaaS)",
+            "2": "Infrastructure-as-a-Service (IaaS)",
+            "3": "Function-as-a-Service (FaaS)"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Office Pro Plus 2019.\n\nThe company is considering migrating to Microsoft 365.\n\nYou need to identify the capabilities that the company would gain access to by migrating to Microsoft 365.\n\nWhich three capabilities should you identify? Each correct answer presents a part of the solution.",
+        "options": {
+            "0": "Integrates with Microsoft Graph 365.",
+            "1": "Ability to run Office apps while offline.",
+            "2": "Minimizes management overhead.",
+            "3": "Access to the latest features.",
+            "4": "Support for Skype for Business."
+        },
+        "answer": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nYou need to implement a cloud-based solution that meets the following requirements:\n\n- Allows employees to use Microsoft applications such as Word, Excel, and PowerPoint.\n- Allows employees to work from their personalized tablet devices whether connected or disconnected from the internet.\n- Minimizes management effort.\n- Offers a subscription-based model.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Azure Virtual Desktop",
+            "1": "Microsoft Azure Virtual Machines",
+            "2": "Microsoft 365",
+            "3": "Windows 365"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company operates exclusively with on-premises services and is using Microsoft Office Pro Plus 2019 for all employees.\n\nThe company's CIO is considering migrating to Microsoft 365.\n\nYou need to identify the cloud service needed for the companies' employees to access Microsoft 365 apps.\n\nWhich cloud service should you identify?",
+        "options": {
+            "0": "Active Directory",
+            "1": "Microsoft Entra ID",
+            "2": "Microsoft Endpoint Manager",
+            "3": "Microsoft Graph"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company must standardize the tool used to manage tasks and activities across various departments.\n\nThe tool must meet the following requirements:\n\n- Support dynamic scheduling\n- Track task dependencies and subtasks regardless of the team size\n- Track costs\n   \nWhich Microsoft 365 app should you recommend?",
+        "options": {
+            "0": "Viva Topics",
+            "1": "Microsoft Project",
+            "2": "To Do",
+            "3": "Bookings"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a work management solution with the following requirements:\n\n- Provides automated email and SMS notifications about upcoming appointments.\n- Supports buffer times that automatically adjust staff schedules to account for activities required to prepare for meetings with customers.\n- Integrates with Outlook.\n   \nYou need to recommend a solution to implement.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Bookings",
+            "1": "Planner",
+            "2": "Microsoft Project",
+            "3": "To Do"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs to enable team leads to manage the tasks for team members.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Assign a task to multiple team members.  \n- Manage tasks in a Calendar view.\n- Visualize the progress of individual and team tasks in a Charts view.\n   \nWhich Microsoft 365 app should you recommend?",
+        "options": {
+            "0": "To Do",
+            "1": "OneDrive",
+            "2": "Bookings",
+            "3": "Planner"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a work management solution with the following requirements:\n\n- Allow employees to organize shared tasks on Kanban boards.\n- Include support for timeline Gantt charts.\n- Integrate with Microsoft Teams and Power BI Desktop.\n   \nYou need to recommend a solution to implement.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Bookings",
+            "1": "Planner",
+            "2": "Microsoft Project",
+            "3": "To Do"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company runs a Microsoft Exchange server on-premises.\n\nThe chief security officer (CSO) is concerned that mailboxes operating in the cloud will be more vulnerable to cybersecurity threats.\n\nYou need to recommend a tool for administrators to use that will protect the cloud-hosted mailboxes against advanced threats.\n\nWhich tool should you recommend?",
+        "options": {
+            "0": "Microsoft Defender for Office 365",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Intune",
+            "3": "Microsoft PowerApps"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company plans to use Microsoft 365.\n\nYou need to make several apps available for users.\n\nWhich app must you install locally on each user\u2019s computer?",
+        "options": {
+            "0": "OneDrive",
+            "1": "OneNote",
+            "2": "Publisher",
+            "3": "Teams"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a task management solution that includes the following requirements:\n\n- Allow employees to organize their tasks on a Kanban board.\n- Integrate with Microsoft Outlook and Teams.\n- Support the use of @mentions in Microsoft Word, Excel, and PowerPoint files for task assignments.\n   \nYou need to recommend a solution to implement.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Bookings",
+            "1": "Planner",
+            "2": "Microsoft Project",
+            "3": "To Do"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company plans to implement Microsoft 365.\n\nThe chief security officer (CSO) has concerns whether company emails will be secure.\n\nThe email security solution must protect against:\n\n- Viruses attached to emails\n- Unsolicited emails\n   \nYou need to recommend an email security solution to deploy with Microsoft 365.\n\nWhich two features should you identify? Each solution presents part of the solution.",
+        "options": {
+            "0": "Microsoft Safe Links",
+            "1": "Anti-malware protection",
+            "2": "Anti-spoofing protection",
+            "3": "Anti-Spam policies",
+            "4": "Mailbox Intelligence"
+        },
+        "answer": [
+            1,
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to create intranet sites to foster collaboration between business units.\n\nEach business unit must be able to:\n\n- Share files securely inside or outside the company.\n- Manage content in document libraries with versioning and access control.\n- Create and customize sites for the business unit.\n   \nYou need to recommend a solution.\n\nWhich app should you recommend?",
+        "options": {
+            "0": "Microsoft OneDrive",
+            "1": "Microsoft Teams",
+            "2": "Microsoft SharePoint",
+            "3": "Microsoft Viva"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs to collaborate on files.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Provide access to files when there is no internet connectivity.\n- Provide sharing of files with users internal and external to the organization.\n- Provide native applications for Mac, Windows, and mobile operating systems.\u00a0\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft SharePoint team sites",
+            "1": "Microsoft Teams",
+            "2": "Microsoft Viva Engage",
+            "3": "Microsoft OneDrive"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company evaluates productivity solutions to implement.\n\nThe solution must be able to:\n\n- Provide departments access to secure shared file storage.\n- Facilitate department-wide co-authoring.\n- Provide workflow integration with Microsoft Power Automate.\n   \nYou need to recommend a solution to implement.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft SharePoint team sites",
+            "1": "Microsoft SharePoint communication sites",
+            "2": "Microsoft Viva Engage internal network",
+            "3": "Microsoft Viva Engage external network"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to improve the process of helping new hires with onboarding. A solution is required to help employees increase their knowledge and expertise from resources available across Microsoft 365.\n\nThis solution must meet the following requirements:\n\n- Create pages automatically for each knowledge area.\n- Created pages must contain definitions of the knowledge area and relevant people.\n- Provide the ability for experts to edit and approve pages as required.\n   \nYou need to recommend a solution to implement.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Viva Engage",
+            "1": "Microsoft Viva Topics",
+            "2": "Microsoft OneDrive",
+            "3": "Microsoft Viva Insights"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Teams.\n\nThe company needs to use Teams to host a live video broadcast with 15,000 participants.\n\nThe broadcast must use Microsoft Stream and provide presenter, producer, and organizer roles.\n\nWhich Teams feature should you recommend?",
+        "options": {
+            "0": "Live Events",
+            "1": "Webinar",
+            "2": "Private channel",
+            "3": "Audio conferencing"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.  \n\n \n\nThe company plans to provide new feature updates to Microsoft Office applications as soon as they are available. \n\n \n\nYou need to recommend an update channel for use. \n\n \n\nWhich channel should you recommend?",
+        "options": {
+            "0": "Current Channel (Preview)",
+            "1": "Monthly Enterprise Channel",
+            "2": "Semi-Annual Enterprise Channel (Preview)",
+            "3": "Semi-Annual Enterprise Channel"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to ensure that Microsoft 365 updates are available to all employees.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Security and quality updates are available to employees as soon as they are released.\n- The frequency of feature updates is minimized.\n- The availability of feature updates is delayed as much as possible.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Current Channel",
+            "1": "Monthly Enterprise Channel",
+            "2": "Semi-Annual Enterprise Channel",
+            "3": "Semi-Annual Enterprise Channel (Preview)"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365. The company plans to run a secure desktop solution in the cloud.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Flexible consumption-based pricing model.\n- Provide Windows 7 virtual desktops with free extended security updates.\n- Ability to use FSLogix profile container technology.\n   \nWhich Desktop-as-a-Service solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business ",
+            "1": "Windows 365 Enterprise",
+            "2": "Microsoft Azure Virtual Desktop"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a virtual desktop solution for 1,000 employees.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Provide dedicated desktop compute resources to each user.\n- Integrate with Microsoft Intune and Defender without installing additional software.\n- Provide automatic provisioning triggered by a user license assignment.\n- Minimize the maintenance effort.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business",
+            "1": "Windows 365 Enterprise",
+            "2": "Microsoft Azure Virtual Desktop",
+            "3": "Microsoft Azure Virtual Machine"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A small manufacturing company uses factory automation controls in a Windows 11 environment.\n\nThe engineering manager has a concern that manufacturing will be impacted by Windows updates.\n\nYou need to recommend a Servicing channel solution that includes the following requirements:\n\n- Windows 11 devices only receive the minimum required service updates.\n- All systems receive security updates.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows Insider Program",
+            "1": "General Availability Channel",
+            "2": "Long-Term Servicing Channel",
+            "3": "Semi-Annual Enterprise Channel"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs a solution that can intelligently and securely manage the pre-configuration and set-up of new devices.\n\nYou need to recommend a service that meets the following requirements:\n\n- Support Windows 10 and 11.\n- Simplify the lifecycle management of the devices.\n- Integrate the devices with existing device and application management solutions.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365",
+            "1": "Desktop Analytics",
+            "2": "Configuration Manager",
+            "3": "Windows Autopilot"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company plans to use Microsoft 365.\n\nThe company needs to ensure that Microsoft Viva Organizational Insights will be available to all business leaders.\n\nYou need to recommend an app to include with the implementation of Microsoft 365.\n\nWhich app do you recommend?",
+        "options": {
+            "0": "To Do",
+            "1": "Planner",
+            "2": "Viva Engage",
+            "3": "Teams"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to use Microsoft 365 products more efficiently.\n\nYou need to recommend an analytics solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "productivity score report",
+            "1": "usage report",
+            "2": "Endpoint Manager admin center",
+            "3": "Microsoft Teams admin center"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to understand the employee adoption rate for Microsoft 365 apps and the company\u2019s overall productivity score.\n\nThe company needs a report that shows information for the past 90 days. The report must include the following information:\n\n- Total number of Microsoft Office activations\n- Total number of stored files\n- Microsoft browser usage\n   \nYou need to recommend an admin center the report can be generated from.\n\nWhich admin center should you recommend?",
+        "options": {
+            "0": "Microsoft Teams Admin center",
+            "1": "Compliance Admin center",
+            "2": "Microsoft SharePoint Admin center",
+            "3": "Microsoft 365 Admin center"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nA new user signs into the Microsoft 365 user portal by using a third-party web browser. The user is not able to access all Microsoft 365 apps.\n\nYou need to recommend a solution.\n\nWhat should you recommend?",
+        "options": {
+            "0": "Assign a license to the user.",
+            "1": "Add the user to a Microsoft 365 Global reader role.",
+            "2": "Install a third-party browser extension.",
+            "3": "Ask the user to use Microsoft Edge."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company plans to use Microsoft 365.\n\nThe company needs to minimize the frequency of billing for Microsoft 365 services. The frequency must be manageable by using the Microsoft 365 admin center.\n\nWhich billing frequency should you recommend the company use?",
+        "options": {
+            "0": "Monthly",
+            "1": "Quarterly",
+            "2": "Semiannual",
+            "3": "Annual"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company plans to use Microsoft 365.\n\nThe company expresses the need to use Microsoft Software Assurance.\n\nYou need to recommend the pricing model that includes the Microsoft Software Assurance benefit.\n\nWhich pricing model should you recommend?",
+        "options": {
+            "0": "Cloud Solution Provider (CSP)",
+            "1": "Microsoft Online Service Program (MOSP)",
+            "2": "Microsoft Volume Licensing",
+            "3": "Web Direct"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company plans to transition to Microsoft 365.\n\nThe company is an on-premises software assurance customer and needs a base license type that offers cloud relevant software assurance benefits.\n\nYou need to recommend a user subscription license (USL).\n\nWhich license should you recommend?",
+        "options": {
+            "0": "Add-on USLs",
+            "1": "From SA USLs",
+            "2": "Full USLs",
+            "3": "Step Up USLs"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company has an existing Microsoft Volume Licensing agreement and is operating exclusively in an on-premises environment.\n\nThe company plans to use Microsoft 365.\n\nYou need to recommend a user subscription licensing (USL) option that allows the company to leverage existing benefits while transitioning to Microsoft 365.\n\nWhich licensing option should you recommend?",
+        "options": {
+            "0": "Add-on USLs",
+            "1": "From SA USLs",
+            "2": "Full USLs",
+            "3": "Step Up USLs"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365. The company has an on-premises presence with several Microsoft products licensed for a specific version.\n\nThe company wants to operate on a hybrid model:\n\n- Some of the workloads will run on premises.\n- Some services will move to Microsoft 365.\n   \nYou need to recommend a user subscription license (USL) for the company.\n\nWhich type of user subscription license (USL) should you recommend?",
+        "options": {
+            "0": "Full USL",
+            "1": "Add-on USL",
+            "2": "From SA USL",
+            "3": "Step Up USL"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company recently subscribed to Microsoft 365.\n\nThe company wants to drive user adoption of the new Microsoft 365 services.\n\nYou need to recommend a support option for the company.\n\nWhich support option should you recommend?",
+        "options": {
+            "0": "FastTrack",
+            "1": "Pre-sales",
+            "2": "Community-based",
+            "3": "Microsoft Unified"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft products.\n\nThe company has Microsoft licenses that allow them to run the latest version of the software. They need to transition to the cloud.\n\nYou need to recommend a user subscription license (USL).\n\nWhich license do you recommend?",
+        "options": {
+            "0": "Full USL",
+            "1": "Add-On USL",
+            "2": "Step Up USL",
+            "3": "From SA USL"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company expresses the need to adopt the concept of assumed breach and mitigate it.\n\nYou need to recommend the access type to implement.\n\nWhich access should you recommend?",
+        "options": {
+            "0": "external firewalls",
+            "1": "just-in-time access",
+            "2": "network segmentation",
+            "3": "password-based authentication"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to strengthen the protection of Microsoft 365 apps.\n\nYou need to recommend a solution that includes the following requirements:\n\n- Additional authentication factors.\n- Evaluate user-based risks.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Adaptive access",
+            "1": "Microsoft Entra ID conditional access",
+            "2": "Internal micro-segmentation",
+            "3": "Just-In-time (JIT) access"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company has a new remote work policy for employees.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Employees can only access company resources from specific locations.\n- Extra authentication factors are included.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Just-in-time (JIT)",
+            "1": "Conditional Access",
+            "2": "Federation",
+            "3": "Micro-segmentation"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Entra ID as an authentication platform.\n\nActive Directory is not integrated with Microsoft Entra ID. The company needs to use Microsoft Defender to check potentially compromised users.\n\nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Defender for Identity",
+            "1": "Defender for Office 365",
+            "2": "Defender for Cloud Apps",
+            "3": "Defender for Endpoint"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to mitigate security attacks on data within RAM or CPU caches.\n\nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "encryption at rest",
+            "1": "Hashing",
+            "2": "Enclaves",
+            "3": "private key"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company authenticates by using Active Directory for its on-premises applications and resources. The company uses Microsoft 365.\n\nThe company requires single sign-on (SSO) with smart cards or certificates for the cloud apps and on-premises objects.\n\nYou need to recommend a Microsoft Entra ID authentication method.\n\nWhich authentication method should you recommend?",
+        "options": {
+            "0": "Password hash synchronization",
+            "1": "Pass-through",
+            "2": "Federated",
+            "3": "Passwordless"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Entra ID.\n\nInternal authenticated users who try to access company apps outside the designated IP range must be blocked.\n\nYou need to recommend a Microsoft Entra ID feature the company should use.\n\nWhich feature should you recommend?",
+        "options": {
+            "0": "User flows",
+            "1": "Conditional access",
+            "2": "External identity",
+            "3": "Role-based access control"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Entra ID.\n\nThe help desk receives multiple requests for password changes from employees.\n\nYou need to recommend a solution to avoid these requests.\n\nWhich Microsoft Entra ID feature should you recommend?",
+        "options": {
+            "0": "multifactor authentication",
+            "1": "password hash synchronization",
+            "2": "pass-through authentication",
+            "3": "self-service password reset"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company experiences multiple suspicious attacks on employee accounts. To prevent future attacks, the company requires a solution that provides the following:\n\n- Monitors the behavior of employees.\n- Reduces surface attacks on employee accounts.\n- Identifies and investigates suspicious attacks on employee accounts.\n   \nYou need to recommend a solution.\n\nWhich Microsoft Defender service should you recommend?",
+        "options": {
+            "0": "Microsoft Defender for Cloud Apps",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Defender for Identity",
+            "3": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to monitor the following activities:\n\n- suspicious behaviors of employees\n- details of mailbox attacks and user involved attacks\n- breach activities on devices\n   \nYou need to identify which admin portal the company should use.\n\nWhich admin portal should you identify?",
+        "options": {
+            "0": "Exchange admin portal",
+            "1": "SharePoint admin center",
+            "2": "Microsoft 365 Defender portal",
+            "3": "Microsoft Purview compliance portal"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company adopts Microsoft 365 collaboration tools.\n\nThe company wants protection against threats posed by email messages.\n\nWhich Microsoft Defender service should the company use?",
+        "options": {
+            "0": "Microsoft Defender for Identity",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Defender for Office 365",
+            "3": "Microsoft Defender for Cloud Apps"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company is implementing Microsoft 365 Defender services.\n\nA security auditor wants to explore the Microsoft 365 Defender portal.\n\nYou need to assign a role to the security auditor by using the principle of least privilege.\n\nWhich role should you assign?",
+        "options": {
+            "0": "Global Reader",
+            "1": "Security Reader",
+            "2": "Global Administrator",
+            "3": "Security Administrator"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365 services.\n\nThe company must identify improvements to its security configuration.\n\nYou need to recommend a Microsoft 365 Defender tool that provides improvement recommendations.\n\nWhich tool should you recommend?",
+        "options": {
+            "0": "Learning hub",
+            "1": "Secure Score",
+            "2": "Cloud Discovery",
+            "3": "Threat Explorer"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants protection against insider risks, such as IP theft and data leaks.\n\nYou need to recommend a service that provides this type of protection.\n\nWhat should you recommend?",
+        "options": {
+            "0": "Microsoft Purview",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Priva",
+            "3": "Microsoft Service Trust Portal"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company requires documentation that confirms Microsoft cloud services will protect company data.\n\nYou need to recommend a tool that provides the documentation.\n\nWhich tool should you recommend?",
+        "options": {
+            "0": "Microsoft Secure Score",
+            "1": "Microsoft Purview",
+            "2": "Service Trust Portal",
+            "3": "eDiscovery solutions"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company creates virtual machines in the public cloud.\n\nThe company needs to have full responsibility for managing the operating systems and network controls.\n\nWhich cloud service model should you use?",
+        "options": {
+            "0": "Software-as-a-Service (SaaS)",
+            "1": "Platform-as-a-Service (PaaS)",
+            "2": "Infrastructure-as-a-Service (IaaS)"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company evaluates productivity solutions to implement.\n\nThe solution must be able to:\n\n- Provide employees access to Microsoft Office applications.\n- Minimize the company\u2019s maintenance and management costs.\n   \nYou need to recommend a solution.\n\nWhich type of cloud service should you recommend?",
+        "options": {
+            "0": "Infrastructure as a Service (IaaS)",
+            "1": "Platform as a Service (PaaS)",
+            "2": "Software as a Service (SaaS)"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company runs its workloads in a datacenter. The company is considering moving workloads to the cloud and need to understand cloud concepts.\n\nWhat is a benefit of moving to the cloud?",
+        "options": {
+            "0": "The cloud allows resources to scale up or scale down as business needs change.",
+            "1": "Cloud computing shifts expenditures towards capital expenses.",
+            "2": "Cloud computing provides low-level access to hardware.",
+            "3": "Datacenter operators have full control of the procurement and physical installation for servers."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365. The company needs to manage virtual scheduling and appointments.\n\nThis solution must meet the following requirements:\n\n- Enable the company to set appointment times, business hours, and pricing.\n- Allow customers to schedule appointments through a webpage.\n- Enable the company access to a contact list of customers.\n   \nWhich Microsoft 365 app should you recommend?",
+        "options": {
+            "0": "To Do",
+            "1": "Bookings",
+            "2": "Planner",
+            "3": "Forms"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company plans to host a companywide online meeting with 8,000 employees.\n\nThe meeting must:\n\n- Allow presenters to share video and screen.\n- Allow the organizer to deactivate video and audio for all attendees.\n- Allow the organizer to moderate questions and answers.\n   \nWhich Microsoft Teams solution should you recommend?",
+        "options": {
+            "0": "Teams Private Channel Meeting",
+            "1": "Teams Meeting",
+            "2": "Teams Chat Audio Call",
+            "3": "Teams Live Event"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nA manager observes employees having difficulty managing their daily activities. \n\nThe manager needs a tool that supports employees creating and managing tasks. The tool must meet these requirements:\n\n- Create repeatable tasks.\n- Create named task lists.\n- Mark a task as important.\n- View tasks based on due date.\n- Schedule task reminders.\n   \nWhich Microsoft 365 app should you recommend?",
+        "options": {
+            "0": "Bookings",
+            "1": "Microsoft Project",
+            "2": "To Do",
+            "3": "Forms"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe Sales team currently communicates with the Customer Support team by email messages.\n\nThe Sales team and Customer Support team need to be able to collaborate on documents together, editing, and commenting in real time.\n\nYou need to recommend a collaboration solution for the teams to use.\n\nWhich three solutions should you recommend? Each correct answer is part of the solution.",
+        "options": {
+            "0": "Microsoft OneNote",
+            "1": "Microsoft SharePoint",
+            "2": "Microsoft Bookings",
+            "3": "Microsoft Viva Connections",
+            "4": "Microsoft Teams"
+        },
+        "answer": [
+            0,
+            1,
+            4
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365. The company has 1,000 employees using Microsoft Surface devices.\n\nThe company needs to implement a virtual desktop solution for all employees that will:\n\n- Provide dedicated desktop compute resources to each individual user.\n- Integrate natively with Surface biometric authentication.\n- Provide support for the pen and ink experience.\n- Minimize administrative effort.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business",
+            "1": "Windows 365 Enterprise",
+            "2": "Microsoft Azure Virtual Desktop",
+            "3": "Microsoft Azure Virtual Machine"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs to implement a Cloud PC solution for 600 employees.\n\nThe solution must meet the following requirements:\n\n- Fixed fee-based pricing model.\n- Full integration with Microsoft Intune by default.\n- Ability to be provisioned with custom images.\n   \nYou need to recommend a cloud solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business",
+            "1": "Microsoft Azure Virtual Desktop",
+            "2": "Windows 365 Enterprise",
+            "3": "Microsoft Azure Virtual Machine"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a virtual desktop solution.\n\nThe solution must be able to:\n\n- Provide the ability to share compute resources across multiple users.\n- Optimize the user profile management by using FSLogix container technology.\n- Minimize the maintenance effort.\n   \nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business",
+            "1": "Windows 365 Enterprise",
+            "2": "Microsoft Azure Virtual Desktop",
+            "3": "Microsoft Azure Virtual Machine"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.  \n\n \n\nThe company plans to provide new feature updates to Microsoft Office applications as soon as possible based on the results of its internal testing. Based on the standard operating procedures of the company, the internal testing takes about four months. \n\n \n\nYou need to recommend an update channel for use. The solution must ensure that the updated applications are supported for at least six months. \n\n  \n\nWhich channel should you recommend?",
+        "options": {
+            "0": "Current Channel",
+            "1": "Monthly Enterprise Channel",
+            "2": "Semi-Annual Enterprise Channel (Preview)",
+            "3": "Semi-Annual Enterprise Channel"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company purchases a Microsoft 365 subscription and needs to deploy Windows 11.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Provide a customized out-of-box experience (OOBE) that installs applications and configures settings required by the company.\n- Eliminate the need for IT staff to configure devices for each user.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "In-place upgrade",
+            "1": "Provisioning package configuration",
+            "2": "Subscription activation",
+            "3": "Windows Autopilot"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to virtualize applications for users.\n\nYou need to recommend a solution that provides: \n\n- Virtualized desktops for use by employees.\n- Consumption-based pricing.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Azure Virtual Desktop",
+            "1": "Windows 365",
+            "2": "Microsoft 365",
+            "3": "Microsoft Azure Bastion"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Intune.\n\nThe company must track device compliance, device health, and device trends through pre-defined reports.\n\nYou need to recommend an admin center for accessing these reports.\n\nWhich admin center should you recommend?",
+        "options": {
+            "0": "Microsoft Entra ID",
+            "1": "Microsoft Endpoint Manager",
+            "2": "Microsoft SharePoint",
+            "3": "Microsoft Teams"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to automatically generate a daily email to each employee informing them about the following:\n\n- Outstanding commitments and pending follow-ups to emails from other employees.\n- Documents related to the employee's meetings scheduled on that day.\n   \nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Viva Advanced Insights",
+            "1": "Microsoft Viva Personal Insights",
+            "2": "Microsoft Viva Organizational Insights",
+            "3": "Microsoft Viva Manager Insights"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to provide employee analytics to business leaders.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Integrate with Microsoft Teams.\n- Provide insights to business leaders to identify the work patterns of the company's employees.\n- Automatically generate and display employee engagement statistics regarding the number of extra hours employees work each week.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft 365 admin center",
+            "1": "Microsoft 365 user portal",
+            "2": "Microsoft Viva Manager Insights",
+            "3": "Microsoft Viva Organizational Insights"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to report on the protection of identities, devices, and apps.\n\nYou need to advise the company where to access this information.\n\nWhich admin center should you advise the company to use?",
+        "options": {
+            "0": "Security and Compliance",
+            "1": "Exchange",
+            "2": "SharePoint",
+            "3": "Microsoft Entra ID"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to perform the following administrative activities:\n\n- View invoices and past billing statements.\n- Modify the current payment method.\n- Update the email notification for billings to the new manager\u2019s email.\n   \nWhich administrative center should you recommend?",
+        "options": {
+            "0": "Microsoft Teams admin center",
+            "1": "Microsoft SharePoint admin center",
+            "2": "Microsoft Exchange admin center",
+            "3": "Microsoft 365 admin center"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company plans to implement Microsoft 365 for 500 employees.\n\nEmployees work from desktop and laptop computers and need to use the Microsoft Office desktop applications.\n\nYou need to recommend the appropriate subscription plan.\n\nWhich subscription plan should you recommend?",
+        "options": {
+            "0": "Microsoft 365 E3",
+            "1": "Microsoft 365 F3",
+            "2": "Microsoft 365 Business Premium",
+            "3": "Microsoft 365 Business Standard"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company acquires Microsoft 365 licenses for its environment through an authorized partner.\n\nWhich type of billing account did the company set up?",
+        "options": {
+            "0": "Microsoft Customer Agreement",
+            "1": "Microsoft Online Services Program",
+            "2": "Microsoft Products & Services Agreement Program"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company records a monthly uptime percentage below 95%.\n\nWhich percentage of service credit can the company receive from Microsoft?",
+        "options": {
+            "0": "0 percent",
+            "1": "25 percent",
+            "2": "50 percent",
+            "3": "100 percent"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company help desk receives calls about errors when users access Office Online apps. The help desk team suspects it is a service issue.\n\nYou need to direct the help desk team to the location in the Microsoft 365 admin center to obtain more information about the issue.\n\nWhich location should you identify?",
+        "options": {
+            "0": "Health",
+            "1": "Settings",
+            "2": "Reports",
+            "3": "Support"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to evaluate the session risk before a user accesses Microsoft 365 resources.\n\nYou need to recommend which primary component of the Zero Trust model needs to be configured.\n\nWhich component should you recommend?",
+        "options": {
+            "0": "Devices",
+            "1": "Identities",
+            "2": "Infrastructure",
+            "3": "Network"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs real-time policy evaluation to involve access control through segmentation.\n\nYou need to recommend the primary component of the Zero Trust model that needs to be configured.\n\nWhich primary component do you recommend?",
+        "options": {
+            "0": "Apps",
+            "1": "Devices",
+            "2": "Infrastructure",
+            "3": "Network"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs security professionals to use the Microsoft 365 Defender portal to proactively search for undetected threats across users' devices and applications.\n\nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Hunting",
+            "1": "Incidents and alerts",
+            "2": "Secure score",
+            "3": "Threat analytics"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company\u2019s security team needs to understand threat signals for Microsoft 365 products and services. You need to recommend a solution that meets the following requirements:\u00a0\u00a0\n\n- Provide the first line of defense in the stack.\n- Automated investigation and remediation of breaches.\n- Provide capabilities for network protection.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Defender for Office 365",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Defender for Identity",
+            "3": "Microsoft Defender for Cloud Apps"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Active Directory to authenticate access to users' computers and applications.\n\nThe company needs to detect insider attacks targeting the company.\n\nYou need to recommend a Microsoft 365 Defender service.\n\nWhich service should you recommend?",
+        "options": {
+            "0": "Microsoft Defender for Cloud Apps",
+            "1": "Microsoft Defender for Endpoint",
+            "2": "Microsoft Defender for Identity",
+            "3": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to achieve the following:\n\n- Analyze and mitigate internal risks on data before they occur.\n- Set data classification policies.\n- Set data retention policies.\n   \nYou need to recommend an admin portal to implement these actions.\n\nWhich admin portal should you recommend?",
+        "options": {
+            "0": "Microsoft Service Trust Portal",
+            "1": "Microsoft Exchange admin portal",
+            "2": "Microsoft Purview compliance portal",
+            "3": "Microsoft Defender portal"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company is concerned about the impact of downtime.\n\nYou need to explain when the company will receive service credit due to a decrease in uptime.\n\nBelow which percentage of monthly uptime threshold would result in 100 percent service credit?",
+        "options": {
+            "0": "95 percent",
+            "1": "99 percent",
+            "2": "99.9 percent",
+            "3": "99.99 percent"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to ensure they have an assigned account manager to oversee all support-related issues.\n\nYou need to recommend a support option for the company.\n\nWhich support option should you recommend?",
+        "options": {
+            "0": "FastTrack",
+            "1": "Pre-sales",
+            "2": "Community-based",
+            "3": "Microsoft Unified"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company wants to implement security best practices for Microsoft 365 workloads.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Segment network access and use encryption.\n- Limit user access using just-in-time (JIT) and just enough access (JEA).\n- Always authenticate and authorize.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Zero Trust",
+            "1": "Shared responsibility model",
+            "2": "Responsibility Assignment Matrix (RAM)",
+            "3": "Federation trust"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs to allow external sharing with partners and vendors. The company requires the default configuration available to achieve this goal.\n\nYou need to recommend a cloud identity provider.\n\nWhich two providers should you recommend? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "Facebook",
+            "1": "Active Directory",
+            "2": "Microsoft Entra ID",
+            "3": "Microsoft account"
+        },
+        "answer": [
+            2,
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Active Directory to authenticate users accessing their computers.\n\nThe company needs to know which functionality requires Microsoft Entra ID.\n\nWhich functionality should you describe?",
+        "options": {
+            "0": "Support for modern authentication.",
+            "1": "Support for single sign-on.",
+            "2": "Ability to create user objects.",
+            "3": "Ability to create computer objects."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to establish data privacy policies and regulations.\n\nYou need to recommend a tool to help the company achieve these goals.\n\nWhich tool should you recommend?",
+        "options": {
+            "0": "Microsoft Priva",
+            "1": "Service Trust Portal",
+            "2": "Microsoft Secure Score",
+            "3": "Microsoft Defender portal"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company needs to implement Microsoft productivity solutions for its 500 employees.\n\nThe company has high speed internet access from its locations to the cloud. Remote workers have high speed internet access to the cloud.\n\nInternet connectivity uptime is not 100%.\n\nUsers must be able to:\n\n- Collaborate within documents and workbooks.\n- Create relational databases.\n   \nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft 365 Enterprise Web apps",
+            "1": "Microsoft 365 Business web apps",
+            "2": "Microsoft 365 Business",
+            "3": "Microsoft 365 Enterprise"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft OneDrive to collaborate on documents.\n\nThe chief security officer (CSO) states there may be a security issue based upon how the system displays file recommendations for users.\n\nYou need to identify the service that provides this capability.\n\nWhich service should you identify?",
+        "options": {
+            "0": "Microsoft Graph",
+            "1": "Microsoft Planner",
+            "2": "Microsoft Viva",
+            "3": "Microsoft Viva Engage"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a Microsoft Viva solution.\n\nThe solution must be able to:\n\n- Provide a company branded app in Microsoft Teams.\n- Provide access to content curated for individual worker roles within the company.\n- Deliver personalized content through integration with Microsoft Viva Engage and Microsoft Stream.\n\nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Viva Connections",
+            "1": "Microsoft Viva Learning",
+            "2": "Microsoft Viva Insights",
+            "3": "Microsoft Viva Topics"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs a cloud-based service that can manage all devices and applications.\n\nYou need to recommend a service that meets the following requirements:\n\n- Ability to manage Windows and Mac operating systems.\n- Ability to manage Android and iOS/iPadOS.\n- Ability to integrate with Microsoft Entra ID.\n- Provide insights into compliance status of devices.\n   \nWhich service should you recommend?",
+        "options": {
+            "0": "Desktop Analytics",
+            "1": "Configuration Manager",
+            "2": "Microsoft Intune",
+            "3": "Windows 365"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company wants to help employees find a balance between productivity and well-being.\n\nYou need to recommend a solution that allows the identification of teams' work patterns that could lead to burnout.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Personal Insights feature of Microsoft Viva Insights",
+            "1": "Manager Insights feature of Microsoft Viva Insights",
+            "2": "Microsoft 365 Usage Reports",
+            "3": "Security Report in the Microsoft 365 Defender admin center"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company purchased Microsoft Office 2019 for all its employees without an existing Microsoft Volume Licensing agreement.\n\nThe company needs to know which user subscription licensing (USL) option will minimize the cost while transitioning to Microsoft 365.\n\nYou need to recommend a licensing solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "Add-on USLs",
+            "1": "From SA USLs",
+            "2": "Full USLs",
+            "3": "Step Up USLs"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company evaluates appointment scheduling solutions to implement.\n\nYou need to recommend a solution that meets the following requirements:\n\n- Users must be able to create pages that are accessible through shareable links for customers to schedule appointments.\n- Integrate with Microsoft Teams.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "To Do",
+            "1": "Planner",
+            "2": "Bookings",
+            "3": "Microsoft Project"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company plans to use Microsoft 365.\n\nYou need to recommend a solution that meets the company's requirements:\n\n- Communicate with chat, voice calling, and online meetings.\n- Communicate with email messages.\n- Schedule meetings and appointments.\n   \nWhich two applications should you recommend? Each answer is part of the solution.",
+        "options": {
+            "0": "Microsoft Teams",
+            "1": "Microsoft Exchange",
+            "2": "Microsoft Bookings",
+            "3": "Microsoft OneDrive",
+            "4": "Microsoft To Do"
+        },
+        "answer": [
+            0,
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company plans to host a Microsoft Teams meeting for 4,500 employees.\n\nYou need to specify how many employees will be able to use screen sharing in the meeting.\n\nWhich number should you specify?",
+        "options": {
+            "0": "500",
+            "1": "1,000",
+            "2": "2,500",
+            "3": "5,000"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to implement a virtual desktop solution for 100 employees.\n\nYou need to recommend a solution with the following requirements:\n\n- Preserve user settings across different logon sessions.\n- Provide automatic provisioning triggered by a user license assignment.\n- Minimize operational and licensing costs.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Windows 365 Business",
+            "1": "Windows 365 Enterprise",
+            "2": "Microsoft Azure Virtual Desktop",
+            "3": "Microsoft Azure Virtual Machine"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company needs a solution to support the well-being and productivity of employees. They want to provide each employee with information about their work habits and recommendations to improve their habits.\n\nEmployees must be able to:\n\n- Protect their time.\n- Stay connected with tasks and colleagues.\n- Give praise and take breathing breaks.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Microsoft Viva Insights",
+            "1": "Microsoft To Do",
+            "2": "Microsoft Planner",
+            "3": "Microsoft Viva Connections"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nWhich three services are fully hosted and managed by Microsoft in the cloud? Each correct answer is a complete solution.",
+        "options": {
+            "0": "Microsoft OneDrive",
+            "1": "Microsoft Exchange",
+            "2": "Microsoft Entra ID",
+            "3": "Microsoft Bookings",
+            "4": "Microsoft Viva Connections"
+        },
+        "answer": [
+            0,
+            3,
+            4
+        ]
+    },
+    {
+        "question": "A company implements Microsoft 365.\n\nThe company has concerns about the encryption and classification of information and removal of Shadow IT in the organization.\n\nYou need to recommend a Zero Trust methodology pillar solution.\n\nWhich two pillars should you recommend? Each correct answer represents part of a complete solution.",
+        "options": {
+            "0": "Infrastructure",
+            "1": "Identities",
+            "2": "Data",
+            "3": "Applications",
+            "4": "Networks"
+        },
+        "answer": [
+            2,
+            3
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Entra ID to authenticate users.\n\nThe company needs to allow users to access resources authenticated by another identity provider.\n\nYou need to recommend a solution.\n\nWhich solution should you recommend?",
+        "options": {
+            "0": "federation trust",
+            "1": "just-in-time access",
+            "2": "modern authentication",
+            "3": "multi-factor authentication"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company needs to access the portal that serves as the primary source of Microsoft 365 compliance related information.\n\nYou need to recommend a portal.\n\nWhich portal should you recommend?",
+        "options": {
+            "0": "Microsoft Priva",
+            "1": "Microsoft Purview",
+            "2": "Service Trust portal",
+            "3": "Trust Center"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company requires a tool to understand its current security posture.\n\nYou recommend Microsoft Secure Score.\n\nYou need to describe its capabilities.\n\nWhich three capabilities should you describe? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "Secure Score provides improvement actions on the current security posture.",
+            "1": "The lower the company\u2019s Secure Score is, the better the protection.",
+            "2": "Companies can use Secure Score to measure their current security posture across apps, identities, and devices.",
+            "3": "Secure Score provides improvement actions on the current compliance posture.",
+            "4": "Secure Score can be used to set key performance indicators (KPIs) for the company\u2019s security posture."
+        },
+        "answer": [
+            0,
+            2,
+            4
+        ]
+    },
+    {
+        "question": "A company hosts several services in an on-premises data center.\n\nYou are making a presentation to the company about the benefits of cloud computing.\n\nWhich two cloud computing benefits should you describe? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "high availability of resources",
+            "1": "complete control of a data center",
+            "2": "ability to deploy apps across regions",
+            "3": "local residency of data"
+        },
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company plans to arrange a conference call that will be attended by 4,500 employees.\n\nYou need to recommend a solution that meets the following requirements:\n\n- All employees can attend the meeting.\n- All employees can participate by using moderated Q&A.\n   \nWhich solution should you recommend?",
+        "options": {
+            "0": "Live event",
+            "1": "Meeting",
+            "2": "Webinar",
+            "3": "Microsoft Stream"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nThe company plans to arrange a Microsoft Teams meeting for 4,500 employees.\n\nYou need to specify the maximum number of participants that will be able to call in to the meeting from their phones.\n\nWhich number should you specify?",
+        "options": {
+            "0": "1,000",
+            "1": "2,000",
+            "2": "5,000",
+            "3": "20,000"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft Teams.\n\nThe company uses a team named HR Projects.\n\nYou need to create a channel in the team. The channel must meet the following requirements:\n\n- Ability to add a few existing members of the team to the channel.\n- Ability to add members from the other departments who are not members of the team.\n- Disable the capability to add guests to the channel.\n   \nWhich channel type should you recommend?",
+        "options": {
+            "0": "Private",
+            "1": "Standard",
+            "2": "Shared"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "A company is planning the user login process for access to Microsoft 365.\n\nThe company needs to document the login process stages. You need to explain the process that verifies if a username and password combination is correct.\n\nWhich named process should you explain?",
+        "options": {
+            "0": "Authentication",
+            "1": "Authorization",
+            "2": "Zero Trust",
+            "3": "Shared responsibility model"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365.\n\nYou are describing the work management capabilities of Microsoft Project to a colleague.\n\nWhich capability does Microsoft Project provide?",
+        "options": {
+            "0": "Use views such as grid views and timeline Gantt charts.",
+            "1": "Organize tasks with a daily to-do list called \"My Day\".",
+            "2": "Add extra time between appointments for any pre- or post-appointment activities.",
+            "3": "Create a booking page for customers and clients to schedule and reschedule appointments on their own."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "A company uses Microsoft 365. \n\nThe company needs a tool that updates employees on company events and activities. \n\nThis tool must meet the following requirements: \n\n- Provide a dashboard for easy access to resources.\n- Provide personalized news and communications.\n- Provide a personalized view of tasks and assignments.\n   \nWhich Microsoft 365 app should you recommend?",
+        "options": {
+            "0": "Bookings",
+            "1": "Viva Connections",
+            "2": "Viva Topics",
+            "3": "To Do"
+        },
+        "answer": [
+            1
+        ]
+    }
+]
