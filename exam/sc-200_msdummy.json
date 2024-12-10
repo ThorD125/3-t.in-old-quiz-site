@@ -1,0 +1,1117 @@
+[
+    {
+        "question": "You have a Microsoft 365 E5 subscription that contains three devices named Device1, Device2, and Deivce3. The subscription uses Microsoft Defender for Endpoint.\n\nYou are performing an investigation by using the following query.\n\n```\nDeviceLogonEvents\n| where ActionType == \"LogonFailed\"\n| summarize LogonFailures=count() by DeviceName, LogonType, InitiatingProcessCommandLine\n| where LogonFailures > 3\n| project LogonFailures, DeviceName, LogonType, InitiatingProcessCommandLine\n| sort by LogonFailures desc\n```\n\nYou need to exclude Device3 from the query.\n\nWhich statement should you add to the query?",
+        "options": {
+            "0": "`| where DeviceName != \"Device3\"`",
+            "1": "`| where DeviceName == \"Device3\"`",
+            "2": "`| where DeviceName =~ \"Device3\"`",
+            "3": "`| where DeviceName has \"Device3\"`"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to create a livestream session in Microsoft Sentinel.\n\nWhich Microsoft Sentinel resource can you add to the livestream?",
+        "options": {
+            "0": "a hunting query",
+            "1": "a watchlist",
+            "2": "an analytics query",
+            "3": "an incident"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a Microsoft Sentinel workspace.\n\nYou develop three hunting queries.\n\nYou need to ensure that the hunting queries run each time you open the **Hunting** blade.\n\nWhat should you do?",
+        "options": {
+            "0": "Add the queries as Bookmarks.",
+            "1": "Add the queries as Favorites.",
+            "2": "Add the queries to a livestream.",
+            "3": "Create an analytics rule."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou have the following hunting query.\n\n```\nSigninLogs\n| where TimeGenerated > ago(7d)\n| extend ErrorCode = tostring(Status.errorCode)\n| extend FailureReason = tostring(Status.failureReason)\n| where ErrorCode in (\"50053\", \"50079\")\n| project UserPrincipalName, IPAddress, AppDisplayName, ['Error Code'] = ErrorCode, ['Reason']= FailureReason\n```\n\nYou run the query and select results to add as a bookmark.\n\nWhich projected column does **NOT** map to an entity?",
+        "options": {
+            "0": "`AppDisplayName`",
+            "1": "`IPAddress`",
+            "2": "`Reason`",
+            "3": "`UserPrincipalName`"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace that has the following data connectors configured:\n\n- SigninLogs\n- AuditLogs\n- SecurityAlerts\n\nYou need to create a query that will look for an IP address across the three configured data tables and return the matching rows.\n\nWhich operator should you use?",
+        "options": {
+            "0": "`extend`",
+            "1": "`join`",
+            "2": "`lookup`",
+            "3": "`union`"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription and a Microsoft Sentinel workspace.\n\nYou create a custom query named Query1.\n\nYou need to test Query1 against events as they occur in the subscription.\n\nWhat should you use?",
+        "options": {
+            "0": "a bookmark",
+            "1": "a livestream",
+            "2": "a parser",
+            "3": "a watchlist"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a user named User1 and a Microsoft Sentinel workspace.\n\nYou create a query that looks for failed sign-ins for User1.\n\nYou need to save key findings from the results. The solution must ensure that you use the results in an investigation graph.\n\nWhat should you create?",
+        "options": {
+            "0": "a bookmark",
+            "1": "a livestream",
+            "2": "a parser",
+            "3": "a watchlist"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a Microsoft Sentinel workspace.\n\nYou have the following query.\n\n```\nAzureActivity\n| summarize count() by OperationName, bin(TimeGenerated, 4h)\n```\n\nYou need to update the KQL query to show graphical output.\n\nWhich operator should you use?",
+        "options": {
+            "0": "`print`",
+            "1": "`project`",
+            "2": "`project-away`",
+            "3": "`render`"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Sentinel.\n\nYou need to create a report that will visualize alert information over time.\n\nWhat should you create first?",
+        "options": {
+            "0": "a hunting query",
+            "1": "a notebook",
+            "2": "a playbook",
+            "3": "a workbook"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou plan to add a workbook to Microsoft Sentinel.\n\nYou create a workbook query.\n\nYou need to display the query results in a time chart.\n\nWhich keyword should you include in the query?",
+        "options": {
+            "0": "`extend`",
+            "1": "`print`",
+            "2": "`project`",
+            "3": "`render`",
+            "4": "`summarize`"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft SharePoint Online.\n\nYou need to be notified if a user downloaded a large number of documents from SharePoint Online during the month before the user\u2019s account was deleted.\n\nWhat should you use?",
+        "options": {
+            "0": "a Microsoft Defender for Cloud Apps file policy",
+            "1": "a Microsoft Defender for Office 365 alert policy",
+            "2": "a Microsoft Purview insider risk management policy",
+            "3": "a Microsoft Entra Governance access review"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that contains five Microsoft SharePoint Online sites.\n\nYou apply data loss prevention (DLP) policies to the SharePoint Online sites.\n\nYou need to review the DLP alerts.\n\nWhich two portals can you use? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "the Microsoft Purview compliance portal",
+            "1": "the SharePoint admin center",
+            "2": "the Microsoft 365 admin center",
+            "3": "the Microsoft Defender portal"
+        },
+        "answer": [
+            0,
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that contains a user named User1 and a Microsoft SharePoint Online site named Site1.\n\nUser1 leaves the company, and the user\u2019s account is deleted.\n\nYou need to identify whether User1 downloaded files from Site1 during the 30 days before the account was deleted.\n\nWhich type of policy should you create?",
+        "options": {
+            "0": "a Microsoft Defender for Cloud Apps file policy",
+            "1": "a Microsoft Defender for Office 365 alert policy",
+            "2": "a Microsoft Purview insider risk management policy",
+            "3": "a Microsoft Entra Governance access review"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a hybrid Microsoft Entra tenant and a Microsoft 365 E5 subscription.\n\nYou need to review all changes made to the Active Directory Enterprise Admins group during the last 14 days.\n\nWhat should you use?",
+        "options": {
+            "0": "the Microsoft Entra ID Provisioning Analysis workbook",
+            "1": "the Microsoft Entra ID Sensitive Operations Report workbook",
+            "2": "the Microsoft Defender for Cloud Apps Cloud Discovery users page",
+            "3": "the Microsoft Defender for Identity Modifications to sensitive groups report"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a hybrid Microsoft Entra tenant and a Microsoft 365 E5 subscription.\n\nYou need to identify any high-risk users that have performed a password reset during the last 14 days.\n\nWhat should you use?",
+        "options": {
+            "0": "the Identity Protection risk analysis workbook in Microsoft Entra ID",
+            "1": "the Sensitive Operations Report workbook in Microsoft Entra ID",
+            "2": "the Risky sign-ins report in Microsoft Entra ID Protection",
+            "3": "the Risky users report in Microsoft Entra ID Protection"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Identity.\n\nYou need to download a Defender for Identity detailed alert report.\n\nWhich format will the report use?",
+        "options": {
+            "0": "CSV",
+            "1": "JSON",
+            "2": "TXT",
+            "3": "XLSX"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a hybrid Microsoft 365 E5 subscription.\n\nYou need to monitor an Active Directory Domain Services (AD DS) domain and identify and investigate any detected threats.\n\nWhat should you use?",
+        "options": {
+            "0": "Microsoft Entra ID Protection",
+            "1": "Microsoft Defender for Endpoints",
+            "2": "Microsoft Defender for Identity",
+            "3": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Cloud.\n\nYou have a lab environment that uses an IP address range of 14.38.2.0/24.\n\nYou receive multiple alerts from the lab environment.\n\nYou need to remove all alerts that originate from the lab environment network. The solution must meet the following requirements:\n\n- Automatically close all future alerts from the lab environment.\n- Minimize administrative effort.\n\nWhat should you create?",
+        "options": {
+            "0": "a firewall policy",
+            "1": "a logic app",
+            "2": "a suppression rule",
+            "3": "an automation rule"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Defender for Cloud.\n\nYou review security alerts in Defender for Cloud and notice a potential unauthorized use of credential access.\n\nYou need to respond to and take the necessary steps to remediate the alert.\n\nWhich action should you perform in the Defender for Cloud dashboard?",
+        "options": {
+            "0": "Inspect resource context",
+            "1": "Mitigate the threat",
+            "2": "Prevent future attacks",
+            "3": "Suppress similar alerts",
+            "4": "Trigger automated response"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have an Azure virtual machine named VM1 that runs Windows Server and is protected by using Microsoft Defender for Cloud.\n\nDefender for Cloud generates multiple alerts for VM1. You review the alerts and establish that the alerts are false positives.\n\nYou need to prevent new VM1 alerts from being shown in Defender for Cloud for seven days.\n\nWhat should you do?",
+        "options": {
+            "0": "Create a suppression rule.",
+            "1": "Modify the alert processing rule.",
+            "2": "Modify the alert rule.",
+            "3": "Modify the diagnostic settings for VM1."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "Your company uses Microsoft Defender for Cloud.\n\nYou need to create a Defender for Cloud workflow automation.\n\nWhat should you create first?",
+        "options": {
+            "0": "a logic app",
+            "1": "a storage account",
+            "2": "an App Service app",
+            "3": "an automation account"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that contains a user named User1.\n\nYou have a Microsoft Sentinel workspace.\n\nYou receive multiple alerts for failed sign-ins for User1. You investigate the alerts and identify that they are false positives.\n\nYou need to prevent additional failed sign-in alerts from being generated for User1. The solution must ensure that failed sign-in alerts will be generated for other accounts.\n\nWhat should do?",
+        "options": {
+            "0": "Add an activity template to entity behavior.",
+            "1": "Create a watchlist.",
+            "2": "Create an automation rule.",
+            "3": "Update the analytics rule."
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You manage Microsoft Sentinel for 20 customers. Each customer has its own Microsoft Sentinel workspace.\n\nYou plan to use Multiple workspace view in Microsoft Sentinel.\n\nYou need to identify which Microsoft Sentinel features you can use in Multiple workspace view?\n\nWhat can you use?",
+        "options": {
+            "0": "Incidents, Analytics, and Hunting",
+            "1": "Incidents and Analytics only",
+            "2": "Incidents and Threat intelligence only",
+            "3": "Incidents only"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace and an Azure virtual machine named VM1.\n\nYou open an investigation graph for the incident.\n\nWhat does the investigation graph show if you hover over VM1?",
+        "options": {
+            "0": "the last five security events for VM1",
+            "1": "the network security group (NSG) for VM1",
+            "2": "the ports open on VM1",
+            "3": "the processes running on VM1"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a user named User1 and a Microsoft Sentinel workspace.\n\nYou receive multiple sign-in-related alerts for User1.\n\nYou need to view all insights for the user account.\n\nWhat should you use?",
+        "options": {
+            "0": "a sign-ins workbook",
+            "1": "Advanced Hunting",
+            "2": "entity behavior",
+            "3": "threat intelligence"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou develop a playbook named Playbook1.\n\nYou need to perform a manual test of Playbook1 from the Microsoft Sentinel portal.\n\nWhich blade should you select first?",
+        "options": {
+            "0": "Analytics",
+            "1": "Automation",
+            "2": "Hunting",
+            "3": "Incidents"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to create a playbook that will run automatically in response to a Microsoft Sentinel incident.\n\nWhat should you create first?",
+        "options": {
+            "0": "a hunting query",
+            "1": "a logic app",
+            "2": "a trigger",
+            "3": "an automation rule"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a resource group named RG1 and a Microsoft Sentinel workspace.\n\nIn RG1, you create a playbook named Play1.\n\nYou need to ensure that the Azure Security Insights identity can run Play1. The solution must follow the principle of least privilege.\n\nWhat should you do?",
+        "options": {
+            "0": "Delegate the Logic App Contributor role on Play1.",
+            "1": "Delegate the Logic App Contributor role on RG1.",
+            "2": "Delegate the Microsoft Sentinel Automation Contributor role on Play1.",
+            "3": "Delegate the Microsoft Sentinel Automation Contributor role on RG1."
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou plan to deploy Microsoft Defender for Cloud Apps.\n\nYou need to create a policy that will implement data loss prevention (DLP).\n\nWhich two types of policies should you create? Each correct answer presents part of the solution.",
+        "options": {
+            "0": "access policy",
+            "1": "app discovery policy",
+            "2": "file policy",
+            "3": "session policy"
+        },
+        "answer": [
+            2,
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou need to ensure that you can identify and protect sensitive documents in the subscription. The solution must ensure that you can prevent users from sending sensitive information to users in external organizations by using Microsoft Teams or Slack. The solution must use real-time content inspection.\n\nWhat should you deploy?",
+        "options": {
+            "0": "Microsoft Defender for Cloud Apps",
+            "1": "Microsoft Defender for Containers",
+            "2": "Microsoft Defender for Endpoint",
+            "3": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that contains a user named User1.\n\nYou need to prevent User1 from sending more than 20 email messages per day.\n\nWhat should you configure in Microsoft Defender for Office 365?",
+        "options": {
+            "0": "an anti-phishing policy",
+            "1": "an anti-spam policy",
+            "2": "the Tenant Allow/Block Lists",
+            "3": "Enhanced Filtering"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Endpoint.\n\nYou deploy an app named App1. App1 clears logs from an application server.\n\nWhen App1 runs, it triggers a Microsoft Defender alert.\n\nYou need to prevent App1 from triggering alerts. The solution must ensure that other apps will still trigger alerts.\n\nWhat should you configure?",
+        "options": {
+            "0": "a detection rule",
+            "1": "a suppression rule",
+            "2": "an alert policy",
+            "3": "an automated investigation"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel playbook named Playbook1.\n\nPlaybook1 is triggered when a new Microsoft Sentinel incident is created.\n\nYou create a custom near-real-time (NRT) analytics rule named NRTRule1.\n\nYou need to ensure that NRTRule1 can use Playbook1.\n\nWhat should you do?",
+        "options": {
+            "0": "Add an automation rule to NRTRule1.",
+            "1": "Configure Alert Automation (Classic) on NRTRule1.",
+            "2": "Configure the Incident settings for NRTRule1.",
+            "3": "Recreate NRTRule1 as a scheduled query rule."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou plan to create a watchlist of high-value assets.\n\nYou need to create a list of the assets that you will upload.\n\nHow should you format the list?",
+        "options": {
+            "0": "CSV",
+            "1": "DOCX",
+            "2": "XLSX",
+            "3": "XML"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace that contains the following query.\n\n```\nOfficeActivity\n| where TimeGenerated > ago(7h)\n| where Operation !contains \"Mail\"\n| project TimeGenerated, UserId, Operation, OfficeWorkload, RecordType, _ResourceId\n| sort by TimeGenerated desc nulls last\n```\n\nThe query filters the office activity table to remove results that refer to email, and project selected information from the table in descending order.\n\nYou need to create a custom parser named Parser1 that will run the query.\n\nWhat should you do first?",
+        "options": {
+            "0": "Remove `| sort by TimeGenerated desc nulls last`.",
+            "1": "Remove the `TimeGenerated` column from the results.",
+            "2": "Remove `| where TimeGenerated > ago(7h)`.",
+            "3": "Replace the `!contains` operator with the `!has` operator."
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to prevent a built-in Advanced Security Information Model (ASIM) parser from being updated automatically.\n\nWhich two actions can you perform? Each answer presents a complete solution.",
+        "options": {
+            "0": "Build a custom unifying parser and include the built-in parser version.",
+            "1": "Create a hunting query and reference the built-in parser.",
+            "2": "Create an analytics rule and include the built-in parser.",
+            "3": "Redeploy the built-in parser and specify a CallerContext value of Any and a SourceSpecificParser value of Any.",
+            "4": "Redeploy the built-in parser and specify a CallerContext value of Built-in."
+        },
+        "answer": [
+            0,
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou deploy a new security device that is connected to the workspace by using the Common Event Format (CEF) data connector.\n\nYou need to develop a custom parser to interpret the data from the device.\n\nWhat should you do first?",
+        "options": {
+            "0": "Collect sample logs.",
+            "1": "Create a playbook.",
+            "2": "Map the source event fields to the identified schema. ",
+            "3": "Switch to the Syslog connector."
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou are testing a parser.\n\nYou need to improve query performance during the testing.\n\nWhat should you do?",
+        "options": {
+            "0": "Add a watchlist.",
+            "1": "Add filtering parameters.",
+            "2": "Configure a source-specific parser.",
+            "3": "Define a time filter."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou are implementing Microsoft Defender for Endpoint.\n\nYou need to ensure that you can block specific IP addresses and URLs.\n\nWhich advanced feature should you configure?",
+        "options": {
+            "0": "Custom network indicators ",
+            "1": "Enable EDR in block mode ",
+            "2": "Restrict correlation to within scoped device groups",
+            "3": "Web content filtering"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou are evaluating Microsoft Defender for Endpoint.\n\nYou need to minimize how long Defender for Endpoint data is retained.\n\nWhat is the minimum data retention period you can configure?",
+        "options": {
+            "0": "14 days",
+            "1": "30 days",
+            "2": "60 days",
+            "3": "180 days"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Endpoint.\n\nYou need to be notified when new or updated threat analytics information is added to Microsoft Defender XDR.\n\nWhich two methods can you use? Each answer presents a complete solution.",
+        "options": {
+            "0": "Configure a Microsoft Sentinel automation rule.",
+            "1": "Configure a threat analytics email notification rule. ",
+            "2": "Configure a vulnerabilities email notification rule. ",
+            "3": "Configure an Advanced Hunting detection rule.",
+            "4": "Configure an alert email notification rule."
+        },
+        "answer": [
+            1,
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Defender for Cloud. The subscription contains a virtual machine named VM1. VM1 hosts a Docker container that hosts an app named App1.\n\nYou need to ensure that the configuration of the Docker host meets best practices. The solution must ensure that you are alerted if vulnerabilities are detected.\n\nWhat should you use?",
+        "options": {
+            "0": "Microsoft Defender for App Service ",
+            "1": "Microsoft Defender for Cloud Apps ",
+            "2": "Microsoft Defender for Containers",
+            "3": "Microsoft Defender for Servers"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains 50 virtual machines that run Windows Server. The virtual machines are onboarded to Microsoft Defender for Cloud.\n\nYou need to identify the virtual machines that are missing updates and have Windows firewall disabled.\n\nWhat should you configure?",
+        "options": {
+            "0": "auto provisioning",
+            "1": "data collection",
+            "2": "Defender plans",
+            "3": "workflow automation"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains five virtual machines onboarded to Microsoft Defender for Cloud.\n\nYou need to reduce the amount of data that is sent to a Log Analytics workspace.\n\nWhat should you configure?",
+        "options": {
+            "0": "auto provisioning",
+            "1": "data collection ",
+            "2": "Defender plans ",
+            "3": "workflow automation"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Defender for Cloud.\n\nYou have an Amazon Web Services (AWS) account.\n\nYou need to ensure that you can use Microsoft Defender for Cloud to assess the resources in the AWS account.\n\nWhich blade in the Microsoft Defender for Cloud portal should you use to configure the AWS connector?",
+        "options": {
+            "0": "Environment settings",
+            "1": "Regulatory compliance",
+            "2": "Workflow automation",
+            "3": "Workload protections"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Security Operations Center (SOC) and a Microsoft Sentinel workspace.\n\nYou need to ensure that Tier 1 SOC analysts can manage incidents in Microsoft Sentinel by running preconfigured playbooks. The solution must meet the following requirements:\n\n- Prevent analysts from making changes to playbooks or the Microsoft Sentinel workspace.\n- Follow the principle of least privilege.\n\nWhich role or roles should you assign to the analysts?",
+        "options": {
+            "0": "Microsoft Sentinel Automation Contributor",
+            "1": "Microsoft Sentinel Contributor",
+            "2": "Microsoft Sentinel Reader and Logic App Contributor",
+            "3": "Microsoft Sentinel Responder and Logic App Operator"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription.\n\nYou need to deploy Microsoft Sentinel.\n\nWhat should you create first?",
+        "options": {
+            "0": "a Log Analytics workspace",
+            "1": "a SQL database",
+            "2": "a storage account",
+            "3": "an Azure Synapse Analytics workspace"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "Your on-premises network contains multiple devices that provide logs in Common Event Format (CEF).\n\nYou have an Azure subscription and a Microsoft Sentinel workspace named Workspace1.\n\nYou need to ingest the logs from the devices into Workspace1.\n\nWhat should you do first?",
+        "options": {
+            "0": "Add the Security Events via Legacy Agent data connector in Microsoft Sentinel.",
+            "1": "Add the Syslog data connector in Microsoft Sentinel.",
+            "2": "Deploy a computer that runs Linux.",
+            "3": "Deploy a server that runs Windows Server."
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou plan to deploy a Syslog data connector in Microsoft Sentinel.\n\nYou download an agent to a computer that runs Linux.\n\nYou need to onboard the agent to Microsoft Sentinel.\n\nWhich information do you need?",
+        "options": {
+            "0": "the Azure subscription ID and the name of the Microsoft Sentinel workspace",
+            "1": "the Azure subscription ID and the workspace primary key",
+            "2": "the Microsoft Sentinel workspace ID and the workspace secondary key",
+            "3": "the name of the Microsoft Sentinel workspace and the credentials of the user assigned the Microsoft Sentinel Reader role"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to enable User and Entity Behavior Analytics (UEBA) in Microsoft Sentinel.\n\nWhich two data sources support the use of UEBA? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "Azure Activity",
+            "1": "Azure SQL Databases",
+            "2": "Microsoft 365",
+            "3": "Security Events",
+            "4": "Threat Intelligence Platforms"
+        },
+        "answer": [
+            0,
+            3
+        ]
+    },
+    {
+        "question": "Your company uses Microsoft Defender for Cloud.\n\nDuring a 24-hour period, Defender for Cloud generates the following alerts:\n\n- 12 low-severity alerts\n- Six medium-severity alerts\n- Three high-severity alerts\n\nWhat is the maximum number of email notifications that Defender for Cloud will send during the 24 hours?",
+        "options": {
+            "0": "3",
+            "1": "6",
+            "2": "9",
+            "3": "12",
+            "4": "21"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Endpoint and contains a device named Device1.\n\nDevice1 triggered a high-severity alert.\n\nYou need to review the events that occurred before the alert was triggered.\n\nWhat should you do in the Microsoft Defender portal?",
+        "options": {
+            "0": "From the Device page, select **Go hunt**.",
+            "1": "From the Device page, select the **Timeline** tab.",
+            "2": "From the Microsoft Defender portal, query for Device1 in Advanced Hunting."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to investigate incidents by using Microsoft Sentinel.\n\nWhat is the maximum age of the incidents that can be investigated?",
+        "options": {
+            "0": "7 days",
+            "1": "14 days",
+            "2": "30 days",
+            "3": "90 days"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription and an Azure subscription.\n\nYou use Microsoft Sentinel with the following data connectors:\n\n- Microsoft Entra ID\n- Microsoft Entra ID Protection\n- Microsoft 365\n- Microsoft Defender for Office 365\n\nFrom Microsoft Sentinel, you create an automation rule named Rule1.\n\nYou need to configure an Incident provider condition for Rule1.\n\nWhich two incident providers can you specify in the condition? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "Microsoft Entra ID",
+            "1": "Microsoft Entra ID Protection",
+            "2": "Microsoft Sentinel",
+            "3": "Microsoft Defender for Office 365",
+            "4": "Microsoft 365"
+        },
+        "answer": [
+            2,
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Sentinel.\n\nYou plan to create a playbook that will be triggered when an incident is created in Microsoft Sentinel.\n\nWhat should be used to implement the automated trigger action?",
+        "options": {
+            "0": "a Log Analytics workspace",
+            "1": "an integration service environment",
+            "2": "Azure Logic Apps",
+            "3": "diagnostic logs"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "Your company has the following devices:\n\n- A Windows 11 device named Device1\n- A Windows 10 device named Device2\n- An iOS device named Device3\n- An Android device named Device4\n\nWhich devices can be onboarded and protected by using Microsoft Defender for Endpoint?",
+        "options": {
+            "0": "Device1 and Device2 only ",
+            "1": "Device1, Device2, and Device3 only ",
+            "2": "Device1, Device2, and Device4 only ",
+            "3": "Device1, Device2, Device3, and Device4 ",
+            "4": "Device1 only"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Cloud.\n\nYou have a virtual machine named Server1 that runs Windows Server and is hosted in Amazon Web Services (AWS).\n\nYou need to collect logs and resolve vulnerabilities for Server1 by using Defender for Cloud.\n\nWhat should you install on Server1?",
+        "options": {
+            "0": "the Azure Connected Machine agent",
+            "1": "the Azure Monitor Dependency agent ",
+            "2": "the Azure Pipelines agent",
+            "3": "InfluxData Telegraf agent"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains following resources:\n\n- A virtual machine named VM1\n- A storage account named storage1\n- An Azure App Service named App1\n\nWhich resources can be protected by using Microsoft Defender for Cloud?",
+        "options": {
+            "0": "VM1 and App1 only",
+            "1": "VM1 and storage1 only",
+            "2": "VM1 only",
+            "3": "VM1, storage1, and App1"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Defender for Cloud and contains a Log Analytics workspace named Workspace1.\n\nYou need to store Secure Score and security recommendations from Defender for Cloud in Workspace1.\n\nWhat should you use?",
+        "options": {
+            "0": "a security policy",
+            "1": "auto provisioning",
+            "2": "continuous export ",
+            "3": "workflow automation"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You are configuring a new Microsoft Sentinel environment.\n\nWhich items are required to create a Microsoft Sentinel workspace?",
+        "options": {
+            "0": "a Microsoft 365 subscription, a Log Analytics workspace, and an Azure Storage account",
+            "1": "a Microsoft 365 subscription, an Azure Storage account, and an Azure Monitor account",
+            "2": "an Azure subscription, a Microsoft Entra tenant, and a Log Analytics workspace",
+            "3": "an Azure subscription, a Microsoft Entra tenant, and an Azure SQL managed instance"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Sentinel.\n\nYou create a user named Admin1.\n\nYou need to ensure that Admin1 can add playbooks in Microsoft Sentinel. The solution must follow the principle of least privilege.\n\nWhich role should you assign to Admin1?",
+        "options": {
+            "0": "Microsoft Sentinel Automation Contributor",
+            "1": "Microsoft Sentinel Contributor",
+            "2": "Microsoft Sentinel Responder",
+            "3": "Owner"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have an Azure subscription and a Microsoft SharePoint Online site named Site1.\n\nYou are implementing Microsoft Sentinel.\n\nYou need to collect events from Site1.\n\nWhich data connector should you add to Microsoft Sentinel?",
+        "options": {
+            "0": "Microsoft Defender for Office 365",
+            "1": "Microsoft 365",
+            "2": "Security Events via Legacy Agent",
+            "3": "Syslog"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Cloud Apps.\n\nYou need to be notified if a user signs in from a risky IP address. The solution must ensure that the user is also notified.\n\nWhich type of policy should you create?",
+        "options": {
+            "0": "a Cloud Discovery anomaly detection policy",
+            "1": "a session policy",
+            "2": "an access policy",
+            "3": "an activity policy"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "Your company uses Microsoft Defender for Cloud.\n\nYou need to configure the continuous export of Defender for Cloud data.\n\nTo which two destinations can you export the data? Each correct answer presents a complete solution.",
+        "options": {
+            "0": "a Log Analytics workspace",
+            "1": "a Microsoft Sentinel workspace",
+            "2": "a storage account",
+            "3": "an Azure Synapse Analytics workspace",
+            "4": "an event hub"
+        },
+        "answer": [
+            0,
+            4
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to create an analytics rule that will use entity mapping.\n\nWhich type of rule should you create?",
+        "options": {
+            "0": "anomaly",
+            "1": "fusion",
+            "2": "machine learning (ML) behavioral analytics",
+            "3": "scheduled"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace that contains the following rules:\n\n- A near-real-time (NRT) rule named Rule1\n- A fusion rule named Rule2\n- A scheduled rule named Rule3\n- A machine learning (ML) behavior analytics rule named Rule4\n\nYou need to review the query logic used for individual rules.\n\nWhich rules can you review?",
+        "options": {
+            "0": "Rule1 and Rule3 only",
+            "1": "Rule1, Rule2, and Rule3 only",
+            "2": "Rule1, Rule2, Rule3, and Rule4",
+            "3": "Rule2 and Rule3 only",
+            "4": "Rule3 only"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace that has a Microsoft Defender for Cloud data connector.\n\nYou create a Microsoft incident creation rule named Rule1.\n\nYou need to ensure that Rule1 creates incidents based on Defender for Cloud alerts.\n\nWhat should you configure in Rule1?",
+        "options": {
+            "0": "a rule query",
+            "1": "alert details",
+            "2": "analytics rule logic",
+            "3": "entity mapping"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to create a parameter-less custom parser for an authentication information model.\n\nWhich syntax should you use?",
+        "options": {
+            "0": "`ASimAuthentication`",
+            "1": "`ASiAuthentication<vendor><Product>`",
+            "2": "`imAuthentication`",
+            "3": "`vimAuthentication<vendor><Product>`"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou plan to create a Microsoft Defender XDR hunting query to identify users that have been affected by clicking a suspicious URL.\n\nYou need to create a detection rule that will mark the user as compromised.\n\nWhich two properties should you include in the rule? Each answer presents part of the solution.",
+        "options": {
+            "0": "`AccountUpn`",
+            "1": "`AlertId`",
+            "2": "`ReportId`",
+            "3": "`TimeGenerated`"
+        },
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou have the following query.\n\n```\nSigninLogs\n| where TimeGenerated > ago(7d)\n| extend ErrorCode = tostring(Status.errorCode)\n| extend FailureReason = tostring(Status.failureReason)\n| where ErrorCode in (\"50053\", \"50079\")\n| project UserPrincipalName, IPAddress, AppDisplayName, ['Error Code'] = ErrorCode, ['Reason']= FailureReason\n```\n\nYou need to ensure that you can use the query in a livestream.\n\nWhat should you do?",
+        "options": {
+            "0": "Remove `tostring()` from `['Reason']= tostring(FailureReason)`.",
+            "1": "Remove `| where TimeGenerated > ago(7d)`.",
+            "2": "Replace `> ago(7d)` with `== ago(7d)`.",
+            "3": "Replace `ErrorCode in (\"50053\", \"50079\")` with `ErrorCode has_any (\"50053\", \"50079\")`."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace that has a Microsoft Entra ID data connector.\n\nYou need to create a report that visualizes sign-in information over time.\n\nWhat should you use?",
+        "options": {
+            "0": "a hunting query",
+            "1": "a notebook",
+            "2": "a playbook",
+            "3": "a workbook"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Security Operations Center (SOC) and a Microsoft Sentinel workspace.\n\nYou plan to provide the SOC manager with a Microsoft Sentinel workbook that includes the following metrics:\n\n- Incident created over time\n- Mean time to triage\n\nYou need to create the workbook by using a template. The solution must minimize administrative effort.\n\nWhich template should you use?",
+        "options": {
+            "0": "Analytics Efficiency",
+            "1": "Incident Overview",
+            "2": "Investigation Insights",
+            "3": "Security Alerts",
+            "4": "Security operations efficiency"
+        },
+        "answer": [
+            4
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that uses Microsoft Defender for Cloud Apps and Microsoft Sentinel.\n\nYou need to automatically create incidents from Microsoft security events in Microsoft Sentinel. The solution must use Microsoft incident creation rules.\n\nWhich blade in Microsoft Sentinel should you use?",
+        "options": {
+            "0": "Analytics",
+            "1": "Automation",
+            "2": "Hunting",
+            "3": "Incidents"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou create the following KQL query.\n\n```\nlet timeframe = ago(3h);\nlet threshold = 5;\n//ParserName\n| where TimeGenerated > timeframe\n| where EventType=='Logon' and EventResult=='Success'\n| where isnotempty(SrcGeoCountry)\n| summarize StartTime = min(TimeGenerated), EndTime = max(TimeGenerated), Vendors=make_set(EventVendor), Products=make_set(EventProduct), '\n NumOfCountries = dcount(SrcGeoCountry) by TargetUserId, TargetUserPrincipalName, TargetUserType\n| where NumOfCountries >= threshold\n| extend timestamp = StartTime, AccountCustomEntity = TargetUserPrincipalName\n```\n\nYou need to complete the query to ensure that it will identify successful sign-ins from multiple countries during the last three hours.\n\nWhich parser name should you insert in the query in the position marked with `//ParserName` comment?",
+        "options": {
+            "0": "`imAuthentication`",
+            "1": "`_Im_Dns`",
+            "2": "`imProcessCreate`",
+            "3": "`imWebSession`"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou create the following analytics rules in Microsoft Sentinel:\n\n- A near-real-time (NRT) rule named Rule1\n- A fusion rule named Rule2\n- A scheduled rule named Rule3\n- A Microsoft security rule named Rule4\n\nYou need to identify which rules will generate incidents that can be investigated by using Microsoft Sentinel.\n\nWhich rules should you identify?",
+        "options": {
+            "0": "Rule1 and Rule2 only",
+            "1": "Rule1 and Rule3 only",
+            "2": "Rule1, Rule2, and Rule3 only",
+            "3": "Rule1, Rule2, Rule3, and Rule4",
+            "4": "Rule4 only"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou have the following query.\n\n```\nSecurityEvent\n| where TimeGenerated > ago(7d)\n| where EventID == 4625\n| summarize count() by TargetAccount\n```\n\nYou need to use the query as a hunting query. The solution must generate result deltas.\n\nWhat should you do?",
+        "options": {
+            "0": "Remove `| summarize count() by TargetAccount`.",
+            "1": "Remove `| where TimeGenerated > ago(7d)`.",
+            "2": "Replace `summarize count() by` with `Distinct`.",
+            "3": "Replace `TimeGenerated` with `Timestamp`."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace and a playbook named Playbook1.\n\nYou need to ensure that you can manually run Playbook1 from an incident investigation. The solution must ensure that Playbook1 is available from Actions on the incident information window.\n\nWhat should you do?",
+        "options": {
+            "0": "Add the Microsoft Sentinel Automation Contributor role to Playbook1.",
+            "1": "Update Playbook1 to use a managed identity.",
+            "2": "Update Playbook1 to use the alert trigger.",
+            "3": "Update Playbook1 to use the incident trigger."
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "Your company uses Microsoft Defender for Cloud.\n\nYou need to review the security policies configured in Defender for Cloud.\n\nWhat should you use?",
+        "options": {
+            "0": "the Azure portal",
+            "1": "the Microsoft Defender for Cloud Apps portal",
+            "2": "the Microsoft 365 admin center ",
+            "3": "the Microsoft Defender portal"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have an Azure Storage account named storage1 that contains the following resources:\n\n- A blob container named container1\n- A file share named share1\n- A queue named queue1\n- A table named table1\n\nYou enable Microsoft Defender for Cloud for storage1.\n\nWhich resources will be protected?",
+        "options": {
+            "0": "container1 and share1 only",
+            "1": "container1 only",
+            "2": "container1, share1, and table1 only ",
+            "3": "container, share1, queue1, and table1 ",
+            "4": "share1 only"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You have the following cloud environments:\n\n- An Azure subscription that uses Microsoft Defender for Cloud\n- A Microsoft 365 tenant.\n- An Amazon Web Services (AWS) account\n- A Google Cloud Platform (GCP) project\n\nYou need to ensure that you can use Defender for Cloud to perform Cloud Security Posture Management (CSPM) for the environments.\n\nWhich environments will require that a connector be deployed?",
+        "options": {
+            "0": "AWS and GCP only",
+            "1": "AWS, GCP, and Microsoft 365",
+            "2": "AWS only",
+            "3": "GCP only",
+            "4": "Microsoft 365 and GCP only",
+            "5": "Microsoft 365 only"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You are implementing Microsoft Sentinel.\n\nYou add a Microsoft Entra ID Protection data connector to Microsoft Sentinel.\n\nYou need to verify whether data is ingested from the connector.\n\nWhich table should you query?",
+        "options": {
+            "0": "`AzureDiagnostics`",
+            "1": "`CommonSecurityLog`",
+            "2": "`SecurityAlert`",
+            "3": "`SecurityEvents`"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a Microsoft Sentinel workspace deployed to West US Azure region.\n\nYou have the following Azure virtual machines:\n- A virtual machine named VM1 that runs Windows Server 2022 and is deployed to the East US Azure region\n- A virtual machine named VM2 that runs Windows Server 2019 and is deployed to the West US region\n- A virtual machine named VM3 that runs Windows 10 and is deployed to the East US region\n- A virtual machine named VM4 that runs Windows 11 and is deployed to the West US region\n\nYou deploy Windows Security Events via the Azure Monitoring Agent (AMA) data connector to the Microsoft Sentinel workspace.\n\nFrom which virtual machines can you collect events?",
+        "options": {
+            "0": "VM1 and VM2 only",
+            "1": "VM1, VM2, VM3, and VM4",
+            "2": "VM2 and VM4 only",
+            "3": "VM2 only"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou plan to deploy Microsoft Defender for Endpoint to meet the following requirements:\n\n- Block executable content from email messages.\n- Block unsigned processes that run from USB drives.\n\nWhich Defender for Endpoint capability should you use?",
+        "options": {
+            "0": "Attack surface reduction",
+            "1": "Block at first site",
+            "2": "Controlled folder access",
+            "3": "Exploit protection"
+        },
+        "answer": [
+            0
+        ]
+    },
+    {
+        "question": "You manage multiple Azure subscriptions that are linked to different Microsoft Entra tenants. Each subscription hosts a Microsoft Sentinel workspace. The subscriptions are distributed across multiple Azure regions.\n\nYou need to monitor incidents from all the Microsoft Sentinel workspaces by using a community workbook.\n\nWhat should you include in the solution?",
+        "options": {
+            "0": "an Azure AD B2C tenant",
+            "1": "an Azure Storage account",
+            "2": "Azure Firewall rules",
+            "3": "Azure Lighthouse"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have an Azure subscription that contains a Microsoft Sentinel workspace and a resource group named RG1. The workspace is deployed to RG1. The subscription is linked to a Microsoft Entra tenant that contains four users named User1, User2, User3, and User4.\n\nThe users are assigned the following roles for RG1:\n\n- User1 is assigned the Owner role.\n- User2 is assigned the Microsoft Sentinel Responder role.\n- User3 is assigned the Microsoft Sentinel Contributor role.\n- User4 is assigned the Microsoft Sentinel Reader and Workbook Contributor roles.\n\nYou need to delegate the addition of workbooks to the workspace.\n\nWhich users can you use?",
+        "options": {
+            "0": "User1 and User4 only",
+            "1": "User1 only",
+            "2": "User1, User2, User3, and User4",
+            "3": "User1, User3, and User4 only"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that includes a user named User1.\n\nYou need to ensure all email sent to User1, including malicious email, is excluded from filtering by Microsoft Defender for Office 365.\n\nWhat should you configure?",
+        "options": {
+            "0": "a quarantine policy",
+            "1": "a SecOps mailbox",
+            "2": "a Tenant Allow/Block List",
+            "3": "Enhanced Filtering"
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Cloud Apps.\n\nYou need to create a Defender for Cloud Apps policy that will generate alerts based on a trainable classifier.\n\nWhich type of policy should you create?",
+        "options": {
+            "0": "access policy",
+            "1": "activity policy",
+            "2": "file policy",
+            "3": "Cloud Discovery anomaly detection policy"
+        },
+        "answer": [
+            2
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou create the following analytics query.\n\n```\nlet SunburstMD5=dynamic([\"b91ce2fa41029f6955bff20079468448\",\"02af7cec58b9a5da1c542b5a32151ba1\",\"2c4a910a1299cdae2a4e55988a2f102e\",\"846e27a652a5e1bfbd0ddd38a16dc865\",\"4f2eb62fa529c0283b28d05ddd311fae\"]);\nlet SupernovaMD5=\"56ceb6d0011d87b6e4d7023d7ef85676\";\nimFileEvent\n| where TargetFileMD5 in(SunburstMD5) or TargetFileMD5 in(SupernovaMD5)\n| extend\n    timestamp = TimeGenerated,\n    AccountCustomEntity = User, \n    HostCustomEntity = DvcHostname,\n    FileHashCustomEntity = TargetFileMD5,\n    AlgorithmCustomEntity = \"MD5\"\n```\n\nYou need to add the query to the workspace.\n\nWhat should you do first?",
+        "options": {
+            "0": "Change `imFileEvent` to `FileEvent`.",
+            "1": "Deploy an Advanced Security Information Model (ASIM) parser.",
+            "2": "Deploy the appropriate data connector.",
+            "3": "Remove `timestamp = TimeGenerated`."
+        },
+        "answer": [
+            1
+        ]
+    },
+    {
+        "question": "You have a Microsoft 365 E5 subscription.\n\nYou are using Microsoft Defender portal.\n\nYou need to create a custom detection rule by using a hunting query.\n\nWhich two columns should the query return? Each correct answer presents part of the solution.",
+        "options": {
+            "0": "`AlertId`",
+            "1": "`ReportId`",
+            "2": "`TimeGenerated`",
+            "3": "`Timestamp`"
+        },
+        "answer": [
+            1,
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou need to create a variable named WLVar1 that will contain a list of available watchlists.\n\nWhich query should you run?",
+        "options": {
+            "0": "`_GetWatchlist('WLVar1')`",
+            "1": "`let WLVar1 = _GetWatchlist();`",
+            "2": "`let WLVar1 = _GetWatchlist('All');`",
+            "3": "`let WLVar1 = Watchlist;`"
+        },
+        "answer": [
+            3
+        ]
+    },
+    {
+        "question": "You have a Microsoft Sentinel workspace.\n\nYou purchase a third-party threat intelligence platform.\n\nYou need to connect the threat intelligence platform to Microsoft Sentinel.\n\nWhat should you do first?",
+        "options": {
+            "0": "Add a watchlist in Microsoft Sentinel.",
+            "1": "Deploy a server that runs Windows Server.",
+            "2": "Deploy a computer that runs Linux.",
+            "3": "Register an app with Microsoft Entra ID."
+        },
+        "answer": [
+            3
+        ]
+    }
+]
