@@ -130,14 +130,15 @@ function selectAnswer(e) {
     if (arraysAreEqual(currentQuestion.answer, selectedAnswersFiltered)) {
       answerButtonContainer.classList.add('correct');
       e.target.classList.add('correct');
-      feedbackText.textContent = `Correct!`;
+      console.log(currentQuestion);
+      feedbackText.textContent = `Correct! ${currentQuestion.answer_description ?? ''}`;
       feedbackText.style.color = '#4CAF50';
       correctstreak += 1;
       answer_correct = true;
     } else {
       answerButtonContainer.classList.add('wrong');
       e.target.classList.add('wrong');
-      feedbackText.textContent = `Wrong!`;
+      feedbackText.textContent = `Wrong! ${currentQuestion.answer_description ?? ''}`;
       feedbackText.style.color = '#f44336';
 
       correctstreak = 0;
