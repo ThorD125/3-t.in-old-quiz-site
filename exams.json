@@ -18,5 +18,10 @@
     {
         "title": "ms-900_msdump",
         "file": "ms-900_msdump.json"
+    },
+    {
+        "title": "sc-200_ms_practice_exam",
+        "file": "sc-200_msdummy.json"
     }
+    
 ]
