@@ -1,0 +1,315 @@
+[
+    {
+        "question": "What is required to deploy Microsoft Defender for Endpoint to Windows devices in your organization?",
+        "options": {
+            "A": "Subscription to the Microsoft Defender for Endpoint online service.",
+            "B": "No action is required. Microsoft Defender for Endpoint is included in the Windows 10 operating system.",
+            "C": "License for Microsoft Intune."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "To deploy Microsoft Defender for Endpoint, you require a subscription to the Microsoft Defender for Endpoint online service."
+    },
+    {
+        "question": "Which of the following choices describes threat hunting using Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "You can proactively inspect events in your network using a powerful search and query tool.",
+            "B": "Detecting and blocking apps that are considered unsafe but may not be detected as malware.",
+            "C": "Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Endpoint advanced threat hunting is a powerful search and query tool built on top of a query language that gives you flexibility."
+    },
+    {
+        "question": "Which of the following capabilities isn't a component of Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "Next generation protection",
+            "B": "Endpoint detection and response",
+            "C": "Cloud device management"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Cloud device management isn't a component of security administration of Microsoft Defender for Endpoint."
+    },
+    {
+        "question": "The default data retention period in Microsoft Defender XDR for Endpoint is?",
+        "options": {
+            "A": "One month",
+            "B": "Six months",
+            "C": "Three months"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The default is six months."
+    },
+    {
+        "question": "Which of the following options is a valid Microsoft Defender XDR for Endpoint onboarding option for Windows 10 devices?",
+        "options": {
+            "A": "Group policy",
+            "B": "Microsoft Store",
+            "C": "General install package"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Group policy is a valid deployment option."
+    },
+    {
+        "question": "Which security permission allows the configuration of storage settings?",
+        "options": {
+            "A": "Manage security settings in Security Center",
+            "B": "Manage portal system settings",
+            "C": "Advanced commands"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "This permission allows the configuration of storage settings."
+    },   
+    {
+        "question": "Which solution is used to control the applications that must earn trust to be run?",
+        "options": {
+            "A": "Exploit protection",
+            "B": "Controlled folder access",
+            "C": "Application control"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Application control is used for trust."
+    },
+    {
+        "question": "Which option below is an attack surface reduction rule that can be configured?",
+        "options": {
+            "A": "Block PowerShell from executing",
+            "B": "Block process creations originating from PSExec and WMI commands",
+            "C": "Block content from mobile devices"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Blocking process creation from PSExec is an attack surface reduction rule that can be configured."
+    },
+    {
+        "question": "Which of the following items is a deployment option?",
+        "options": {
+            "A": "PowerShell",
+            "B": "ASRConfig.exe",
+            "C": "Microsoft Deployment System"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "PowerShell is a valid deployment option."
+    },{
+        "question": "The security operations analyst discovered an interesting event, what should be done to mark it for further review?",
+        "options": {
+            "A": "Tag",
+            "B": "Highlight",
+            "C": "Flag"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can Flag events."
+    },
+    {
+        "question": "Which Behavioral blocking can be used with third-party antivirus?",
+        "options": {
+            "A": "Client behavior blocking",
+            "B": "EDR in block mode",
+            "C": "Feedback-loop blocking"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "EDR in Block allows for blocking even when third party AV is used."
+    },
+    {
+        "question": "A Windows 10 Device doesn't appear in the device list, what could be the problem?",
+        "options": {
+            "A": "The Device was renamed",
+            "B": "The Device is missing the latest KBs",
+            "C": "The Device had no alerts in the past 30 days"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can adjust the time setting to find the device."
+    },   
+    {
+        "question": "Which type of information is collected in an Investigation package?",
+        "options": {
+            "A": "Command History",
+            "B": "Prefetch Files",
+            "C": "Network transactions"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Prefetch files are collected."
+    },
+    {
+        "question": "Which of the actions below is a Device action?",
+        "options": {
+            "A": "Reboot",
+            "B": "Reformat device",
+            "C": "Isolate device"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can isolate a device."
+    },
+    {
+        "question": "Which of the following artifact types has an investigation page?",
+        "options": {
+            "A": "Domain",
+            "B": "Hunter",
+            "C": "Threat Actor"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "There's an investigation page for Domain."
+    },
+    {
+        "question": "What information is provided by a deep file analysis?",
+        "options": {
+            "A": "Command history",
+            "B": "Registry Modifications",
+            "C": "Code change history"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Registry modifications are reported."
+    },
+    {
+        "question": "Which information is provided on the user account page?",
+        "options": {
+            "A": "Associated alerts",
+            "B": "Security groups",
+            "C": "Threat hunt ID"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Associated alerts are provided."
+    },    
+    {
+        "question": "Which is a valid remediation level?",
+        "options": {
+            "A": "Semi - require approval for any remediation",
+            "B": "Semi - user accounts only",
+            "C": "Semi - files only"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "This is a valid remediation level."
+    },
+    {
+        "question": "A security operations analyst needs to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should they use?",
+        "options": {
+            "A": "File",
+            "B": "Extension",
+            "C": "Folder"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "File will exclude this specific file from automation."
+    },
+    {
+        "question": "In advanced features, which setting should be turned on to block files even if a third-party antivirus is used?",
+        "options": {
+            "A": "Enable EDR in block mode",
+            "B": "Allow or block file",
+            "C": "Automated Investigation"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "EDR in block mode is used with third party antivirus."
+    },    
+    {
+        "question": "Which file type can be used to upload Indicators?",
+        "options": {
+            "A": "JSON",
+            "B": "XML",
+            "C": "CSV"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "CSV file format is supported."
+    },
+    {
+        "question": "Which type is an accepted indicator type?",
+        "options": {
+            "A": "Certificates",
+            "B": "Email subject line",
+            "C": "Code data"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Certificates are an indicator type."
+    },
+    {
+        "question": "Which filter is included as part of an Alert notification rule?",
+        "options": {
+            "A": "Alert Severity",
+            "B": "Account",
+            "C": "Subject IDs"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Alert Severity is a filter option for the rule."
+    },    
+    [
+        {
+          "question": "In the Vulnerable Devices Report, which graphs show each device counted only once based on the highest level of known exploit?",
+          "options": {
+            "A": "Vulnerability age graphs",
+            "B": "Exploit availability graphs",
+            "C": "Severity level graphs"
+          },
+          "answer": [
+            "B"
+          ],
+          "answer_description": "The exploit graphs show this information."
+        },
+        {
+          "question": "Which report lists the software vulnerabilities your devices are exposed to by listing the Common Vulnerabilities and Exposures (CVE) ID?",
+          "options": {
+            "A": "Event Timeline",
+            "B": "Weakness",
+            "C": "Software Inventory"
+          },
+          "answer": [
+            "B"
+          ],
+          "answer_description": "This report is listed by the CVE ID."
+        },
+        {
+          "question": "Which report or dashboard provides a list of the most recently published threat reports?",
+          "options": {
+            "A": "Vulnerable devices report",
+            "B": "Threat protection",
+            "C": "Threat Analytics"
+          },
+          "answer": [
+            "C"
+          ],
+          "answer_description": "This dashboard provides a list of the most recently published threats."
+        }
+      ]      
+]
