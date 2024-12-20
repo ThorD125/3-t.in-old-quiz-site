@@ -264,8 +264,18 @@ const explain = document.getElementById("explain");
 fetch('/exams.json')
   .then(response => response.json())
   .then(exams => {
-    populateExamDropdown(exams);
+      fetch('/exam/della/exams.json')
+      .then(response => response.json())
+      .then(dellaexams => {
+        populateExamDropdown(exams + dellaexams);
+      })
   })
+
+// fetch('/exams.json')
+//   .then(response => response.json())
+//   .then(exams => {
+//     populateExamDropdown(exams);
+//   })
   .catch(error => console.error('Error loading exams:', error));
 
 examSelection.addEventListener('change', () => {
