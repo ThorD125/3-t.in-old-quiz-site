@@ -264,10 +264,12 @@ const explain = document.getElementById("explain");
 fetch('/exams.json')
   .then(response => response.json())
   .then(exams => {
-      fetch('/exam/della/exams.json')
+      return fetch('/exam/della/exams.json')
       .then(response => response.json())
       .then(dellaexams => {
-        populateExamDropdown(exams + dellaexams);
+        Array.prototype.push.apply(exams,dellaexams); 
+
+        populateExamDropdown(exams);
       })
   })
 
