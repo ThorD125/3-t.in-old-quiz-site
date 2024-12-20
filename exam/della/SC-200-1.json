@@ -1,0 +1,241 @@
+[
+    {
+        "question": "Which Microsoft Defender XDR solution can detect an Active Directory Domain compromise?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Domain compromise is detected with Microsoft Defender for Identity."
+    },
+    {
+        "question": "Which Microsoft Defender XDR solution can detect a phishing email?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Phishing email is detected by Microsoft Defender for Office 365."
+    },
+    {
+        "question": "Which Microsoft Defender XDR solution can detect a malware installation?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Malware installation is detected by Microsoft Defender for Endpoint."
+    },
+    {
+        "question": "When you're reviewing a specific incident, which tab is contained on the incident page?",
+        "options": {
+            "A": "Networks",
+            "B": "Non-Azure Machines",
+            "C": "Assets"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The incident page has a tab for Assets."
+    },
+    {
+        "question": "You can classify an Incident as which of the following?",
+        "options": {
+            "A": "True positive",
+            "B": "High alert",
+            "C": "Test alert"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "True positive is an option."
+    },
+    {
+        "question": "The Devices page shows information from which Defender product?",
+        "options": {
+            "A": "Microsoft Cloud App Security",
+            "B": "Microsoft Defender for Identity",
+            "C": "Microsoft Defender for Endpoint"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Devices are based on Defender for Endpoint."
+    },
+    {
+        "question": "True or false? Microsoft Defender for Office 365 requires an agent to be deployed to all Windows 10 devices in your organization for the best protection.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization. No agents are deployed."
+    },
+    {
+        "question": "What describes Safe Attachments from Microsoft Defender for Office 365?",
+        "options": {
+            "A": "Messages and attachments are routed to a special environment where Microsoft Defender for Office 365 uses various machine learning and analysis techniques to detect malicious intent.",
+            "B": "Protects your users from malicious URLs in a message or in an Office document.",
+            "C": "A powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Office 365 Safe Attachments protects against unknown malware and viruses, and provides zero-day protection to safeguard your messaging system by rerouting messages and using machine learning to detect malicious intent."
+    },
+    {
+        "question": "Which of the following is not an Attack Simulator scenario?",
+        "options": {
+            "A": "Spear phishing",
+            "B": "Password spray",
+            "C": "Bitcoin mining"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Bitcoin mining isn't an Attack Simulator scenario."
+    },
+    {
+        "question": "Which task can a user with the Security Operator role perform?",
+        "options": {
+            "A": "Configure alerts",
+            "B": "Confirm safe sign-in",
+            "C": "Reset a password for a user"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Security Operators can view all Identity Protection reports and the Overview screen, dismiss user risk, confirm safe sign-in, and confirm compromise."
+    },
+    {
+        "question": "There are two risk policies that can be enabled in the directory. One is user risk policy. Which is the other risk policy?",
+        "options": {
+            "A": "Mobile device access risk policy",
+            "B": "Sign-in risk policy",
+            "C": "Hybrid identity sign-in risk policy"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity directly. Sign-in risk policy analyzes the probability that the sign-in was performed by someone other than the user."
+    },
+    {
+        "question": "In Microsoft Graph, which three APIs expose information about risky users and sign-ins?",
+        "options": {
+            "A": "riskDetection, riskyUsers, signIns",
+            "B": "riskDetection, itemActivity, signIns",
+            "C": "riskyUsers, signIns, IdentitySet"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "There are three APIs that expose information about risky users and sign-ins. RiskDetection allows you to query Microsoft Graph for a list of user and sign-in linked risk detections. You also get associated information about the detection. The second API, riskyUsers, allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky. The API, signIns, allows you to query Microsoft Graph for information on Microsoft Entra ID sign-ins. The information contains specific properties related to risk state, detail, and level."
+    },
+    {
+        "question": "Microsoft Defender for Identity requires an on-premises Active Directory environment.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory."
+    },
+    {
+        "question": "Which of the following describes advanced threats detected by Microsoft Defender for Identity?",
+        "options": {
+            "A": "Reconnaissance",
+            "B": "Vertical movements",
+            "C": "Bitcoin mining"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Identity can identify rogue users and attackers' attempts to gain information such as usernames, users' group membership, IP addresses assigned to devices, resources, and more, using various methods."
+    },
+    {
+        "question": "Which of the following is not a supported integration for Microsoft Defender for Identity?",
+        "options": {
+            "A": "Microsoft Defender for Endpoint",
+            "B": "Microsoft Defender for Cloud Apps",
+            "C": "Intune"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Currently, there is no supported integration with Microsoft Defender for Identity and Microsoft Intune."
+    },
+    {
+        "question": "How can you get an at-a-glance overview of the kinds of apps being used within your organization?",
+        "options": {
+            "A": "Use Azure Information Protection",
+            "B": "Use Conditional Access",
+            "C": "Use the Cloud Discovery Dashboard"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can see what kinds of apps are being used, open alerts, and the risk levels of apps in your organization."
+    },
+    {
+        "question": "The Defender for Cloud Apps framework includes which of the following?",
+        "options": {
+            "A": "Discover and control the use of Shadow IT",
+            "B": "Block external traffic",
+            "C": "Protect Active Directory"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": " The framework includes: Discover and control the use of Shadow IT, protect your sensitive information anywhere in the cloud, protect against cyberthreats and anomalies, and assess the compliance of your cloud apps."
+    },
+    {
+        "question": "Which of these is a feature of Conditional Access App Control policies?",
+        "options": {
+            "A": "Remote access",
+            "B": "Require multi-factor authentication",
+            "C": "Protect on download"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Prevent data exfiltration, protect on download, prevent upload of unlabeled files, monitor user sessions for compliance, block access, and block custom activities are all features of Conditional Access App Control policies."
+    },
+    {
+        "question": "How can you ensure that a file is sent into quarantine for review by an administrator?",
+        "options": {
+            "A": "When creating a file policy, select Quarantine for admin",
+            "B": "When creating a file policy, select Put in admin quarantine",
+            "C": "When creating a file policy, select Put in review for admin"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "You need to select Put in admin quarantine to let administrators review files."
+    },
+    {
+        "question": "Which anomaly detection policy triggers an alert if the same user credentials originate from two geographically distant locations within a short time?",
+        "options": {
+            "A": "Impossible travel",
+            "B": "Impossible distance",
+            "C": "Impossible twins"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The impossible travel policy is triggered when two user activities originate from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second."
+    }   
+
+]       
