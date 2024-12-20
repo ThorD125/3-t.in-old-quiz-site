@@ -1,0 +1,134 @@
+[
+    {
+      "question": "What does the search operator do?",
+      "options": {
+        "A": "Searches across tables and isn't column-specific.",
+        "B": "Searches only data in the last hour.",
+        "C": "Searches in columns specified."
+      },
+      "answer": [
+        "A"
+      ],
+      "answer_description": "Correct. The search will search across all columns in tables specified."
+    },
+    {
+      "question": "What are project operators?",
+      "options": {
+        "A": "Project operators filter a table to the subset of rows that satisfy a predicate.",
+        "B": "Project operators create summarized columns and append them to the result set.",
+        "C": "Project operators add, remove, or rename columns in a result set."
+      },
+      "answer": [
+        "C"
+      ],
+      "answer_description": "Correct. project operators control what columns to include, add, remove, or rename in the result set of a statement."
+    },
+    {
+        "question": "The dcount() function will do which of the following?",
+        "options": {
+          "A": "Return a day count on the expression difference provided to the function.",
+          "B": "Return a difference count on the expression provided to the function.",
+          "C": "Return a distinct count on the expression provided to the function."
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Correct. dcount provides a distinct count."
+      },
+      {
+        "question": "The arg_max() function will do which of the following?",
+        "options": {
+          "A": "Returns the maximum value for each column passed to the function.",
+          "B": "Returns a JSON Array of maximum values for each column passed to the function.",
+          "C": "Returns a row selected based on the row having the max value for an expression."
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Correct. The arg_max function returns a row selected based on the row having the max value for an expression."
+      },
+      {
+        "question": "The bin() function provides the most value to which type of chart?",
+        "options": {
+          "A": "scatterchart",
+          "B": "timechart",
+          "C": "barchart"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Correct. Bin() will round down values to an integer multiple of the given bin size. The timechart displays a time series based on the bin size."
+      },
+      {
+        "question": "Which join flavor contains a row in the output for every combination of matching rows from left and right?",
+        "options": {
+          "A": "kind=leftouter",
+          "B": "kind=inner",
+          "C": "kind=fullouter"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Correct. Inner contains a row in the output for every combination of matching rows from left and right."
+      },
+      {
+        "question": "When you're using the join operator, how do you specify fields from each table?",
+        "options": {
+          "A": "$1.columname and $2.columnname",
+          "B": "$left.columname and $right.columnname",
+          "C": "$inner.columname and $outer.columnname"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Correct. The $left and $right preceding the field name specifies the table."
+      },
+      {
+        "question": "When you use union on two tables, do the two tables need matching columns?",
+        "options": {
+          "A": "No.",
+          "B": "Yes.",
+          "C": "Only when the project operator is used."
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "Correct. The results contain all columns from both tables."
+      },
+      {
+        "question": "Which KQL statement should you use to parse external data into a virtual table?",
+        "options": {
+          "A": "parse_json",
+          "B": "extract",
+          "C": "externaldata"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Correct. Use the externaldata operator to create a virtual table from an external source."
+      },
+      {
+        "question": "A Dynamic field contains which of the following items?",
+        "options": {
+          "A": "Calculated data.",
+          "B": "Key-value pair data.",
+          "C": "External data."
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Correct. The properties in the field are accessed with the dot notation."
+      },
+      {
+        "question": "To create a virtual table, save your KQL as which type?",
+        "options": {
+          "A": "Module.",
+          "B": "Function.",
+          "C": "Definition."
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Correct. Functions then can be referenced in other KQL statements."
+      }
+]

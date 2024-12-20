@@ -1,0 +1,218 @@
+[
+    {
+        "question": "What does Microsoft Sentinel provide?",
+        "options": {
+            "A": "A solution for checking your security posture in the cloud",
+            "B": "An end-to-end solution for security operations",
+            "C": "A solution for securely storing keys and secrets in the cloud"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Sentinel gives you an end-to-end solution for security operations. The solution includes visibility, analytics, hunting, incident management, and automation."
+    },
+    {
+        "question": "Which language is used to query data within Microsoft Sentinel?",
+        "options": {
+            "A": "SQL",
+            "B": "GraphQL",
+            "C": "KQL"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Microsoft Sentinel holds its data."
+    },
+    {
+        "question": "Which Azure service stores the log data that is ingested into Microsoft Sentinel?",
+        "options": {
+            "A": "Azure Data Factory",
+            "B": "Log Analytics",
+            "C": "Azure Monitor"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Log Analytics is the underlying service that stores the log data for Microsoft Sentinel."
+    },
+    {
+        "question": "Where is your log data stored?",
+        "options": {
+            "A": "Microsoft Sentinel Workspace",
+            "B": "Azure Lighthouse",
+            "C": "Log Analytics workspace"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Log Analytics workspace is where the data resides."
+    },
+    {
+        "question": "Which Microsoft Sentinel security role can create workbooks?",
+        "options": {
+            "A": "Microsoft Sentinel Responder",
+            "B": "Microsoft Sentinel Reader",
+            "C": "Microsoft Sentinel Contributor"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Contributor role can create workbooks."
+    },
+    {
+        "question": "Why is it important to set the region when creating the Log Analytics workspace?",
+        "options": {
+            "A": "Specifies where the log data will be stored.",
+            "B": "Specifies the timezone the data will be displayed in.",
+            "C": "Specifies the log retention period."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Region is the data center where your log data is stored."
+    },
+    {
+        "question": "Which table stores Defender for Endpoint logon events?",
+        "options": {
+            "A": "DeviceLogonEvents",
+            "B": "OfficeActivity",
+            "C": "SigninLogs"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The Defender for Endpoint data is stored in tables starting with Device."
+    },
+    {
+        "question": "What table contains logs from Windows hosts collected directly to Microsoft Sentinel?",
+        "options": {
+            "A": "SecurityEvent",
+            "B": "AuditLogs",
+            "C": "SecurityAlert"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Logs from Windows events are stored in the SecurityEvent table."
+    },
+    {
+        "question": "Which table stores Alerts from Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "SecurityIncident",
+            "B": "DeviceEvents",
+            "C": "SecurityAlert"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Alerts will reside in the SecurityAlert table."
+    },
+    {
+        "question": "Which of the following operations is a typical scenario for using a Microsoft Sentinel watchlist?",
+        "options": {
+            "A": "Creating more alerts to help identify issues.",
+            "B": "Export business data as a watchlist.",
+            "C": "Responding to incidents quickly with the rapid import of IP addresses."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Responding to incidents quickly with the rapid import of IP addresses is a typical use case for a Microsoft Sentinel watchlist."
+    },
+    {
+        "question": "How do you access a new watchlist named MyList in KQL?",
+        "options": {
+            "A": "_Watchlist('MyList')",
+            "B": "_GetWatchlist('MyList')",
+            "C": "_Getlist('MyList')"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "_GetWatchlist('MyList') is the proper function to access the watchlist in KQL."
+    },
+    {
+        "question": "In Threat Intelligence, indicators are considered as which of the following?",
+        "options": {
+            "A": "Strategic",
+            "B": "Operational",
+            "C": "Tactical"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Indicators are considered Tactical Threat Intelligence, which can be used for detecting and preventing threats."
+    },
+    {
+        "question": "Which of these items is an example of a Threat indicator?",
+        "options": {
+            "A": "Threat Actor Name",
+            "B": "Domain Name",
+            "C": "Threat Campaign"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Domain Name is a Threat indicator that can be queried against log data."
+    },
+    {
+        "question": "What table do you query in KQL to view your indicators?",
+        "options": {
+            "A": "Indicator",
+            "B": "TI Indicator",
+            "C": "ThreatIntelligenceIndicator"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The ThreatIntelligenceIndicator table stores the threat intelligence indicators."
+    },
+    {
+        "question": "What is one of the benefits of integrating Microsoft Sentinel and Defender XDR in the Defender portal?",
+        "options": {
+            "A": "It increases the complexity of managing and switching between multiple tools.",
+            "B": "It streamlines operations and reduces the risk of errors that can occur when switching between different systems.",
+            "C": "It requires context-switching when querying across different data sets."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "By integrating security solutions, operations can be streamlined, and the risk of errors reduced."
+    },
+    {
+        "question": "Which portal supports the functionality of adding entities to threat intelligence from incidents in Microsoft Sentinel?",
+        "options": {
+            "A": "Both Azure and Defender portals",
+            "B": "Azure portal",
+            "C": "Defender portal"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Azure portal supports adding entities to threat intelligence from incidents in Microsoft Sentinel."
+    },
+    {
+        "question": "What is one of the product changes associated with connecting a workspace to Defender XDR?",
+        "options": {
+            "A": "Microsoft Sentinel Reader role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.",
+            "B": "All Microsoft security incident creation rules are activated to avoid duplicate incidents.",
+            "C": "Log tables, queries, and functions in the Microsoft Sentinel workspace are also available in advanced hunting within Defender XDR."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "When a workspace is connected to Defender XDR, log tables, queries, and functions in the Microsoft Sentinel workspace become available in advanced hunting within Defender XDR."
+    },
+    {
+        "question": "What happens when a workspace is disconnected from the Defender portal in Microsoft Sentinel?",
+        "options": {
+            "A": "The Microsoft Sentinel section is removed from the left-hand side navigation of the Defender portal.",
+            "B": "The workspace is deleted from Microsoft Sentinel.",
+            "C": "Data from Microsoft Sentinel is still included on the Overview page."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "When a workspace is disconnected, the Microsoft Sentinel section is removed from the navigation of the Defender portal."
+    }
+]
