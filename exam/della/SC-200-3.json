@@ -1,0 +1,194 @@
+[
+    {
+        "question": "Which DLP component is used to classify a document?",
+        "options": {
+            "A": "Sensitive info types",
+            "B": "Retention Policy",
+            "C": "Sensitivity label"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Sensitivity label is applied to a document."
+    },
+    {
+        "question": "In Defender for Cloud Apps, which type of Policy is used for DLP?",
+        "options": {
+            "A": "Access Policy",
+            "B": "File Policy",
+            "C": "Activity Policy"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "File Policy is used for DLP."
+    },
+    {
+        "question": "Which DLP component has the logic to protect content in locations such as SharePoint Online?",
+        "options": {
+            "A": "Sensitive info types",
+            "B": "DLP Policy",
+            "C": "Sensitivity label"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The DLP Policy specifies the location."
+    },
+    {
+        "question": "If you want to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates, which policy setting do you select?",
+        "options": {
+            "A": "Indicators",
+            "B": "Policy timeframes",
+            "C": "Intelligent detections"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Depending on the template, you select the timeframes available are activation window and past activity detection."
+    },
+    {
+        "question": "Configuring a Microsoft Human Resources (HR) data connector is a dependency for which insider risk management template?",
+        "options": {
+            "A": "Departing employee's data theft template",
+            "B": "Data leaks",
+            "C": "Offensive language in email"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "If you configure a policy using the Departing employee data theft template, you'll need to configure a Microsoft 365 HR data connector so that you can import user and log data from 3rd-party risk management and human resources platforms. HR connectors allow you to pull in human resources data from CSV files, including user termination and last employment dates."
+    },
+    {
+        "question": "You create a new policy by stepping through the policy wizard and policy settings. Which of the following is optional when creating a new policy?",
+        "options": {
+            "A": "The users or groups the policy will apply to",
+            "B": "Alert indicators",
+            "C": "Specify content to prioritize"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "This is optional. You can assign the sources to prioritize for risky user activity such as SharePoint sites."
+    },
+    {
+        "question": "You want to search for insider risk alerts that occurred in the past 30 days and are high severity risks. The easiest way to accomplish this is to do which of the following?",
+        "options": {
+            "A": "From the Alerts dashboard search for “last 30 days.”",
+            "B": "Click “Export” to download a CSV file with all alerts. Import this into Excel and use the filter function.",
+            "C": "From the Alerts dashboard, select the Filter control."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can filter alerts by one or more attributes including Status, Severity, Time detected, and Policy."
+    },
+    {
+        "question": "Which of the case actions opens a new eDiscovery (Premium) case in your investigation?",
+        "options": {
+            "A": "Escalate for investigation",
+            "B": "Send a notice",
+            "C": "Resolve the case"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Escalate the case for employee investigation in situations where additional legal review is needed for the employee's risk activity. This escalation opens a new eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations."
+    },
+    {
+        "question": "What is the main difference between Audit (Standard) and Audit (Premium) regarding audit log retention periods?",
+        "options": {
+            "A": "Audit (Standard) offers a maximum retention period of 180 days.",
+            "B": "Audit (Standard) supports 10-year retention policies.",
+            "C": "Both versions offer indefinite retention."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Audit (Standard) supports a retention period of 180 days by default."
+    },
+    {
+        "question": "What step should be taken first before searching the audit log in Microsoft Purview?",
+        "options": {
+            "A": "Install the latest updates for Microsoft 365.",
+            "B": "Confirm audit log search is enabled.",
+            "C": "Export the existing audit logs to a CSV file for backup."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Confirm audit log search is enabled with the Get-AdminAuditLogConfig command."
+    },
+    {
+        "question": "What feature of Microsoft Purview Audit (Premium) is essential for managing sensitive communications securely?",
+        "options": {
+            "A": "Standard data retention.",
+            "B": "Basic audit logs.",
+            "C": "MailItemsAccessed."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "MailItemsAccessed is important for providing detailed records of how and when email items are accessed, essential for managing sensitive communications."
+    },
+    {
+        "question": "What is the primary purpose of exporting audit logs to CSV in Microsoft Purview Audit?",
+        "options": {
+            "A": "To perform detailed data analysis and meet compliance reporting requirements.",
+            "B": "To reduce the storage space used on servers.",
+            "C": "To enhance the visual presentation of data."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Exporting audit logs to CSV enables extensive data manipulation and deeper insights, essential for compliance and detailed analysis."
+    },
+    {
+        "question": "How are audit log retention policies prioritized in Microsoft Purview Audit (Premium) when conflicts occur?",
+        "options": {
+            "A": "Based on the date the policy was created.",
+            "B": "Alphabetically by policy name.",
+            "C": "By a priority level set by the administrator."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Administrators set a priority level to determine which policy takes precedence if there are conflicts."
+    },
+    {
+        "question": "As your organizations Security Operations analyst, you need the Enterprise Administrator to grant you access to the Content search page to conduct searches, and preview and export search results. What role group membership must be assigned in the Microsoft Purview compliance portal to complete these tasks?",
+        "options": {
+            "A": "Organization Management role group",
+            "B": "Compliance Manager role group",
+            "C": "eDiscovery Manager role group"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "This role group provides the permissions necessary to access the Content search page to conduct searches and preview and export search results."
+    },
+    {
+        "question": "You created and ran a Content search and you want to preview the search results. What's the maximum number of randomly selected items that are available to preview?",
+        "options": {
+            "A": "500",
+            "B": "1000",
+            "C": "2500"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A maximum of 1,000 randomly selected items are available to preview."
+    },
+    {
+        "question": "You're creating a new content search. On the Locations page, you set the 'Exchange mailboxes' toggle switch to On. What does this enable?",
+        "options": {
+            "A": "All public folders in the Exchange Online organization can be placed on hold",
+            "B": "You can specify the mailboxes to place on hold",
+            "C": "All Exchange mailboxes in your organization can be searched for Teams chat data for on-premises users"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Setting this switch to On enables you to specify the mailboxes to be placed on hold."
+    }
+]
