@@ -1,18 +1,6 @@
 [
     {
-        "title": "SC-200-1",
-        "file": "della/SC-200-1.json"
-    },
-    {
-        "title": "SC-200-3",
-        "file": "della/SC-200-3.json"
-    },
-    {
-        "title": "SC-200-4",
-        "file": "della/SC-200-4.json"
-    },
-    {
-        "title": "SC-200-5",
-        "file": "della/SC-200-5.json"
+        "title": "SC-200-quizes",
+        "file": "della/quizes.json"
     }
 ]
