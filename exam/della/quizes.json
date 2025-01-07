@@ -1,0 +1,2392 @@
+[
+    {
+        "question": "Which Microsoft Defender XDR solution can detect an Active Directory Domain compromise?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Domain compromise is detected with Microsoft Defender for Identity."
+    },
+    {
+        "question": "Which Microsoft Defender XDR solution can detect a phishing email?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Phishing email is detected by Microsoft Defender for Office 365."
+    },
+    {
+        "question": "Which Microsoft Defender XDR solution can detect a malware installation?",
+        "options": {
+            "A": "Microsoft Defender for Identity",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender for Office 365"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Malware installation is detected by Microsoft Defender for Endpoint."
+    },
+    {
+        "question": "When you're reviewing a specific incident, which tab is contained on the incident page?",
+        "options": {
+            "A": "Networks",
+            "B": "Non-Azure Machines",
+            "C": "Assets"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The incident page has a tab for Assets."
+    },
+    {
+        "question": "You can classify an Incident as which of the following?",
+        "options": {
+            "A": "True positive",
+            "B": "High alert",
+            "C": "Test alert"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "True positive is an option."
+    },
+    {
+        "question": "The Devices page shows information from which Defender product?",
+        "options": {
+            "A": "Microsoft Cloud App Security",
+            "B": "Microsoft Defender for Identity",
+            "C": "Microsoft Defender for Endpoint"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Devices are based on Defender for Endpoint."
+    },
+    {
+        "question": "True or false? Microsoft Defender for Office 365 requires an agent to be deployed to all Windows 10 devices in your organization for the best protection.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Defender for Office 365 is a cloud-based email filtering service that helps protect your organization. No agents are deployed."
+    },
+    {
+        "question": "What describes Safe Attachments from Microsoft Defender for Office 365?",
+        "options": {
+            "A": "Messages and attachments are routed to a special environment where Microsoft Defender for Office 365 uses various machine learning and analysis techniques to detect malicious intent.",
+            "B": "Protects your users from malicious URLs in a message or in an Office document.",
+            "C": "A powerful report that enables your Security Operations team to investigate and respond to threats effectively and efficiently."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Office 365 Safe Attachments protects against unknown malware and viruses, and provides zero-day protection to safeguard your messaging system by rerouting messages and using machine learning to detect malicious intent."
+    },
+    {
+        "question": "Which of the following is not an Attack Simulator scenario?",
+        "options": {
+            "A": "Spear phishing",
+            "B": "Password spray",
+            "C": "Bitcoin mining"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Bitcoin mining isn't an Attack Simulator scenario."
+    },
+    {
+        "question": "Which task can a user with the Security Operator role perform?",
+        "options": {
+            "A": "Configure alerts",
+            "B": "Confirm safe sign-in",
+            "C": "Reset a password for a user"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Security Operators can view all Identity Protection reports and the Overview screen, dismiss user risk, confirm safe sign-in, and confirm compromise."
+    },
+    {
+        "question": "There are two risk policies that can be enabled in the directory. One is user risk policy. Which is the other risk policy?",
+        "options": {
+            "A": "Mobile device access risk policy",
+            "B": "Sign-in risk policy",
+            "C": "Hybrid identity sign-in risk policy"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Sign-in risk policy: The sign-in risk policy detects suspicious actions that come along with the sign-in. It's focused on the sign-in activity directly. Sign-in risk policy analyzes the probability that the sign-in was performed by someone other than the user."
+    },
+    {
+        "question": "In Microsoft Graph, which three APIs expose information about risky users and sign-ins?",
+        "options": {
+            "A": "riskDetection, riskyUsers, signIns",
+            "B": "riskDetection, itemActivity, signIns",
+            "C": "riskyUsers, signIns, IdentitySet"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "There are three APIs that expose information about risky users and sign-ins. RiskDetection allows you to query Microsoft Graph for a list of user and sign-in linked risk detections. You also get associated information about the detection. The second API, riskyUsers, allows you to query Microsoft Graph for information about users that Identity Protection detected as being risky. The API, signIns, allows you to query Microsoft Graph for information on Microsoft Entra ID sign-ins. The information contains specific properties related to risk state, detail, and level."
+    },
+    {
+        "question": "Microsoft Defender for Identity requires an on-premises Active Directory environment.",
+        "options": {
+            "A": "True",
+            "B": "False"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory."
+    },
+    {
+        "question": "Which of the following describes advanced threats detected by Microsoft Defender for Identity?",
+        "options": {
+            "A": "Reconnaissance",
+            "B": "Vertical movements",
+            "C": "Bitcoin mining"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Identity can identify rogue users and attackers' attempts to gain information such as usernames, users' group membership, IP addresses assigned to devices, resources, and more, using various methods."
+    },
+    {
+        "question": "Which of the following is not a supported integration for Microsoft Defender for Identity?",
+        "options": {
+            "A": "Microsoft Defender for Endpoint",
+            "B": "Microsoft Defender for Cloud Apps",
+            "C": "Intune"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Currently, there is no supported integration with Microsoft Defender for Identity and Microsoft Intune."
+    },
+    {
+        "question": "How can you get an at-a-glance overview of the kinds of apps being used within your organization?",
+        "options": {
+            "A": "Use Azure Information Protection",
+            "B": "Use Conditional Access",
+            "C": "Use the Cloud Discovery Dashboard"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can see what kinds of apps are being used, open alerts, and the risk levels of apps in your organization."
+    },
+    {
+        "question": "The Defender for Cloud Apps framework includes which of the following?",
+        "options": {
+            "A": "Discover and control the use of Shadow IT",
+            "B": "Block external traffic",
+            "C": "Protect Active Directory"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": " The framework includes: Discover and control the use of Shadow IT, protect your sensitive information anywhere in the cloud, protect against cyberthreats and anomalies, and assess the compliance of your cloud apps."
+    },
+    {
+        "question": "Which of these is a feature of Conditional Access App Control policies?",
+        "options": {
+            "A": "Remote access",
+            "B": "Require multi-factor authentication",
+            "C": "Protect on download"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Prevent data exfiltration, protect on download, prevent upload of unlabeled files, monitor user sessions for compliance, block access, and block custom activities are all features of Conditional Access App Control policies."
+    },
+    {
+        "question": "How can you ensure that a file is sent into quarantine for review by an administrator?",
+        "options": {
+            "A": "When creating a file policy, select Quarantine for admin",
+            "B": "When creating a file policy, select Put in admin quarantine",
+            "C": "When creating a file policy, select Put in review for admin"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "You need to select Put in admin quarantine to let administrators review files."
+    },
+    {
+        "question": "Which anomaly detection policy triggers an alert if the same user credentials originate from two geographically distant locations within a short time?",
+        "options": {
+            "A": "Impossible travel",
+            "B": "Impossible distance",
+            "C": "Impossible twins"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The impossible travel policy is triggered when two user activities originate from geographically distant locations within a time period shorter than the time it would have taken the user to travel from the first location to the second."
+    },
+    {
+        "question": "What are Large Language Models?",
+        "options": {
+            "A": "Models that detect additional meaning in paragraphs of text.",
+            "B": "Lists of words and code that computers use to generate text.",
+            "C": "Models that use deep learning to process and understand natural language on a massive scale."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Large language models use deep learning to process and understand natural language on a massive scale."
+    },
+    {
+        "question": "Which Microsoft Copilot should a customer support agent use to research and resolve a support issue?",
+        "options": {
+            "A": "Microsoft Copilot for Microsoft Edge",
+            "B": "Microsoft Copilot in Dynamics 365 Customer Service",
+            "C": "Copilot for Security"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Customer service agents can use Copilot in Dynamics 365 Customer Service to analyze support tickets, research similar issues, find resolutions, and communicate them to users with only a few clicks and prompts."
+    },
+    {
+        "question": "Which tool should a professional developer use to build a custom copilot and deploy it as a service endpoint in Azure?",
+        "options": {
+            "A": "Copilot for Azure",
+            "B": "Microsoft Copilot Studio",
+            "C": "Microsoft Azure AI Foundry"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft Azure AI Foundry is designed as a unified development portal for professional software developers to allow for full customization of language models."
+    },
+    {
+        "question": "What are the steps required to onboard organizations and users to Microsoft Security Copilot?",
+        "options": {
+            "A": "Enable Copilot plugins, and procure Microsoft Entra Premium 1 licensing.",
+            "B": "Procure Microsoft Entra Premium 1 licensing.",
+            "C": "Provision SCUs, set up the default environment, and assign role permission."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The admin must provision and allocate security compute units (SCUs), set up the default environment, and assign role permissions to users."
+    },
+    {
+        "question": "A security analyst is crafting a prompt to investigate an incident involving the Pearl Sleet actor. Which prompt will likely yield the most comprehensive results?",
+        "options": {
+            "A": "Can you give me information about Pearl Sleet activity, including a list of known indicators of compromise and tools, tactics, and procedures (TTPs)?",
+            "B": "Describe Pearl Sleet.",
+            "C": "List Pearl Sleet activities."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "This prompt is clear, specific, and includes elements such as the goal and expectations for a detailed response."
+    },
+    {
+        "question": "An admin is tasked with setting up Microsoft Security Copilot and needs to provision capacity. After reviewing the options, which method should the admin choose to provision capacity for their organization?",
+        "options": {
+            "A": "Provision capacity through a third-party vendor.",
+            "B": "Provision capacity within Security Copilot.",
+            "C": "Provision capacity by directly purchasing SCUs from a software retailer."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Provisioning capacity within Security Copilot is recommended and guided by a wizard for ease of setup."
+    },
+    {
+        "question": "A security analyst needs to review past sessions created in Microsoft Security Copilot. After accessing the standalone experience, which option should they select to manage and review these sessions?",
+        "options": {
+            "A": "Select the My sessions option from the home menu.",
+            "B": "Select the Help icon.",
+            "C": "Select settings."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "My sessions allows users to manage and review past sessions with options to search, filter, rename, duplicate, or delete."
+    },
+    {
+        "question": "After enabling the Defender EASM plugin in Copilot, a security analyst wants to assess the organization's exposure to a specific vulnerability; which prompt should they use to obtain this information?",
+        "options": {
+            "A": "Get assets by CVSS score.",
+            "B": "Get expired SSL certificates.",
+            "C": "Is my external attack surface impacted by CVE-2023-21709?"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "This prompt specifically checks for the impact of a given CVE on the organization's external attack surface."
+    },
+    {
+        "question": "A security analyst needs to integrate ServiceNow incident management with Microsoft Security Copilot. Which authentication method should be configured to enable this integration?",
+        "options": {
+            "A": "Anonymous authentication.",
+            "B": "OAuth authorization.",
+            "C": "Copilot uses on-behalf-of authentication so no other authentication is required for ServiceNow integration."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The ServiceNow plugin offers a Basic sign-in or OAuth authorization for authentication."
+    },
+    {
+        "question": "A security analyst is tasked with automating investigation flows to streamline repetitive steps in Copilot. After selecting relevant prompts from an existing session, the analyst wants to create a promptbook. What should the analyst do next to accomplish this task?",
+        "options": {
+            "A": "Select the 'Create promptbook' icon to open the page where they can name, tag, and further customize the promptbook.",
+            "B": "Select the 'Export prompts' button to download the selected prompts for manual execution.",
+            "C": "Choose the 'Save session' option to preserve the current state of the session for later use."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Select the 'Create promptbook' icon to open the page where they can name, tag, and further customize the promptbook."
+    },
+    {
+        "question": "After uploading a PDF file to Microsoft Security Copilot, an analyst wants to ensure the file is included as a source in their current session. What should the analyst do next?",
+        "options": {
+            "A": "Toggle the button on the right-hand side of the file until the toggle is lit up.",
+            "B": "Delete the file and reupload it to automatically include it as a source.",
+            "C": "Navigate to the Files section and select on the file name to open it."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Toggling the button includes the file as a source in the current session."
+    },
+    {
+        "question": "A security analyst is using Copilot in Microsoft Defender XDR to review an incident and needs to understand the sequence of events that occurred during the attack. Which feature should they use to obtain a comprehensive overview?",
+        "options": {
+            "A": "Script analysis",
+            "B": "Summarize incidents",
+            "C": "Guided responses"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Summarize incidents feature provides an overview of the attack, including the timeline and assets involved."
+    },
+    {
+        "question": "An organization's legal compliance team uses Microsoft Purview eDiscovery tools for internal and external investigations and is planning to use Security Copilot to help make them more productive and aid in their investigations. Which of the following statements is true regarding Copilot use with eDiscovery?",
+        "options": {
+            "A": "Copilot functionality isn't supported with Microsoft Purview eDiscovery.",
+            "B": "The organization must be licensed to use Microsoft Purview eDiscovery (Premium).",
+            "C": "The organization needs to be licensed for Microsoft Purview eDiscovery (Standard), as a minimum."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "To use Security Copilot functionality with Microsoft Purview eDiscovery, the organization must be licensed for Microsoft Purview eDiscovery (Premium)."
+    },
+    {
+        "question": "After enabling the Entra plugin in Copilot and assigning the appropriate role permissions, an admin navigates to the Risky users report to investigate a user's risky sign-ins. What should the admin do next to view the Copilot generated summary?",
+        "options": {
+            "A": "Select the 'Export' option to download the user's risk details.",
+            "B": "Check the 'User Activity' log for recent sign-in attempts.",
+            "C": "Select the 'Summarize' tab in the Risky User Details window."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The 'Summarize' tab displays the Copilot generated summary of the user's risk level."
+    },
+    {
+        "question": "What information can be obtained by using Copilot in Intune, when creating a new policy?",
+        "options": {
+            "A": "The date and time a policy was last updated.",
+            "B": "The number of users who have accessed a policy.",
+            "C": "Information about individual settings, their impact, and recommended values."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "When creating a new policy, Copilot can be used to learn more about individual settings, their impact, and recommended values."
+    },
+    {
+        "question": "Copilot in Defender for Cloud is available for all users when you enable Defender for Cloud in your environment, have access to Azure Copilot, and have SCUs assigned for Security Copilot. What additional requirement must be met to remediate code with Security Copilot?",
+        "options": {
+            "A": "You must enable all the cloud workload protection plans.",
+            "B": "You must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements.",
+            "C": "You must enable the Defender for Cloud Security Posture Management (DCSPM) plan."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "To use the capability to remediate code with Security Copilot, you must connect your Azure DevOps environment to Defender for Cloud, configure the Microsoft Security DevOps Azure DevOps extension, and meet the DevOps security support and prerequisites requirements."
+    },
+    {
+        "question": "How do you provision capacity for Microsoft Security Copilot?",
+        "options": {
+            "A": "You can provision capacity by selecting the 'Owner settings' option and then choosing 'Provision capacity.'",
+            "B": "You can provision capacity by selecting the help icon and entering Provision Capacity.",
+            "C": "You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot or by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can provision capacity by running the wizard that is part of the first run experience Microsoft Security Copilot or by selecting 'Microsoft Security Copilot compute capacities' in the Azure portal and completing the steps."
+    },
+    {
+        "question": "When adding a custom plugin, what are the options that you select as part of the upload process?",
+        "options": {
+            "A": "You can select 'Who can use this plugin' and you upload a file in the format of .docx, .pdf, .txt, or .md.",
+            "B": "You can select 'Who can use this plugin' and you select whether you're uploading a Security Copilot plugin or an OpenAI plugin.",
+            "C": "You start by enabling the option 'Allow Security Copilot to access data from your Microsoft 365 services' then you select whether you're uploading a Security Copilot plugin or an OpenAI plugin."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "When adding a custom plugin, you can select 'Who can use this plugin' and you select whether you're uploading a Security Copilot plugin or an OpenAI plugin."
+    },
+    {
+        "question": "What the option that best describes the steps involved in creating a custom promptbook?",
+        "options": {
+            "A": "From the owner settings, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.",
+            "B": "Start with an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, and select create.",
+            "C": "Select the Sources icon, select files, then upload a .json formatted file that contains the details of the promptbook."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "To create a custom promptbook, identify an existing session, select the prompts you want to reuse, select the custom promptbook icon, follow the steps in the Create a promptbook page, and then select create."
+    },
+    {
+        "question": "Which DLP component is used to classify a document?",
+        "options": {
+            "A": "Sensitive info types",
+            "B": "Retention Policy",
+            "C": "Sensitivity label"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Sensitivity label is applied to a document."
+    },
+    {
+        "question": "In Defender for Cloud Apps, which type of Policy is used for DLP?",
+        "options": {
+            "A": "Access Policy",
+            "B": "File Policy",
+            "C": "Activity Policy"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "File Policy is used for DLP."
+    },
+    {
+        "question": "Which DLP component has the logic to protect content in locations such as SharePoint Online?",
+        "options": {
+            "A": "Sensitive info types",
+            "B": "DLP Policy",
+            "C": "Sensitivity label"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The DLP Policy specifies the location."
+    },
+    {
+        "question": "If you want to define past and future review periods that are triggered after policy matches based on events and activities for the insider risk management policy templates, which policy setting do you select?",
+        "options": {
+            "A": "Indicators",
+            "B": "Policy timeframes",
+            "C": "Intelligent detections"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Depending on the template, you select the timeframes available are activation window and past activity detection."
+    },
+    {
+        "question": "Configuring a Microsoft Human Resources (HR) data connector is a dependency for which insider risk management template?",
+        "options": {
+            "A": "Departing employee's data theft template",
+            "B": "Data leaks",
+            "C": "Offensive language in email"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "If you configure a policy using the Departing employee data theft template, you'll need to configure a Microsoft 365 HR data connector so that you can import user and log data from 3rd-party risk management and human resources platforms. HR connectors allow you to pull in human resources data from CSV files, including user termination and last employment dates."
+    },
+    {
+        "question": "You create a new policy by stepping through the policy wizard and policy settings. Which of the following is optional when creating a new policy?",
+        "options": {
+            "A": "The users or groups the policy will apply to",
+            "B": "Alert indicators",
+            "C": "Specify content to prioritize"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "This is optional. You can assign the sources to prioritize for risky user activity such as SharePoint sites."
+    },
+    {
+        "question": "You want to search for insider risk alerts that occurred in the past 30 days and are high severity risks. The easiest way to accomplish this is to do which of the following?",
+        "options": {
+            "A": "From the Alerts dashboard search for “last 30 days.”",
+            "B": "Click “Export” to download a CSV file with all alerts. Import this into Excel and use the filter function.",
+            "C": "From the Alerts dashboard, select the Filter control."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can filter alerts by one or more attributes including Status, Severity, Time detected, and Policy."
+    },
+    {
+        "question": "Which of the case actions opens a new eDiscovery (Premium) case in your investigation?",
+        "options": {
+            "A": "Escalate for investigation",
+            "B": "Send a notice",
+            "C": "Resolve the case"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Escalate the case for employee investigation in situations where additional legal review is needed for the employee's risk activity. This escalation opens a new eDiscovery (Premium) case in your Microsoft 365 organization. eDiscovery (Premium) provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external legal investigations."
+    },
+    {
+        "question": "What is the main difference between Audit (Standard) and Audit (Premium) regarding audit log retention periods?",
+        "options": {
+            "A": "Audit (Standard) offers a maximum retention period of 180 days.",
+            "B": "Audit (Standard) supports 10-year retention policies.",
+            "C": "Both versions offer indefinite retention."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Audit (Standard) supports a retention period of 180 days by default."
+    },
+    {
+        "question": "What step should be taken first before searching the audit log in Microsoft Purview?",
+        "options": {
+            "A": "Install the latest updates for Microsoft 365.",
+            "B": "Confirm audit log search is enabled.",
+            "C": "Export the existing audit logs to a CSV file for backup."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Confirm audit log search is enabled with the Get-AdminAuditLogConfig command."
+    },
+    {
+        "question": "What feature of Microsoft Purview Audit (Premium) is essential for managing sensitive communications securely?",
+        "options": {
+            "A": "Standard data retention.",
+            "B": "Basic audit logs.",
+            "C": "MailItemsAccessed."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "MailItemsAccessed is important for providing detailed records of how and when email items are accessed, essential for managing sensitive communications."
+    },
+    {
+        "question": "What is the primary purpose of exporting audit logs to CSV in Microsoft Purview Audit?",
+        "options": {
+            "A": "To perform detailed data analysis and meet compliance reporting requirements.",
+            "B": "To reduce the storage space used on servers.",
+            "C": "To enhance the visual presentation of data."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Exporting audit logs to CSV enables extensive data manipulation and deeper insights, essential for compliance and detailed analysis."
+    },
+    {
+        "question": "How are audit log retention policies prioritized in Microsoft Purview Audit (Premium) when conflicts occur?",
+        "options": {
+            "A": "Based on the date the policy was created.",
+            "B": "Alphabetically by policy name.",
+            "C": "By a priority level set by the administrator."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Administrators set a priority level to determine which policy takes precedence if there are conflicts."
+    },
+    {
+        "question": "As your organizations Security Operations analyst, you need the Enterprise Administrator to grant you access to the Content search page to conduct searches, and preview and export search results. What role group membership must be assigned in the Microsoft Purview compliance portal to complete these tasks?",
+        "options": {
+            "A": "Organization Management role group",
+            "B": "Compliance Manager role group",
+            "C": "eDiscovery Manager role group"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "This role group provides the permissions necessary to access the Content search page to conduct searches and preview and export search results."
+    },
+    {
+        "question": "You created and ran a Content search and you want to preview the search results. What's the maximum number of randomly selected items that are available to preview?",
+        "options": {
+            "A": "500",
+            "B": "1000",
+            "C": "2500"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A maximum of 1,000 randomly selected items are available to preview."
+    },
+    {
+        "question": "You're creating a new content search. On the Locations page, you set the 'Exchange mailboxes' toggle switch to On. What does this enable?",
+        "options": {
+            "A": "All public folders in the Exchange Online organization can be placed on hold",
+            "B": "You can specify the mailboxes to place on hold",
+            "C": "All Exchange mailboxes in your organization can be searched for Teams chat data for on-premises users"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Setting this switch to On enables you to specify the mailboxes to be placed on hold."
+    },
+    {
+        "question": "What is required to deploy Microsoft Defender for Endpoint to Windows devices in your organization?",
+        "options": {
+            "A": "Subscription to the Microsoft Defender for Endpoint online service.",
+            "B": "No action is required. Microsoft Defender for Endpoint is included in the Windows 10 operating system.",
+            "C": "License for Microsoft Intune."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "To deploy Microsoft Defender for Endpoint, you require a subscription to the Microsoft Defender for Endpoint online service."
+    },
+    {
+        "question": "Which of the following choices describes threat hunting using Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "You can proactively inspect events in your network using a powerful search and query tool.",
+            "B": "Detecting and blocking apps that are considered unsafe but may not be detected as malware.",
+            "C": "Reduce vulnerabilities (attack surfaces) in your applications with intelligent rules that help stop malware."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Endpoint advanced threat hunting is a powerful search and query tool built on top of a query language that gives you flexibility."
+    },
+    {
+        "question": "Which of the following capabilities isn't a component of Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "Next generation protection",
+            "B": "Endpoint detection and response",
+            "C": "Cloud device management"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Cloud device management isn't a component of security administration of Microsoft Defender for Endpoint."
+    },
+    {
+        "question": "The default data retention period in Microsoft Defender XDR for Endpoint is?",
+        "options": {
+            "A": "One month",
+            "B": "Six months",
+            "C": "Three months"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The default is six months."
+    },
+    {
+        "question": "Which of the following options is a valid Microsoft Defender XDR for Endpoint onboarding option for Windows 10 devices?",
+        "options": {
+            "A": "Group policy",
+            "B": "Microsoft Store",
+            "C": "General install package"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Group policy is a valid deployment option."
+    },
+    {
+        "question": "Which security permission allows the configuration of storage settings?",
+        "options": {
+            "A": "Manage security settings in Security Center",
+            "B": "Manage portal system settings",
+            "C": "Advanced commands"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "This permission allows the configuration of storage settings."
+    },   
+    {
+        "question": "Which solution is used to control the applications that must earn trust to be run?",
+        "options": {
+            "A": "Exploit protection",
+            "B": "Controlled folder access",
+            "C": "Application control"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Application control is used for trust."
+    },
+    {
+        "question": "Which option below is an attack surface reduction rule that can be configured?",
+        "options": {
+            "A": "Block PowerShell from executing",
+            "B": "Block process creations originating from PSExec and WMI commands",
+            "C": "Block content from mobile devices"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Blocking process creation from PSExec is an attack surface reduction rule that can be configured."
+    },
+    {
+        "question": "Which of the following items is a deployment option?",
+        "options": {
+            "A": "PowerShell",
+            "B": "ASRConfig.exe",
+            "C": "Microsoft Deployment System"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "PowerShell is a valid deployment option."
+    },{
+        "question": "The security operations analyst discovered an interesting event, what should be done to mark it for further review?",
+        "options": {
+            "A": "Tag",
+            "B": "Highlight",
+            "C": "Flag"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can Flag events."
+    },
+    {
+        "question": "Which Behavioral blocking can be used with third-party antivirus?",
+        "options": {
+            "A": "Client behavior blocking",
+            "B": "EDR in block mode",
+            "C": "Feedback-loop blocking"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "EDR in Block allows for blocking even when third party AV is used."
+    },
+    {
+        "question": "A Windows 10 Device doesn't appear in the device list, what could be the problem?",
+        "options": {
+            "A": "The Device was renamed",
+            "B": "The Device is missing the latest KBs",
+            "C": "The Device had no alerts in the past 30 days"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can adjust the time setting to find the device."
+    },   
+    {
+        "question": "Which type of information is collected in an Investigation package?",
+        "options": {
+            "A": "Command History",
+            "B": "Prefetch Files",
+            "C": "Network transactions"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Prefetch files are collected."
+    },
+    {
+        "question": "Which of the actions below is a Device action?",
+        "options": {
+            "A": "Reboot",
+            "B": "Reformat device",
+            "C": "Isolate device"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can isolate a device."
+    },
+    {
+        "question": "Which of the following artifact types has an investigation page?",
+        "options": {
+            "A": "Domain",
+            "B": "Hunter",
+            "C": "Threat Actor"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "There's an investigation page for Domain."
+    },
+    {
+        "question": "What information is provided by a deep file analysis?",
+        "options": {
+            "A": "Command history",
+            "B": "Registry Modifications",
+            "C": "Code change history"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Registry modifications are reported."
+    },
+    {
+        "question": "Which information is provided on the user account page?",
+        "options": {
+            "A": "Associated alerts",
+            "B": "Security groups",
+            "C": "Threat hunt ID"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Associated alerts are provided."
+    },    
+    {
+        "question": "Which is a valid remediation level?",
+        "options": {
+            "A": "Semi - require approval for any remediation",
+            "B": "Semi - user accounts only",
+            "C": "Semi - files only"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "This is a valid remediation level."
+    },
+    {
+        "question": "A security operations analyst needs to exclude a custom executable file c:\\myapp\\myapp.exe, which exclusion type should they use?",
+        "options": {
+            "A": "File",
+            "B": "Extension",
+            "C": "Folder"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "File will exclude this specific file from automation."
+    },
+    {
+        "question": "In advanced features, which setting should be turned on to block files even if a third-party antivirus is used?",
+        "options": {
+            "A": "Enable EDR in block mode",
+            "B": "Allow or block file",
+            "C": "Automated Investigation"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "EDR in block mode is used with third party antivirus."
+    },    
+    {
+        "question": "Which file type can be used to upload Indicators?",
+        "options": {
+            "A": "JSON",
+            "B": "XML",
+            "C": "CSV"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "CSV file format is supported."
+    },
+    {
+        "question": "Which type is an accepted indicator type?",
+        "options": {
+            "A": "Certificates",
+            "B": "Email subject line",
+            "C": "Code data"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Certificates are an indicator type."
+    },
+    {
+        "question": "Which filter is included as part of an Alert notification rule?",
+        "options": {
+            "A": "Alert Severity",
+            "B": "Account",
+            "C": "Subject IDs"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Alert Severity is a filter option for the rule."
+    },    
+    {
+        "question": "In the Vulnerable Devices Report, which graphs show each device counted only once based on the highest level of known exploit?",
+        "options": {
+        "A": "Vulnerability age graphs",
+        "B": "Exploit availability graphs",
+        "C": "Severity level graphs"
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "The exploit graphs show this information."
+    },
+    {
+        "question": "Which report lists the software vulnerabilities your devices are exposed to by listing the Common Vulnerabilities and Exposures (CVE) ID?",
+        "options": {
+        "A": "Event Timeline",
+        "B": "Weakness",
+        "C": "Software Inventory"
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "This report is listed by the CVE ID."
+    },
+    {
+        "question": "Which report or dashboard provides a list of the most recently published threat reports?",
+        "options": {
+        "A": "Vulnerable devices report",
+        "B": "Threat protection",
+        "C": "Threat Analytics"
+        },
+        "answer": [
+        "C"
+        ],
+        "answer_description": "This dashboard provides a list of the most recently published threats."
+    },
+    {
+        "question": "Which of the following describe Microsoft Defender for Cloud's primary role?",
+        "options": {
+          "A": "Cloud security facilitation",
+          "B": "Cloud workload protection",
+          "C": "Cloud configuration management"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Microsoft Defender for Cloud is for Cloud workload protection."
+      },
+      {
+        "question": "Which Microsoft Defender for Cloud feature enables you to see the topology of your workloads?",
+        "options": {
+          "A": "Inventory",
+          "B": "Secure Score",
+          "C": "Network map"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Network map is a visualization of your workloads."
+      },
+      {
+        "question": "To make sure Microsoft Defender for Cloud covers all resources in a Subscription, which option do you enable?",
+        "options": {
+          "A": "Automatic provisioning",
+          "B": "Continuous assessments",
+          "C": "Coverage type"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "Automatic provisioning will install the required agent for the resources."
+      },
+      {
+        "question": "Which is a Windows security events configuration?",
+        "options": {
+          "A": "Reasonable",
+          "B": "Maximum",
+          "C": "Minimal"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Minimal is a configuration option."
+      },
+      {
+        "question": "What should you install on a new Azure Windows VM if you aren't using auto provisioning?",
+        "options": {
+          "A": "Log Analytics Agent",
+          "B": "Sysmon",
+          "C": "Windows Firewall"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "You need to install the Log Analytics Agent."
+      },
+      {
+        "question": "Which of these selections is an auto provisioning extension?",
+        "options": {
+          "A": "Policy Add-on for Kubernetes",
+          "B": "Windows Events",
+          "C": "Policy for Azure Policy"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "Policy Add-on for Kubernetes is an extension."
+      },
+      {
+        "question": "Which is an option to connect your non-Azure computers?",
+        "options": {
+          "A": "Windows Store",
+          "B": "Using Azure Arc enabled servers",
+          "C": "From an Excel spreadsheet"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Using Azure Arc enabled servers is an option to connect."
+      },
+      {
+        "question": "Which resource can Microsoft Defender for Cloud protect in a hybrid environment?",
+        "options": {
+          "A": "Word Documents",
+          "B": "SQL Databases",
+          "C": "Cosmos DB"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "SQL Databases can be protected by Microsoft Defender for Cloud."
+      },
+      {
+        "question": "Which Cloud provider has a Cloud connector in Security Center?",
+        "options": {
+          "A": "IBM Cloud",
+          "B": "GCP",
+          "C": "Oracle"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "GCP has a cloud connector."
+      },
+      {
+        "question": "To automatically remediate a recommendation, select which option?",
+        "options": {
+          "A": "Respond",
+          "B": "Remediate",
+          "C": "Fix"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "The fix option will start the process to automatically remediate."
+      },
+      {
+        "question": "By default, which security policy is assigned to each subscription?",
+        "options": {
+          "A": "SOC TSP",
+          "B": "Azure Security Benchmark",
+          "C": "ISO 27001:2013"
+        },
+        "answer": [
+          "B"
+        ],
+        "answer_description": "Azure Security Benchmark is the default."
+      },
+      {
+        "question": "Defender for Cloud initiatives are defined in?",
+        "options": {
+          "A": "Azure Policy",
+          "B": "Secure Score",
+          "C": "Workbooks"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "Azure Policy is used to define initiatives."
+      },
+      {
+        "question": "What is a protection provided by Microsoft Defender for DNS?",
+        "options": {
+          "A": "Malware communicating with C&C server",
+          "B": "Malware encrypting data on a Device",
+          "C": "Malware enumerating user on a Device"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "Command and Control detection over DNS is detected."
+      },
+      {
+        "question": "Microsoft Defender for Containers does which of the following?",
+        "options": {
+          "A": "Environmental hardening, Vulnerability assessment, and endpoint management",
+          "B": "Environmental hardening, User risk management, and Run-time threat protection",
+          "C": "Environmental hardening, Vulnerability assessment, and Run-time threat protection"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "It performs all three of these services."
+      },
+      {
+        "question": "Which feature of Microsoft Defender for Servers examines files and registries of the operating system, application software, and others for changes that might indicate an attack?",
+        "options": {
+          "A": "Adaptive application controls",
+          "B": "Adaptive network hardening",
+          "C": "File integrity monitoring"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "File integrity monitoring examines files."
+      },
+      {
+        "question": "Defender for Cloud employs which advanced security analytics?",
+        "options": {
+          "A": "Biometric analytics",
+          "B": "Power BI",
+          "C": "Behavioral analytics"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Behavior analytics is used to detect threats."
+      },
+      {
+        "question": "Which Azure technology is used to automate remediation?",
+        "options": {
+          "A": "Azure Functions",
+          "B": "Azure Batch",
+          "C": "Azure Logic Apps"
+        },
+        "answer": [
+          "C"
+        ],
+        "answer_description": "Logic Apps is the automation engine."
+      },
+      {
+        "question": "If available, which report provides Attackers tactics, tools, and procedures?",
+        "options": {
+          "A": "Threat Intelligence",
+          "B": "Secure Score",
+          "C": "Incident"
+        },
+        "answer": [
+          "A"
+        ],
+        "answer_description": "The threat intelligence report contains attacker information if available."
+    },
+    {
+    "question": "What does the search operator do?",
+    "options": {
+        "A": "Searches across tables and isn't column-specific.",
+        "B": "Searches only data in the last hour.",
+        "C": "Searches in columns specified."
+    },
+    "answer": [
+        "A"
+    ],
+    "answer_description": "Correct. The search will search across all columns in tables specified."
+    },
+    {
+    "question": "What are project operators?",
+    "options": {
+        "A": "Project operators filter a table to the subset of rows that satisfy a predicate.",
+        "B": "Project operators create summarized columns and append them to the result set.",
+        "C": "Project operators add, remove, or rename columns in a result set."
+    },
+    "answer": [
+        "C"
+    ],
+    "answer_description": "Correct. project operators control what columns to include, add, remove, or rename in the result set of a statement."
+    },
+    {
+        "question": "The dcount() function will do which of the following?",
+        "options": {
+        "A": "Return a day count on the expression difference provided to the function.",
+        "B": "Return a difference count on the expression provided to the function.",
+        "C": "Return a distinct count on the expression provided to the function."
+        },
+        "answer": [
+        "C"
+        ],
+        "answer_description": "Correct. dcount provides a distinct count."
+    },
+    {
+        "question": "The arg_max() function will do which of the following?",
+        "options": {
+        "A": "Returns the maximum value for each column passed to the function.",
+        "B": "Returns a JSON Array of maximum values for each column passed to the function.",
+        "C": "Returns a row selected based on the row having the max value for an expression."
+        },
+        "answer": [
+        "C"
+        ],
+        "answer_description": "Correct. The arg_max function returns a row selected based on the row having the max value for an expression."
+    },
+    {
+        "question": "The bin() function provides the most value to which type of chart?",
+        "options": {
+        "A": "scatterchart",
+        "B": "timechart",
+        "C": "barchart"
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "Correct. Bin() will round down values to an integer multiple of the given bin size. The timechart displays a time series based on the bin size."
+    },
+    {
+        "question": "Which join flavor contains a row in the output for every combination of matching rows from left and right?",
+        "options": {
+        "A": "kind=leftouter",
+        "B": "kind=inner",
+        "C": "kind=fullouter"
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "Correct. Inner contains a row in the output for every combination of matching rows from left and right."
+    },
+    {
+        "question": "When you're using the join operator, how do you specify fields from each table?",
+        "options": {
+        "A": "$1.columname and $2.columnname",
+        "B": "$left.columname and $right.columnname",
+        "C": "$inner.columname and $outer.columnname"
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "Correct. The $left and $right preceding the field name specifies the table."
+    },
+    {
+        "question": "When you use union on two tables, do the two tables need matching columns?",
+        "options": {
+        "A": "No.",
+        "B": "Yes.",
+        "C": "Only when the project operator is used."
+        },
+        "answer": [
+        "A"
+        ],
+        "answer_description": "Correct. The results contain all columns from both tables."
+    },
+    {
+        "question": "Which KQL statement should you use to parse external data into a virtual table?",
+        "options": {
+        "A": "parse_json",
+        "B": "extract",
+        "C": "externaldata"
+        },
+        "answer": [
+        "C"
+        ],
+        "answer_description": "Correct. Use the externaldata operator to create a virtual table from an external source."
+    },
+    {
+        "question": "A Dynamic field contains which of the following items?",
+        "options": {
+        "A": "Calculated data.",
+        "B": "Key-value pair data.",
+        "C": "External data."
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "Correct. The properties in the field are accessed with the dot notation."
+    },
+    {
+        "question": "To create a virtual table, save your KQL as which type?",
+        "options": {
+        "A": "Module.",
+        "B": "Function.",
+        "C": "Definition."
+        },
+        "answer": [
+        "B"
+        ],
+        "answer_description": "Correct. Functions then can be referenced in other KQL statements."
+    },  
+    {
+        "question": "What does Microsoft Sentinel provide?",
+        "options": {
+            "A": "A solution for checking your security posture in the cloud",
+            "B": "An end-to-end solution for security operations",
+            "C": "A solution for securely storing keys and secrets in the cloud"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Sentinel gives you an end-to-end solution for security operations. The solution includes visibility, analytics, hunting, incident management, and automation."
+    },
+    {
+        "question": "Which language is used to query data within Microsoft Sentinel?",
+        "options": {
+            "A": "SQL",
+            "B": "GraphQL",
+            "C": "KQL"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Microsoft Sentinel holds its data."
+    },
+    {
+        "question": "Which Azure service stores the log data that is ingested into Microsoft Sentinel?",
+        "options": {
+            "A": "Azure Data Factory",
+            "B": "Log Analytics",
+            "C": "Azure Monitor"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Log Analytics is the underlying service that stores the log data for Microsoft Sentinel."
+    },
+    {
+        "question": "Where is your log data stored?",
+        "options": {
+            "A": "Microsoft Sentinel Workspace",
+            "B": "Azure Lighthouse",
+            "C": "Log Analytics workspace"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Log Analytics workspace is where the data resides."
+    },
+    {
+        "question": "Which Microsoft Sentinel security role can create workbooks?",
+        "options": {
+            "A": "Microsoft Sentinel Responder",
+            "B": "Microsoft Sentinel Reader",
+            "C": "Microsoft Sentinel Contributor"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Contributor role can create workbooks."
+    },
+    {
+        "question": "Why is it important to set the region when creating the Log Analytics workspace?",
+        "options": {
+            "A": "Specifies where the log data will be stored.",
+            "B": "Specifies the timezone the data will be displayed in.",
+            "C": "Specifies the log retention period."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Region is the data center where your log data is stored."
+    },
+    {
+        "question": "Which table stores Defender for Endpoint logon events?",
+        "options": {
+            "A": "DeviceLogonEvents",
+            "B": "OfficeActivity",
+            "C": "SigninLogs"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The Defender for Endpoint data is stored in tables starting with Device."
+    },
+    {
+        "question": "What table contains logs from Windows hosts collected directly to Microsoft Sentinel?",
+        "options": {
+            "A": "SecurityEvent",
+            "B": "AuditLogs",
+            "C": "SecurityAlert"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Logs from Windows events are stored in the SecurityEvent table."
+    },
+    {
+        "question": "Which table stores Alerts from Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "SecurityIncident",
+            "B": "DeviceEvents",
+            "C": "SecurityAlert"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Alerts will reside in the SecurityAlert table."
+    },
+    {
+        "question": "Which of the following operations is a typical scenario for using a Microsoft Sentinel watchlist?",
+        "options": {
+            "A": "Creating more alerts to help identify issues.",
+            "B": "Export business data as a watchlist.",
+            "C": "Responding to incidents quickly with the rapid import of IP addresses."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Responding to incidents quickly with the rapid import of IP addresses is a typical use case for a Microsoft Sentinel watchlist."
+    },
+    {
+        "question": "How do you access a new watchlist named MyList in KQL?",
+        "options": {
+            "A": "_Watchlist('MyList')",
+            "B": "_GetWatchlist('MyList')",
+            "C": "_Getlist('MyList')"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "_GetWatchlist('MyList') is the proper function to access the watchlist in KQL."
+    },
+    {
+        "question": "In Threat Intelligence, indicators are considered as which of the following?",
+        "options": {
+            "A": "Strategic",
+            "B": "Operational",
+            "C": "Tactical"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Indicators are considered Tactical Threat Intelligence, which can be used for detecting and preventing threats."
+    },
+    {
+        "question": "Which of these items is an example of a Threat indicator?",
+        "options": {
+            "A": "Threat Actor Name",
+            "B": "Domain Name",
+            "C": "Threat Campaign"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Domain Name is a Threat indicator that can be queried against log data."
+    },
+    {
+        "question": "What table do you query in KQL to view your indicators?",
+        "options": {
+            "A": "Indicator",
+            "B": "TI Indicator",
+            "C": "ThreatIntelligenceIndicator"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The ThreatIntelligenceIndicator table stores the threat intelligence indicators."
+    },
+    {
+        "question": "What is one of the benefits of integrating Microsoft Sentinel and Defender XDR in the Defender portal?",
+        "options": {
+            "A": "It increases the complexity of managing and switching between multiple tools.",
+            "B": "It streamlines operations and reduces the risk of errors that can occur when switching between different systems.",
+            "C": "It requires context-switching when querying across different data sets."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "By integrating security solutions, operations can be streamlined, and the risk of errors reduced."
+    },
+    {
+        "question": "Which portal supports the functionality of adding entities to threat intelligence from incidents in Microsoft Sentinel?",
+        "options": {
+            "A": "Both Azure and Defender portals",
+            "B": "Azure portal",
+            "C": "Defender portal"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Azure portal supports adding entities to threat intelligence from incidents in Microsoft Sentinel."
+    },
+    {
+        "question": "What is one of the product changes associated with connecting a workspace to Defender XDR?",
+        "options": {
+            "A": "Microsoft Sentinel Reader role is assigned to the Microsoft Threat Protection and WindowsDefenderATP apps within the subscription.",
+            "B": "All Microsoft security incident creation rules are activated to avoid duplicate incidents.",
+            "C": "Log tables, queries, and functions in the Microsoft Sentinel workspace are also available in advanced hunting within Defender XDR."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "When a workspace is connected to Defender XDR, log tables, queries, and functions in the Microsoft Sentinel workspace become available in advanced hunting within Defender XDR."
+    },
+    {
+        "question": "What happens when a workspace is disconnected from the Defender portal in Microsoft Sentinel?",
+        "options": {
+            "A": "The Microsoft Sentinel section is removed from the left-hand side navigation of the Defender portal.",
+            "B": "The workspace is deleted from Microsoft Sentinel.",
+            "C": "Data from Microsoft Sentinel is still included on the Overview page."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "When a workspace is disconnected, the Microsoft Sentinel section is removed from the navigation of the Defender portal."
+    },
+    {
+        "question": "Where can you see the number of connected Windows hosts?",
+        "options": {
+            "A": "On the CEF Connector page",
+            "B": "On the Agents page in Log Analytics",
+            "C": "On the Data connectors page"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Agents page in Log Analytics displays the hosts connected."
+    },
+    {
+        "question": "Which connector provides the log data in an unparsed field?",
+        "options": {
+            "A": "Microsoft Entra ID",
+            "B": "Syslog",
+            "C": "CEF"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Syslog connector stores the data in the SyslogMessage field."
+    },
+    {
+        "question": "The vendor-provided connectors primarily use which of the following?",
+        "options": {
+            "A": "Azure Activity Connector",
+            "B": "Security Events Connector",
+            "C": "CEF Connector"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Most vendor-provided connectors use the CEF connector."
+    },
+    {
+        "question": "Where can you see the number of connected Windows hosts?",
+        "options": {
+            "A": "On the CEF Connector page",
+            "B": "On the Agents page in Log Analytics",
+            "C": "On the Data connectors page"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Agents page in Log Analytics displays the hosts connected."
+    },
+    {
+        "question": "Which connector provides the log data in an unparsed field?",
+        "options": {
+            "A": "Microsoft Entra ID",
+            "B": "Syslog",
+            "C": "CEF"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Syslog connector stores the data in the SyslogMessage field."
+    },
+    {
+        "question": "The vendor-provided connectors primarily use which of the following?",
+        "options": {
+            "A": "Azure Activity Connector",
+            "B": "Security Events Connector",
+            "C": "CEF Connector"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Most vendor-provided connectors use the CEF connector."
+    },
+    {
+        "question": "Which connector would you use to connect the raw data from Microsoft Defender for Endpoint?",
+        "options": {
+            "A": "Microsoft Defender for Office 365",
+            "B": "Microsoft Defender for Endpoint",
+            "C": "Microsoft Defender XDR"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The connector can be configured to send the raw data from Defender for Endpoint."
+    },
+    {
+        "question": "Which Microsoft security product is part of the Microsoft Defender XDR suite of products?",
+        "options": {
+            "A": "Microsoft Defender for Cloud Apps",
+            "B": "Microsoft Purview Information Protection",
+            "C": "Microsoft Entra ID"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Microsoft Defender for Cloud Apps is part of the Microsoft Defender XDR suite of products."
+    },
+    {
+        "question": "Which table (Data type) does the Microsoft Defender XDR connector write to?",
+        "options": {
+            "A": "SecurityAlert",
+            "B": "CommonSecurityLog",
+            "C": "SecurityEvent"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The connector ingests alerts and writes them to the SecurityAlert table."
+    },
+    {
+        "question": "Which connector do you use to collect Windows security events?",
+        "options": {
+            "A": "Windows Security Events via AMA",
+            "B": "Common Event Format",
+            "C": "Syslog"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "This connector will collect Windows security events."
+    },
+    {
+        "question": "To collect Sysmon events with the Security Events connector, what is the log name used to collect it in advanced settings?",
+        "options": {
+            "A": "Microsoft-Windows-Sysmon/Operational",
+            "B": "Microsoft-Windows-Sysmon/Events",
+            "C": "Microsoft-Windows-Sysmon/Logs"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "This is the log name to enter."
+    },
+    {
+        "question": "Which table contains the ingested Sysmon events?",
+        "options": {
+            "A": "Event",
+            "B": "CommonSecurityLog",
+            "C": "SecurityEvents"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The Event table contains the ingested logs."
+    },
+    {
+        "question": "The CEF connector writes to which table?",
+        "options": {
+            "A": "CommonSecurityLog",
+            "B": "SecurityEvent",
+            "C": "Syslog"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The connector writes to the CommonSecurityLog."
+    },
+    {
+        "question": "The CEF connector deploys what type of forwarder?",
+        "options": {
+            "A": "Syslog",
+            "B": "Event",
+            "C": "Sysmon"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The CEF connector deploys a Syslog forwarder."
+    },
+    {
+        "question": "The CEF connector can be deployed on which platform?",
+        "options": {
+            "A": "Azure Windows Virtual Machine",
+            "B": "On-premises Windows Host",
+            "C": "Azure Linux Virtual Machine"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Linux is required for deploying the CEF connector."
+    },
+    {
+        "question": "What field contains the unstructured event data?",
+        "options": {
+            "A": "SyslogData",
+            "B": "SyslogEvent",
+            "C": "SyslogMessage"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The SyslogMessage field contains unstructured data."
+    },
+    {
+        "question": "To create a parser in the Log query window, save the query as which of the following?",
+        "options": {
+            "A": "Module",
+            "B": "Function",
+            "C": "Table"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A Function is a named KQL query that is accessed like a regular table."
+    },
+    {
+        "question": "The Syslog connector can be deployed on which platform?",
+        "options": {
+            "A": "Azure Windows Virtual Machine",
+            "B": "On-premise Windows Host",
+            "C": "Azure Linux Virtual Machine"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Linux is required for deploying the Syslog connector."
+    },
+    {
+        "question": "What table do you query in KQL to view your indicators?",
+        "options": {
+            "A": "Indicator",
+            "B": "TIIndicator",
+            "C": "ThreatIntelligenceIndicator"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The ThreatIntelligenceIndicator table stores the indicators."
+    },
+    {
+        "question": "Which version of TAXII is supported?",
+        "options": {
+            "A": "1.1",
+            "B": "1.0",
+            "C": "2.1"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "TAXII versions 2.0 and 2.1 are supported."
+    },
+    {
+        "question": "Threat Intelligence Platform connector uses which technology to send data to Microsoft Sentinel?",
+        "options": {
+            "A": "Azure Functions",
+            "B": "App Service",
+            "C": "Microsoft Graph Security API"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The Microsoft Graph Security API is utilized for sending data."
+    },
+    {
+        "question": "Which of the following aren't common use cases of analytics rules?",
+        "options": {
+            "A": "Identifying compromised accounts.",
+            "B": "Detecting insider threats.",
+            "C": "Visualizing data from Microsoft Sentinel Connectors."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You cannot visualize the data with analytics rules. You can use Microsoft Sentinel Workbook to present and visualize the data collected from the security connectors."
+    },
+    {
+        "question": "You want to find additional information that explains the analytics template and the rule that is used in detection of the threats. Which section in the analytics rules page provides that information?",
+        "options": {
+            "A": "Details pane",
+            "B": "Header bar",
+            "C": "Rules and templates section"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The detailed view pane contains additional information that explains the template and the rule that is used in detection."
+    },
+    {
+        "question": "Which one of the analytics rules can you customize with your own query rules?",
+        "options": {
+            "A": "Fusion",
+            "B": "Machine learning behavior analytics",
+            "C": "Scheduled analytic rules"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Scheduled Analytic rules provide the highest level of customization, allowing users to apply their own query rules."
+    },
+    {
+        "question": "Which type of the template rules can create incidents based on all alerts generated in Microsoft Defender for Cloud?",
+        "options": {
+            "A": "Machine learning behavioral analytics",
+            "B": "Fusion",
+            "C": "Microsoft security"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft security template rules can create incidents based on all alerts generated in Microsoft Defender for Cloud."
+    },
+    {
+        "question": "Which one of the template types should you use to create an incident based on all alerts generated in Microsoft Defender for Cloud?",
+        "options": {
+            "A": "Fusion",
+            "B": "Machine learning behavior analytics",
+            "C": "Microsoft Security"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Template rules based on the Microsoft security type create incidents based on all alerts generated in Microsoft Defender for Cloud."
+    },
+    {
+        "question": "Which one of the following template rules are precreated in Microsoft Sentinel Analytics?",
+        "options": {
+            "A": "Scheduled template rules",
+            "B": "Fusion",
+            "C": "Machine learning behavior analytics templates"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "By default, an alert rule is created using the Fusion rule template in Microsoft Sentinel Analytics."
+    },
+    {
+        "question": "You want to configure a new KQL code to detect suspicious activity from Azure Activity Logs. In which section can you enter your custom KQL code?",
+        "options": {
+            "A": "Set rule logic",
+            "B": "Incident Settings",
+            "C": "Automated response"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "In the Set rule logic section, you can define the detection method by specifying the KQL code that will run against the Microsoft Sentinel workspace."
+    },
+    {
+        "question": "Which of the following statements about scheduled query rules is true?",
+        "options": {
+            "A": "They're precreated by default.",
+            "B": "They can only be enabled without customization.",
+            "C": "You can create your own query to define the detection of the threat."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can use either a predefined or a custom query to detect threats with scheduled query rules."
+    },
+    {
+        "question": "Due to ongoing maintenance activity, you need to stop receiving alerts from analytic rules temporarily. Which action should you enable on the rule to achieve that configuration?",
+        "options": {
+            "A": "Delete",
+            "B": "Disable",
+            "C": "Duplicate"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Disabled rules retain all the configuration and will temporarily stop creating the alerts from the configured detections, while the rule is disabled."
+    },
+    {
+        "question": "What is the most efficient way to edit an existing analytic rule?",
+        "options": {
+            "A": "Delete and recreate the alert with the new logic.",
+            "B": "Duplicate the rule and modify to achieve the necessary changes.",
+            "C": "Create a new rule."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "When you duplicate the rule, you have a startup configuration provided from the original rule, which you can further modify."
+    },
+    {
+        "question": "Automation rules are triggered by?",
+        "options": {
+            "A": "Incidents",
+            "B": "Connectors",
+            "C": "Watchlists"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Automation rules are triggered by incidents."
+    },
+    {
+        "question": "You use a Logic Apps to create a_?",
+        "options": {
+            "A": "Automation rule",
+            "B": "Playbook",
+            "C": "Workbook"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Playbooks are created with Logic Apps."
+    },
+    {
+        "question": "An Automation rule action can?",
+        "options": {
+            "A": "Update the incident title",
+            "B": "Delete the incident",
+            "C": "Change the incident status"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Automation rules can change the incident status."
+    },
+    {
+        "question": "An administrator needs to create a Microsoft Sentinel playbook. The administrator creates a logic app and starts Logic Apps Designer. Which of the following connector should the administrator use as a trigger to your playbook?",
+        "options": {
+            "A": "Office 365 connector",
+            "B": "Microsoft Sentinel Connector",
+            "C": "Microsoft Entra Connector"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Sentinel playbooks use a Microsoft Sentinel Logic Apps connector to trigger logic app actions."
+    },
+    {
+        "question": "Which one of the following statements describes a feature of Microsoft Sentinel playbooks?",
+        "options": {
+            "A": "Microsoft Sentinel playbooks contain a set of continuous activities that always run in response to alerts.",
+            "B": "The Game catalog contains the latest Microsoft games.",
+            "C": "Collections of procedures based on Azure Logic Apps that run in response to an alert."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft Sentinel Playbooks contain logic apps action that are collections of procedures that run in response to an alert."
+    },
+    {
+        "question": "What is dynamic content in a logic app?",
+        "options": {
+            "A": "List of dynamically selected threats.",
+            "B": "List of dynamic inputs for the current action.",
+            "C": "List of dynamic users."
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Dynamic Content displays any available outputs from the previous step, which you can use as inputs for the current action."
+    },
+    {
+        "question": "An administrator creates a new playbook to receive a notification each time a user is delegated the role of Global Administrator. Which connector should the administrator select in the logic app?",
+        "options": {
+            "A": "Microsoft Entra connector.",
+            "B": "Connector for Office 365.",
+            "C": "Microsoft Sentinel Connector."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft Sentinel playbooks start with a trigger from Microsoft Sentinel Connector."
+    },
+    {
+        "question": "Which option should the administrator select to attach the playbook?",
+        "options": {
+            "A": "New",
+            "B": "Unassigned",
+            "C": "Name of the incident"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "When you select the name of the incident, you can start the process to run a playbook on demand in response to an existing incident."
+    },
+    {
+        "question": "You want to search for a suitable threat detection query or a workbook that you can use for your requirements. Where can you search for such items?",
+        "options": {
+            "A": "Azure Architecture Center",
+            "B": "Microsoft Learn",
+            "C": "Microsoft Sentinel repository on GitHub"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft Sentinel repository on GitHub contains out of the box detections, exploration queries, hunting queries, workbooks, and playbooks that will help you to secure your environment and hunt for threats."
+    },
+    {
+        "question": "Which Microsoft Sentinel component generates alerts?",
+        "options": {
+            "A": "Incidents",
+            "B": "Analytics rules",
+            "C": "Data connectors",
+            "D": "Events"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "You can configure analytics rules to generate alerts in Microsoft Sentinel."
+    },
+    {
+        "question": "What's the primary goal of incident management in Microsoft Sentinel?",
+        "options": {
+            "A": "To understand the state of security health in Azure",
+            "B": "To track and manage all Azure issues",
+            "C": "To track and resolve security issues across your organization's environment",
+            "D": "To manage security roles in your environment"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Microsoft Sentinel incident management helps you track and resolve security issues across your organization, including on-premises, Azure, and other cloud environments."
+    },
+    {
+        "question": "Which of the following items is evidence in a Microsoft Sentinel incident?",
+        "options": {
+            "A": "IP address",
+            "B": "Username",
+            "C": "Event",
+            "D": "Host name"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "An event is considered evidence in a Microsoft Sentinel incident."
+    },
+    {
+        "question": "To escalate an incident to the next tier security team, which incident parameter should you change?",
+        "options": {
+            "A": "Severity",
+            "B": "Status",
+            "C": "Owner",
+            "D": "Username"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You should change the owner parameter to a user account for a member of the next tier security team."
+    },
+    {
+        "question": "Which Microsoft Sentinel interface lets you view timelines and relationships between incident resources?",
+        "options": {
+            "A": "Investigation graph",
+            "B": "Incident details page",
+            "C": "Resource relationships page",
+            "D": "Incident status"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The investigation graph lets you view timelines and relationships between incident resources."
+    },
+    {
+        "question": "What are Entities?",
+        "options": {
+            "A": "Data elements",
+            "B": "Tables",
+            "C": "Alerts"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "The data elements include such things as Accounts, IP Addresses, Hosts."
+    },
+    {
+        "question": "In the timeline of the Entity page, what type of items are an aggregation of notable events relating to the entity?",
+        "options": {
+            "A": "Alerts",
+            "B": "Activities",
+            "C": "Bookmarks"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Activities are the aggregation of events."
+    },
+    {
+        "question": "When you're viewing the investigation graph, what option will show Entity Behavior information?",
+        "options": {
+            "A": "Entities",
+            "B": "Timeline",
+            "C": "Insights"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Insights will display Entity Behavior information."
+    },
+    {
+        "question": "When creating a Workspace transformation DCR, what is the name of the virtual table to query?",
+        "options": {
+            "A": "source",
+            "B": "input",
+            "C": "target"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "'source' is the name of the virtual table."
+    },
+    {
+        "question": "What is an ASIM parser in KQL?",
+        "options": {
+            "A": "Variable",
+            "B": "Function",
+            "C": "Aggregate"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A Parser is a KQL Function."
+    },
+    {
+        "question": "Every schema that supports filtering parameters supports at least which parameter?",
+        "options": {
+            "A": "createdon",
+            "B": "ingestiontime",
+            "C": "starttime"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "'starttime' and 'endtime' parameters are the supported filtering parameters."
+    },
+    {
+        "question": "An administrator wants to open a previously saved query. After opening the Logs page in Microsoft Sentinel, which one of the following options must the administrator select?",
+        "options": {
+            "A": "Queries",
+            "B": "Query explorer",
+            "C": "Tables pane"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Query Explorer link in the page header helps you access your previously saved queries."
+    },
+    {
+        "question": "The administrator wants to create an analytics rule from the created query. Which option from the queries pane should the administrator select?",
+        "options": {
+            "A": "Azure Monitor Alert",
+            "B": "Microsoft Sentinel Alert",
+            "C": "Copy link"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A new Microsoft Sentinel alert creates an analytics rule."
+    },
+    {
+        "question": "Which one of the following tools can an administrator use to query data in Microsoft Sentinel?",
+        "options": {
+            "A": "Structured Query Language (SQL)",
+            "B": "PowerShell",
+            "C": "Azure Data Explorer"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Azure Data Explorer, also known as Kusto, is a log analytics cloud platform optimized for ad-hoc big data queries."
+    },
+    {
+        "question": "Which one of the following characters can an administrator use to separate the commands in the query?",
+        "options": {
+            "A": "Pipe (|)",
+            "B": "Hyphen (-)",
+            "C": "Underscore (_)"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "You can use the pipe (|) character to separate commands in the query."
+    },
+    {
+        "question": "Which one of the following elements can't be part of the workbook?",
+        "options": {
+            "A": "Charts",
+            "B": "Tables",
+            "C": "Videos"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "A workbook cannot contain videos."
+    },
+    {
+        "question": "In which section of the Microsoft Entra sign-in logs workbook can an administrator find information that users are required to perform multifactor authentication (MFA) to validate their identity?",
+        "options": {
+            "A": "Sign-in Location",
+            "B": "Conditional Access status",
+            "C": "Sign-ins by Device"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The Conditional Access status table shows which users are required to perform MFA to validate their identity."
+    },
+    {
+        "question": "Which formatting does Microsoft Sentinel use to format the text in the workbook with text visualization?",
+        "options": {
+            "A": "Microsoft Word",
+            "B": "HTML text formatting",
+            "C": "Markdown"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The text is edited through a Markdown formatting, which provides different heading and font styles, hyperlinks, and tables."
+    },
+    {
+        "question": "An administrator creates a custom workbook and wants to display the data in a table. Which visualization steps should the administrator use in the workbook?",
+        "options": {
+            "A": "Text visualization",
+            "B": "Links/Tabs",
+            "C": "Grid visualization"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "You can use grid visualization to present the data in tables."
+    },
+    {
+        "question": "You can connect Microsoft Sentinel to which repositories?",
+        "options": {
+            "A": "Azure DevOps only",
+            "B": "GitHub only",
+            "C": "GitHub and Azure DevOps"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Both GitHub and Azure DevOps repository types are supported for connection to Microsoft Sentinel."
+    },
+    {
+        "question": "Which content type is supported by content hub solutions?",
+        "options": {
+            "A": "Advanced Multistage Attack Detection Fusion Rule",
+            "B": "Parsers",
+            "C": "Search job"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Parsers are supported in a content hub solution."
+    },
+    {
+        "question": "What is the maximum number of repository connections allowed for each Microsoft Sentinel workspace?",
+        "options": {
+            "A": "3",
+            "B": "5",
+            "C": "10"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "A maximum of five repository connections is allowed for each Microsoft Sentinel workspace."
+    },
+    {
+        "question": "Which of the following best describes a good Hypothesis?",
+        "options": {
+            "A": "is Time-bound",
+            "B": "focuses on known Indicators",
+            "C": "focuses on all current threats"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "A good hypothesis should be time-bound to ensure that the investigation is specific and manageable."
+    },
+    {
+        "question": "Threat Hunting is considered which of the following?",
+        "options": {
+            "A": "Retroactive",
+            "B": "Reactive",
+            "C": "Proactive"
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "Threat hunting is proactive as it involves actively searching for threats instead of waiting for alerts or anomalies."
+    },
+    {
+        "question": "\"We want to check which accounts have run cmd.exe.\" Why is this hypothesis poor?",
+        "options": {
+            "A": "Cmd.exe isn't a program.",
+            "B": "Accounts aren't associated with the running of cmd.exe",
+            "C": "The scope is too broad."
+        },
+        "answer": [
+            "C"
+        ],
+        "answer_description": "The scope is too broad as knowing which accounts have run cmd.exe doesn’t inherently indicate an anomaly or threat."
+    },
+    {
+        "question": "Which code syntax is used for Microsoft Sentinel hunting queries?",
+        "options": {
+            "A": "T-SQL (Transact-SQL)",
+            "B": "Kusto Query Language (KQL)",
+            "C": "JavaScript Object Notation (JSON)"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Microsoft Sentinel hunting queries are built using the Kusto Query Language (KQL) syntax."
+    },
+    {
+        "question": "How do bookmarks aid in the threat-hunting process?",
+        "options": {
+            "A": "They enable the hunter to save query results for later reference.",
+            "B": "They enable the hunter to track incident status and resolution.",
+            "C": "They enable the hunter to create workbooks from query results."
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Bookmarks enable the hunter to save query results for later reference, aiding in the threat-hunting process."
+    },
+    {
+        "question": "Which of the following can't be used in a livestream query?",
+        "options": {
+            "A": "Time parameters",
+            "B": "Alert data parameters",
+            "C": "Event entities"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Time parameters can't be used in a livestream query because livestream queries run continuously and don't rely on static time constraints."
+    },
+    {
+        "question": "The msticpy package provides which of the following functionality?",
+        "options": {
+            "A": "Data wrangling",
+            "B": "Analyzing data",
+            "C": "Creating data"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "The msticpy package offers several functions to help security investigators and hunters analyze data effectively."
+    },
+    {
+        "question": "Which is a component of notebooks in Microsoft Sentinel?",
+        "options": {
+            "A": "Telemetry analyzer",
+            "B": "Kernel",
+            "C": "Workbook"
+        },
+        "answer": [
+            "B"
+        ],
+        "answer_description": "Notebooks use the Kernel to parse and execute the code within the notebook."
+    },
+    {
+        "question": "What coding language is most commonly used in the sample Notebooks?",
+        "options": {
+            "A": "Python",
+            "B": "C#",
+            "C": "Java"
+        },
+        "answer": [
+            "A"
+        ],
+        "answer_description": "Python is the most commonly used coding language in the sample notebooks."
+    }   
+]       
