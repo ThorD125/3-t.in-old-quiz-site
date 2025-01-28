@@ -4,6 +4,10 @@
         "file": "az-900.json"
     },
     {
+        "title": "AZ-104",
+        "file": "az-104.json"
+    },
+    {
         "title": "SC-900",
         "file": "sc-900.json"
     },
