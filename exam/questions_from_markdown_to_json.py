@@ -27,7 +27,12 @@ def parse_file_to_json(file_path):
                 }
                 options = {}
                 current_label = 0
-
+            
+            elif line.startswith("![") and "](" in line and line.endswith(")"):
+                img_path = line[line.find("(") + 1:line.find(")")].strip()
+                if current_question:
+                    current_question["img"].append(f"{imgdirectorypath}{img_path}")
+    
             # Detect options (unchecked)
             elif line.startswith("- [ ]"):
                 if current_label < len(option_labels):
@@ -55,6 +60,7 @@ def parse_file_to_json(file_path):
 # File path to the input text file
 file_path = 'questions.txt'
 questions_data = parse_file_to_json(file_path)
+imgdirectorypath = "animagdirectory/"
 
 # Output the parsed data as JSON
 with open('questions.json', 'w', encoding='utf-8') as json_file:
