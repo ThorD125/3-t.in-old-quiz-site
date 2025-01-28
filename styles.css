@@ -167,6 +167,10 @@ h1 {
     height: fit-content;
 }
 
+#exam-selection-container * {
+    overflow-y: hidden;
+}
+
 .btn-container.wrong .btn,
 .btn-container.correct .btn,
 .wrong,
