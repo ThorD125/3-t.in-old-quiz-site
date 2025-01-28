@@ -14,9 +14,9 @@ function countUnique(arr) {
   arr
     .filter(x => x != undefined)
     .forEach(obj => {
-    // console.log(obj);
-    countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
-  });
+      // console.log(obj);
+      countMap.set(obj.question, (countMap.get(obj.question) || 0) + 1);
+    });
 
   let unique = 0;
   countMap.forEach(value => {
@@ -47,7 +47,7 @@ let tempQuestions = "";
 
 function loadQuestions() {
   tempQuestions = shuffleArray(fetchedQuestions).filter(x => x != 'empty').filter(x => x != undefined).slice(0, amountOfQuestions);
-  questions = tempQuestions.filter(x => x != undefined); 
+  questions = tempQuestions.filter(x => x != undefined);
 }
 
 function resetAnimations() {
@@ -91,6 +91,7 @@ function setNextQuestion() {
     return;
   }
 
+
   currentQuestionIndex = Math.floor(Math.random() * questions.length);
   const question = questions[currentQuestionIndex];
 
@@ -98,6 +99,7 @@ function setNextQuestion() {
 
   resetButtonColors();
 
+  renderImages(question.img);
   Object.keys(question.options).forEach(key => {
     const button = document.createElement('button');
     button.className = 'btn';
@@ -107,6 +109,19 @@ function setNextQuestion() {
 
     answerButtonContainer.appendChild(button);
   });
+}
+
+function renderImages(images) {
+  document.querySelector("#image_container").innerHTML = "";
+  if (undefined != images) {
+    console.log(images)
+    images.forEach(function (img_location) {
+      let newImage = document.createElement("img");
+      newImage.src = img_location;
+      document.querySelector("#image_container").appendChild(newImage);
+    });
+
+  }
 }
 
 let answer_correct = false;
@@ -143,7 +158,7 @@ function selectAnswer(e) {
 
       correctstreak = 0;
 
-      if (hardModus) {  
+      if (hardModus) {
         questions = shuffleArray(tempQuestions).filter(x => x != undefined);
       } else {
         questions.push(currentQuestion);
@@ -264,20 +279,20 @@ const explain = document.getElementById("explain");
 fetch('/exams.json')
   .then(response => response.json())
   .then(exams => {
-      return fetch('/exam/della/exams.json')
+    return fetch('/exam/della/exams.json')
       .then(response => response.json())
       .then(dellaexams => {
-        Array.prototype.push.apply(exams,dellaexams); 
+        Array.prototype.push.apply(exams, dellaexams);
 
         populateExamDropdown(exams);
       })
   })
 
-// fetch('/exams.json')
-//   .then(response => response.json())
-//   .then(exams => {
-//     populateExamDropdown(exams);
-//   })
+  // fetch('/exams.json')
+  //   .then(response => response.json())
+  //   .then(exams => {
+  //     populateExamDropdown(exams);
+  //   })
   .catch(error => console.error('Error loading exams:', error));
 
 examSelection.addEventListener('change', () => {
