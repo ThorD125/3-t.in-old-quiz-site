@@ -33,7 +33,7 @@ h1 {
 
 #quiz-container {
     height: 80vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-top: auto;
 }
 
@@ -135,7 +135,7 @@ button.selected:hover {
 
 #answer-buttons {
     max-height: 30vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .slider-container {
