@@ -78,6 +78,19 @@ function visualLoadCounters() {
   questionCounter.querySelector(".unique").textContent = `${uniqueCount.unique}`;
   questionCounter.querySelector(".dupe").textContent = `${uniqueCount.dupes}`;
 }
+function getRandomQuestion(questions) {
+    currentQuestionIndex = Math.floor(Math.random() * questions.length);
+    let question = questions[currentQuestionIndex];
+
+    // Keep selecting a new question if options or answer are empty
+    while ((Object.keys(question.options).length === 0 || question.answer.length === 0) && questions.length > 1) {
+        delete questions[currentQuestionIndex];
+        currentQuestionIndex = Math.floor(Math.random() * questions.length);
+        question = questions[currentQuestionIndex];
+    }
+
+    return question;
+}
 
 function setNextQuestion() {
   if (answer_correct) {
@@ -92,8 +105,7 @@ function setNextQuestion() {
   }
 
 
-  currentQuestionIndex = Math.floor(Math.random() * questions.length);
-  const question = questions[currentQuestionIndex];
+  const question = getRandomQuestion(questions);
 
   questionText.textContent = question.question;
 
